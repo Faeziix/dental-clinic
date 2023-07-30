@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$primary: hsla(246deg, 54%, 38%, 1);
+$accent: hsla(21deg, 83%, 55%, 1);
+$neutral: hsla(278deg, 100%, 97%, 1);
+
+body {
+  font-family: "Vazirmatn";
+  background-color: #fcf7ff;
+  color: hsla(0, 0%, 15%, 1);
+  direction: rtl;
+}
+
+.flex1 {
+  flex: 1;
+  margin-right: auto;
+}
+
+a {
+  &:hover {
+    color: theme("colors.purple.500");
+    text-decoration: underline;
+  }
+}
+
+button {
+  width: 6.25rem;
+  padding: 0.5rem 1rem;
+
+  &.primary {
+    background-color: $primary;
+    color: theme("colors.white");
+  }
+}
+
+h1 {
+  @apply text-2xl font-bold md:text-3xl lg:text-4xl;
+}
+
+h2 {
+  @apply text-xl font-bold md:text-2xl lg:text-3xl;
+}
+
+h3 {
+  @apply text-lg font-bold md:text-xl lg:text-2xl;
+  font-weight: 400;
+}
+
+h4 {
+  @apply text-base font-bold md:text-lg lg:text-xl;
+  font-weight: 400;
+}
+
+h5 {
+  @apply text-sm font-bold md:text-base lg:text-lg;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 0.625rem;
+  font-weight: 300;
+}
+
+p {
+  @apply text-base font-normal md:text-lg lg:text-xl lg:leading-10;
+  font-weight: 400;
+}
+
+input,
+textarea {
+  @apply w-full rounded-lg border-primary border-[1px] border-solid bg-transparent py-2;
+}
