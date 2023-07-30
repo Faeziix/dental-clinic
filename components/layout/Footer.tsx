@@ -135,7 +135,8 @@ function Footer() {
         alt="Footer Background"
         fill
       />
-      <div className="bg-zinc-950">
+
+      <div className="bg-blue-950 absolute bottom-0 w-full left-0">
         <p className="text-center py-4 text-sm">
           کلیه حقوق این سایت برای مطب دکتر سهیلا کریمی محفوظ می‌باشد. ©
         </p>
