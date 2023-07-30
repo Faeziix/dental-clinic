@@ -28,7 +28,7 @@ function Testimonials() {
           style={{
             fontFamily: myFont.style.fontFamily,
           }}
-          className="bg-Neutral p-4 flex flex-col items-center gap-4 rounded-[2rem]"
+          className="bg-Neutral shadow-[0_5px_0_black] border-2 border-solid border-black p-4 flex flex-col items-center gap-4 rounded-[2rem]"
         >
           {testimonials.map((testimonial) => (
             <div
