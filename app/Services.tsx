@@ -45,7 +45,9 @@ function Services() {
                   <h2 className="">{service.display}</h2>
                 </div>
 
-                <p className="leading-8 text-base">{service.text}</p>
+                <p className="leading-8 text-base text-justify">
+                  {service.text}
+                </p>
               </div>
 
               <button className="w-full text-lg lg:text-xl font-semibold relative rounded-3xl border-primary border-2 border-solid">

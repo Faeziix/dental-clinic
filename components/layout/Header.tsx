@@ -34,7 +34,7 @@ const Links = [
 
 function Header() {
   return (
-    <div className="h-20 bg-Neutral py-2 w-full">
+    <div className="h-20 fixed top-0 z-10 bg-Neutral py-2 w-full">
       <div className="flex flex-row-reverse md:flex-row justify-center items-center h-full w-full px-5">
         <Image
           className="mr-auto ml-0 md:ml-auto md:mr-0 h-full w-min"

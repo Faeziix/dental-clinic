@@ -92,7 +92,7 @@ function Journey() {
                 {step.icon}
                 <h2 className="h-full">{step.title}</h2>
               </div>
-              <p className="">{step.description}</p>
+              <p className="text-justify">{step.description}</p>
             </div>
           </div>
         ))}
