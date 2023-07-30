@@ -3,7 +3,7 @@ import styles from "./Hero.module.scss";
 
 function Hero() {
   return (
-    <div className="py-16 text-Neutral w-full min-h-[70vh] px-44 h-full flex flex-col justify-center gap-2 font-semibold">
+    <div className="py-16 relative text-Neutral h-[70vh] w-full px-44 flex flex-col justify-center gap-2 font-semibold">
       <h1 className="">در تلاشیم برای خلق بهترین لبخند شما</h1>
       <p className="max-w-md">
         لورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم
@@ -13,8 +13,8 @@ function Hero() {
         <span className="w-full text-lg font-bolder grow block">رزرو وقت</span>
       </button>
       <div className="absolute top-0 left-0 w-full h-full -z-10">
-        <div className={`${styles.bkgVideo} relative `}>
-          <video className=" object-cover z-[-1]" autoPlay muted loop>
+        <div className={`${styles.bkgVideo} relative h-full w-full`}>
+          <video className="h-full object-cover z-[-10]" autoPlay muted loop>
             <source src="/HeroBkg.MP4" type="video/mp4" />
           </video>
         </div>
