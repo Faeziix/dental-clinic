@@ -12,8 +12,8 @@ function Hero() {
       <button className="primary w-fit px-16 py-4 flex rounded-full mt-11">
         <span className="w-full text-lg font-bolder grow block">رزرو وقت</span>
       </button>
-      <div className="absolute top-0 left-0 w-full h-full">
-        <div className={`${styles.bkgVideo} relative -z-10`}>
+      <div className="absolute top-0 left-0 w-full h-full -z-10">
+        <div className={`${styles.bkgVideo} relative `}>
           <video className=" object-cover z-[-1]" autoPlay muted loop>
             <source src="/HeroBkg.MP4" type="video/mp4" />
           </video>
