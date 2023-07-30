@@ -135,6 +135,11 @@ function Footer() {
         alt="Footer Background"
         fill
       />
+      <div className="bg-zinc-950">
+        <p className="text-center py-4 text-sm">
+          کلیه حقوق این سایت برای مطب دکتر سهیلا کریمی محفوظ می‌باشد. ©
+        </p>
+      </div>
     </footer>
   );
 }

@@ -37,7 +37,7 @@ function Header() {
     <div className="h-20 backdrop-blur-md py-2 w-full">
       <div className="flex flex-row-reverse md:flex-row justify-center items-center h-full w-full px-5">
         <Image
-          className="mr-auto md:ml-auto h-full w-min"
+          className="mr-auto ml-0 md:ml-auto md:mr-0 h-full w-min"
           src={Logo}
           alt="Logo"
         />

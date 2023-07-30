@@ -5,6 +5,14 @@ import Button from "@/components/ui/Buttons";
 import ArrowRightIcon from "@/public/ArrowRightIcon.svg";
 import Link from "next/link";
 
+import localFont from "next/font/local";
+
+// Font files can be colocated inside of `app`
+const myFont = localFont({
+  src: "../public/Digi Anil Bold.ttf",
+  display: "swap",
+});
+
 const testimonials = [
   "لمینیت‌ها خیلی طبیعی و خوشگل شدن. تو راه خونه، نمیتونستم تو آینه چشم از دندونام بردارم :) خیلی خوب به نظر میرسن. انگار که 10 سال جوون‌تر شدم! خیلی از خانم دکتر و تیم حرفه‌ایشون ممنونم.",
   "من امروز عصب‌کشی انجام دادم پیشتون. عالی بود! با اومدن کنار شما ترس و استرس از دندون‌پزشکی تموم شد. کاش زدتر با شما آشنا میشدم؛ ممنونم از مهربونیتون.",
@@ -18,7 +26,7 @@ function Testimonials() {
       <div className="bg-accent p-4 md:rounded-[2rem]">
         <div
           style={{
-            fontFamily: "Digi Anil Bold",
+            fontFamily: myFont.style.fontFamily,
           }}
           className="bg-Neutral p-4 flex flex-col items-center gap-4 rounded-[2rem]"
         >

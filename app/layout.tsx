@@ -3,6 +3,11 @@ import "./globals.scss";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Footer from "@/components/layout/Footer";
+import { Vazirmatn } from "next/font/google";
+
+const vazirmatn = Vazirmatn({
+  subsets: ["arabic"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={vazirmatn.className}>
       <body>
         <Header />
         {children}
