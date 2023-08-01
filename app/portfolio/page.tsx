@@ -52,12 +52,16 @@ function Page() {
                 ))}
               </div>
             ))}
-            <div className="text-center row-start-1 md:row-start-auto md:flex-col flex-row w-full flex">
+            <div className="text-center pt-2 md:py-0 row-start-1 md:row-start-auto md:flex-col flex-row w-full flex">
               <h2 className="md:text-bt grow text-primary">Before</h2>
               <h2 className="md:text-bt grow text-primary">After</h2>
             </div>
           </div>
-          <Button radius="circle" size="xl" className="relative mt-8 mb-16">
+          <Button
+            radius="circle"
+            size="xl"
+            className="relative mx-auto md:mx-0 mt-8 mb-16"
+          >
             مشاهده بیشتر
             <Image
               src={ArrowRightIcon}
