@@ -35,7 +35,7 @@ function Page() {
       <h1 className="py-16">نمونه کار‌ها</h1>
 
       {items.map((item, i) => (
-        <div className="flex flex-col" key={i}>
+        <div className="flex mx-auto w-fit flex-col" key={i}>
           <h2 className="mb-8">{item.category}</h2>
           <div className={styles["items-list"]}>
             {item.images.map((images, n) => (
