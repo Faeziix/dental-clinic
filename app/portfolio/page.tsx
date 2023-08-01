@@ -43,7 +43,7 @@ function Page() {
                 key={n}
                 className={`${
                   n == 1 ? "bg-accent" : ""
-                } flex py-4 px-2 gap-2 md:flex-col`}
+                } flex md:py-4 py-2 px-2 gap-2 md:flex-col`}
               >
                 {images.map((image) => (
                   <div key={image.src} className="basis-full grow">
