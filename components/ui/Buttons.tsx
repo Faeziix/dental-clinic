@@ -1,15 +1,12 @@
 import React from "react";
-import Image from "next/image";
-import ArrowRightIcon from "@/public/ArrowRightIcon.svg";
 import { cva } from "class-variance-authority";
 import { cn } from "@/utils/utils";
-import ArrowRight from "../icons/ArrowRight";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   withArrow?: boolean;
   color?: "primary" | "accent" | "dark" | "neutral";
-  size?: "small" | "medium";
+  size?: "small" | "medium" | "large" | "xl";
   mode?: "default" | "outlined" | "block";
   radius?: "default" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "circle";
 }
@@ -24,6 +21,7 @@ const buttonVarient = cva(
     "relative",
     "whitespace-nowrap",
     "text-center",
+    "w-fit",
   ],
   {
     variants: {
@@ -40,7 +38,7 @@ const buttonVarient = cva(
         small: ["text-sm", "py-1", "px-2"],
         medium: ["text-base", "py-2", "px-4"],
         large: ["text-lg", "py-3", "px-6"],
-        xl: ["text-xl", "py-4", "px-8"],
+        xl: ["text-xl", "py-2", "px-12"],
       },
       mode: {
         default: [""],

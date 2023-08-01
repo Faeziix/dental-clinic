@@ -1,11 +1,11 @@
-import Hero from "./Hero";
 import Image from "next/image";
-import Introduction from "./Introduction";
-import Services from "./Services";
-import Journey from "./Journey";
-import Testimonials from "./Testimonials";
-import Instagram from "./Instagram";
-import ReservationForm from "./ReservationForm";
+import Hero from "./landingPage/Hero";
+import Introduction from "./landingPage/Introduction";
+import Services from "./landingPage/Services";
+import Journey from "./landingPage/Journey";
+import Testimonials from "./landingPage/Testimonials";
+import Instagram from "./landingPage/Instagram";
+import ReservationForm from "./landingPage/ReservationForm";
 
 export default function Home() {
   return (

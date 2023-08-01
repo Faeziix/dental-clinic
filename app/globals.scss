@@ -7,9 +7,16 @@ $accent: hsla(21deg, 83%, 55%, 1);
 $neutral: hsla(278deg, 100%, 97%, 1);
 
 body {
-  background-color: #fcf7ff;
+  background-color: hsla(281, 100%, 98%, 1);
   color: hsla(0, 0%, 15%, 1);
   direction: rtl;
+}
+
+@layer components {
+  .text-bt {
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+  }
 }
 
 .flex1 {

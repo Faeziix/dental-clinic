@@ -1,7 +1,6 @@
 import Header from "@/components/layout/Header";
 import "./globals.scss";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Footer from "@/components/layout/Footer";
 import { Vazirmatn } from "next/font/google";
 
@@ -23,7 +22,7 @@ export default function RootLayout({
     <html lang="en" className={vazirmatn.className}>
       <body>
         <Header />
-        {children}
+        <div className="mt-20">{children}</div>
         <Footer />
       </body>
     </html>
