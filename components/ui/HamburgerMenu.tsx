@@ -41,9 +41,9 @@ function HamburgerMenu({ links }: LinksType) {
       <div
         className={`${
           isOpen ? "block" : "hidden"
-        } fixed top-0 right-0 w-full max-w-md h-screen bg-black bg-opacity-30 z-50`}
+        } fixed top-0 right-0 w-full h-screen bg-black bg-opacity-30 z-50`}
       >
-        <div className="w-2/3 bg-primary h-full">
+        <div className="w-2/3 max-w-xs bg-primary h-full">
           <div onClick={toggleMenu} className="p-5">
             <CrossIcon />
           </div>
