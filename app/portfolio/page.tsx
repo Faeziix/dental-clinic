@@ -61,13 +61,9 @@ function Page() {
             radius="circle"
             size="xl"
             className="relative mx-auto md:mx-0 mt-8 mb-16"
+            withArrow
           >
             مشاهده بیشتر
-            <Image
-              src={ArrowRightIcon}
-              alt="Arrow Right Icon"
-              className="absolute right-2 top-1/2 transform -translate-y-1/2"
-            />
           </Button>
         </div>
       ))}

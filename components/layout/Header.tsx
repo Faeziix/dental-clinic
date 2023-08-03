@@ -3,6 +3,7 @@ import Logo from "@/public/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import HamburgerMenu from "../ui/HamburgerMenu";
+import Button from "../ui/Buttons";
 
 const Links = [
   {
@@ -48,9 +49,14 @@ function Header() {
             </Link>
           ))}
         </div>
-        <button className="px-10 bg-primary w-fit text-Neutral rounded-full hidden md:block py-2 mr-auto font-bold">
+        <Button
+          color="primary"
+          className="md:mr-auto mr-0 ml-auto md:ml-0 hidden md:block"
+          size="lg"
+          radius="circle"
+        >
           رزرو وقت
-        </button>
+        </Button>
         <div className="block md:hidden">
           <HamburgerMenu links={Links} />
         </div>

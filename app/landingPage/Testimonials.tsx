@@ -33,7 +33,7 @@ function Testimonials() {
           {testimonials.map((testimonial) => (
             <div
               style={{
-                fontFamily: "Digi Anil Bold",
+                fontFamily: myFont.style.fontFamily,
               }}
               className="flex w-full flex-col gap-2 rounded-lg"
               key={testimonial}
@@ -47,16 +47,11 @@ function Testimonials() {
           ))}
         </div>
         <Link
-          className="max-w-xs h-full mt-6 block mx-auto"
+          className="max-w-xs h-full mt-6 block mx-auto hover:no-underline"
           href="https://www.instagram.com/stories/highlights/17902117297715473/"
         >
-          <Button radius="circle" mode="block" color="neutral">
+          <Button withArrow radius="circle" mode="block" color="neutral">
             مشاهده بیشتر در هایلایت اینستاگرام
-            <Image
-              src={ArrowRightIcon}
-              alt="Arrow Right Icon"
-              className="absolute top-1/2 transform -translate-y-1/2 invert"
-            />
           </Button>
         </Link>
       </div>

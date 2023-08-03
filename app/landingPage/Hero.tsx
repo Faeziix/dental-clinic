@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Hero.module.scss";
+import Button from "@/components/ui/Buttons";
 
 function Hero() {
   return (
@@ -9,9 +10,9 @@ function Hero() {
         لورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم
         ایپسوملورم ایپسوملورم
       </p>
-      <button className="primary w-fit px-16 py-3 flex rounded-full mt-11">
+      <Button color="primary" radius="circle" size="xl" className="mt-11">
         <span className="w-full text-lg font-bolder grow block">رزرو وقت</span>
-      </button>
+      </Button>
       <div className="absolute top-0 left-0 w-full h-full -z-10">
         <div className={`${styles.bkgVideo} relative h-full w-full`}>
           <video
