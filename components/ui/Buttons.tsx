@@ -35,7 +35,13 @@ const buttonVarient = cva(
   {
     variants: {
       color: {
-        default: ["bg-transparent", "text-dark", "border-dark"],
+        default: [
+          "bg-transparent",
+          "text-dark",
+          "border-dark",
+          "hover:bg-primary",
+          "hover:text-Neutral",
+        ],
         primary: [
           "bg-primary",
           "text-white",
@@ -64,7 +70,7 @@ const buttonVarient = cva(
         block: ["w-full"],
       },
       radius: {
-        default: ["rounded-lg"],
+        default: ["rounded-2xl"],
         circle: ["rounded-full"],
         sm: ["rounded-sm"],
         md: ["rounded-md"],

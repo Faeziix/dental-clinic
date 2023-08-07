@@ -1,10 +1,93 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import ChildToothIcon from "@/public/ChildToothIcon.png";
 import LaminateIcon from "@/public/LaminateIcon.svg";
 import ImplantIcon from "@/public/ImplantIcon.svg";
 import ArrowRightIcon from "@/public/ArrowRightIcon.svg";
 import ServicesGirlImage from "@/public/ServicesGirl.png";
+import { motion, useAnimation, useInView, Variants } from "framer-motion";
+import Button from "@/components/ui/Buttons";
+
+const textVariant: Variants = {
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.7,
+      ease: "easeInOut",
+    },
+  },
+  hidden: {
+    opacity: 0,
+    x: 100,
+  },
+};
+
+const listVariant: Variants = {
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.7,
+      ease: "easeInOut",
+      staggerChildren: 0.2,
+      when: "beforeChildren",
+      staggerDirection: -1,
+      delay: 0.3,
+    },
+  },
+  hidden: {
+    opacity: 0,
+    x: 100,
+  },
+};
+
+const listItemVariant: Variants = {
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.5,
+      ease: "easeInOut",
+    },
+  },
+  hidden: {
+    opacity: 0,
+    scale: 0.7,
+  },
+};
+
+const backgroundVariant: Variants = {
+  visible: {
+    width: "100%",
+    transition: {
+      duration: 0.5,
+      ease: "circOut",
+      delay: 0.7,
+    },
+  },
+  hidden: {
+    width: "0%",
+  },
+};
+
+const imageVariant: Variants = {
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      type: "spring",
+      stiffness: 100,
+      duration: 0.7,
+      delay: 2,
+    },
+  },
+  hidden: {
+    opacity: 0,
+    scale: 0.7,
+  },
+};
 
 const services = [
   {
@@ -28,14 +111,43 @@ const services = [
 ];
 
 function Services() {
+  const controls = useAnimation();
+  const ref = useRef(null);
+  const inView = useInView(ref, {
+    margin: "0px 100px -50px 0px",
+  });
+
+  useEffect(() => {
+    if (inView) controls.start("visible");
+  }, [controls, inView]);
+
   return (
-    <div className="relative w-full">
-      <h1 className="mb-4 pr-5 max-w-5xl mx-auto">محبوب‌ترین خدمات ما</h1>
-      <div className="relative lg:mr-10 lg:ml-[5%] items-end flex">
-        <div className="absolute lg:rounded-3xl top-0 bg-accent w-full lg:w-[105%] lg:-right-[5%] h-full -z-10"></div>
-        <div className="px-5 lg:px-0 max-w-4xl text-2xl lg:mr-auto lg:ml-6 ml-auto mr-auto h-full w-full py-4 flex flex-col md:flex-row-reverse gap-4">
+    <section ref={ref} className="relative w-full">
+      <motion.h1
+        variants={textVariant}
+        initial="hidden"
+        animate={controls}
+        className="mb-4 pr-5 max-w-5xl mx-auto"
+      >
+        محبوب‌ترین خدمات ما
+      </motion.h1>
+      <div className="relative mx-10 lg:pl-10 items-end flex">
+        <motion.div
+          variants={backgroundVariant}
+          initial="hidden"
+          animate={controls}
+          className="absolute lg:rounded-l-3xl rounded-3xl lg:rounded-r-none top-0 bg-accent lg:-right-10 h-full -z-10"
+        />
+
+        <motion.div
+          variants={listVariant}
+          initial="hidden"
+          animate={controls}
+          className="px-5 lg:px-0 max-w-4xl text-2xl lg:mr-auto lg:ml-6 ml-auto mr-auto h-full w-full py-4 flex flex-col-reverse md:flex-row-reverse gap-4"
+        >
           {services.map((service) => (
-            <div
+            <motion.div
+              variants={listItemVariant}
               key={service.name}
               className="flex max-w-xl mx-auto flex-col basis-full px-4 py-8 gap-4 items-center justify-between bg-Neutral rounded-lg"
             >
@@ -50,24 +162,22 @@ function Services() {
                 </p>
               </div>
 
-              <button className="w-full text-lg lg:text-xl font-semibold relative rounded-3xl border-primary border-2 border-solid">
-                <Image
-                  className="absolute  top-1/2 transform -translate-y-1/2"
-                  src={ArrowRightIcon}
-                  alt="Arrow Right Icon"
-                />
+              <Button withArrow mode="block">
                 بیشتر بخوانید
-              </button>
-            </div>
+              </Button>
+            </motion.div>
           ))}
-        </div>
-        <Image
-          src={ServicesGirlImage}
+        </motion.div>
+        <motion.div
           className="hidden lg:block lg:w-3/12 h-full"
-          alt="image"
-        />
+          variants={imageVariant}
+          initial="hidden"
+          animate={controls}
+        >
+          <Image src={ServicesGirlImage} className="" alt="image" />
+        </motion.div>
       </div>
-    </div>
+    </section>
   );
 }
 

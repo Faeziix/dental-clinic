@@ -9,7 +9,7 @@ import ReservationForm from "./landingPage/ReservationForm";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between gap-16 pb-8">
+    <main className="flex flex-col items-center justify-between gap-16 md:gap-32 pb-8">
       <Hero />
       <Introduction />
       <Services />

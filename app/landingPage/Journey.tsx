@@ -74,7 +74,7 @@ const journey = [
 
 function Journey() {
   return (
-    <div className="px-5 md:px-0">
+    <section className="px-5 md:px-0">
       <h1 className="mb-8">سفر سلامت شما همراه با ما</h1>
 
       <div className="flex flex-col gap-12 max-w-5xl">
@@ -97,7 +97,7 @@ function Journey() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 

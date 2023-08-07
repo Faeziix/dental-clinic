@@ -53,7 +53,6 @@ function Header() {
           color="primary"
           className="md:mr-auto mr-0 ml-auto md:ml-0 hidden md:block"
           size="lg"
-          radius="circle"
         >
           رزرو وقت
         </Button>

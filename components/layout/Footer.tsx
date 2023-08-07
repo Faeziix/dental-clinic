@@ -65,7 +65,7 @@ const ContactUs = [
 
 function Footer() {
   return (
-    <footer className="relative px-5 py-20 text-Neutral">
+    <footer className="relative mt-32 px-5 py-20 text-Neutral">
       <section className="flex h-full max-w-5xl mx-auto items-center justify-center">
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="flex flex-col basis-full">

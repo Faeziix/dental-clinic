@@ -13,6 +13,7 @@ module.exports = {
         Neutral: "hsla(278, 100%, 97%, 1)",
         primaryLight: "hsla(246, 54%, 38%, 0.8)",
         dark: "hsla(0, 0%, 15%, 1)",
+        lightBlue: "#EEECFF",
       },
     },
   },

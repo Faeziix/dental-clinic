@@ -4,13 +4,13 @@ import Button from "@/components/ui/Buttons";
 
 function Hero() {
   return (
-    <div className="py-16 relative text-Neutral h-[70vh] w-full md:px-24 lg:px-44 px-5 flex flex-col justify-center gap-2 font-semibold">
+    <section className="py-16 relative text-Neutral h-[70vh] w-full md:px-24 lg:px-44 px-5 flex flex-col justify-center gap-2 font-semibold">
       <h1 className="">در تلاشیم برای خلق بهترین لبخند شما</h1>
       <p className="max-w-md">
         لورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم
         ایپسوملورم ایپسوملورم
       </p>
-      <Button color="primary" radius="circle" size="xl" className="mt-11">
+      <Button color="primary" size="xl" className="mt-11">
         <span className="w-full text-lg font-bolder grow block">رزرو وقت</span>
       </Button>
       <div className="absolute top-0 left-0 w-full h-full -z-10">
@@ -25,7 +25,7 @@ function Hero() {
           </video>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
