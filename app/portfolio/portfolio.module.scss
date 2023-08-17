@@ -1,16 +1,7 @@
 .items-list {
-  display: grid;
-  grid-template-columns: auto repeat(3, auto);
-  grid-template-rows: 1fr;
-  justify-items: right;
-  justify-content: right;
-  background-color: hsla(246, 100%, 96%, 1);
-  width: fit-content;
-  padding-inline: 1rem;
-  border-radius: 0.5rem;
-
   @media (max-width: 768px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     justify-items: center;
     justify-content: center;
     padding-inline: 0;

@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         primary: "hsla(246, 54%, 38%, 1)",
         accent: "hsla(21, 83%, 55%, 1)",
+        background: "#fdfdfd",
         Neutral: "hsla(278, 100%, 97%, 1)",
         primaryLight: "hsla(246, 54%, 38%, 0.8)",
         dark: "hsla(0, 0%, 15%, 1)",

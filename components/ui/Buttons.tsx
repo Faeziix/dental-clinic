@@ -1,8 +1,6 @@
 import React from "react";
 import { cva } from "class-variance-authority";
 import { cn } from "@/utils/utils";
-import ArrowRightIcon from "@/public/ArrowRightIcon.svg";
-import Image from "next/image";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
@@ -53,15 +51,15 @@ const buttonVarient = cva(
           "bg-transparent",
           "border-Neutral",
           "text-Neutral",
-          "hover:bg-primary",
+          "hover:bg-dark",
           "hover:border-primaryLight",
         ],
         dark: ["bg-dark", "text-white"],
       },
       size: {
-        sm: ["text-sm", "py-1", "px-2"],
-        md: ["text-base", "py-2", "px-6"],
-        lg: ["text-lg", "py-2", "px-9"],
+        sm: ["text-sm", "py-2", "px-5"],
+        md: ["text-base", "py-2", "px-10"],
+        lg: ["text-lg", "py-2", "px-16"],
         xl: ["text-xl", "py-3", "px-16"],
       },
       mode: {

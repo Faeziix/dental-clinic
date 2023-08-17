@@ -8,27 +8,20 @@ import {
   variantGenerator,
   textVariant,
 } from "@/utils/animation-variants/variants";
+import useScrollAnimation from "@/utils/useScrollAnimation";
 
 const photoVariant = variantGenerator({
   duration: 0.7,
-  delay: 0.7,
+  delay: 0.5,
 });
 
 const descriptionVariant = variantGenerator({
   duration: 0.7,
-  delay: 1.4,
+  delay: 1,
 });
 
 function Introduction() {
-  const controls = useAnimation();
-  const ref = useRef(null);
-  const inView = useInView(ref, {
-    margin: "0px 0px -50% 0px",
-  });
-
-  useEffect(() => {
-    if (inView) controls.start("visible");
-  }, [controls, inView]);
+  const [ref, controls] = useScrollAnimation();
 
   return (
     <section ref={ref} className="w-full flex max-w-5xl flex-col gap-4 px-5">
@@ -43,9 +36,14 @@ function Introduction() {
       </motion.div>
 
       <div className="flex flex-col md:flex-row gap-4">
-        <motion.div variants={photoVariant} initial="hidden" animate={controls}>
+        <motion.div
+          className="basis-5/12 grow"
+          variants={photoVariant}
+          initial="hidden"
+          animate={controls}
+        >
           <Image
-            className="rounded-lg max-w-[27rem] w-full"
+            className="rounded-lg w-full"
             src={DocImage}
             alt="Doctor Image"
           />
@@ -54,8 +52,14 @@ function Introduction() {
           variants={descriptionVariant}
           initial="hidden"
           animate={controls}
+          className="basis-7/12"
         >
-          دکتر سهیلا کریمی فارغ التحصیل دانشگاه
+          من دکتر سهیلا کریمی، خوشحالم که در طی ۵ سال گذشته به بیش از ۵۰۰ زیباجو
+          کمک کردم که دندون های سالم‌تر و لبخندی جذاب‌تری داشته باشند. مهم‌ترین
+          ویژگی خدمات دندانپزشکی من ارایه بهترین طرح درمان منحصر به فرد هر شخص و
+          انجام کار با ضمانت با به‌روزترین تجهیزات و متریال دندانپزشکی است.
+          مراجعه‌کننده‌های ما کسانی هستند که به سالم بودن دندان‌هایشان اهمیت می
+          دهند و با لبخندی زیباتر می‌خواهند به بهترین خودشان تبدیل شوند.
         </motion.p>
       </div>
     </section>

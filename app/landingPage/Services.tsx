@@ -2,12 +2,13 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import ChildToothIcon from "@/public/ChildToothIcon.png";
-import LaminateIcon from "@/public/LaminateIcon.svg";
-import ImplantIcon from "@/public/ImplantIcon.svg";
-import ArrowRightIcon from "@/public/ArrowRightIcon.svg";
+import LaminateIcon from "@/components/icons/LaminateIcon";
+import ImplantIcon from "@/components/icons/ImplantIcon";
 import ServicesGirlImage from "@/public/ServicesGirl.png";
-import { motion, useAnimation, useInView, Variants } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import Button from "@/components/ui/Buttons";
+import useScrollAnimation from "@/utils/useScrollAnimation";
+import Link from "next/link";
 
 const textVariant: Variants = {
   visible: {
@@ -80,7 +81,7 @@ const imageVariant: Variants = {
       type: "spring",
       stiffness: 100,
       duration: 0.7,
-      delay: 2,
+      delay: 1.7,
     },
   },
   hidden: {
@@ -92,34 +93,29 @@ const imageVariant: Variants = {
 const services = [
   {
     name: "child",
+    link: "/services/child",
     display: "اطفال",
     icon: <Image src={ChildToothIcon} alt="Child Tooth Icon" />,
     text: "متاسفانه برخی والدین به دلیل همکاری نکردن کودک، فرزند خود را به دندان‌پزشکی نمی‌برند که در ادامه باعث بروز مشکلات بزرگی می‌شود. ما با آموزش و تشویق دلبندتان، محیطی دوستانه و آرام برای او ایجاد میکنیم.",
   },
   {
     name: "laminate",
+    link: "/services/laminate",
     display: "لمینت",
-    icon: <Image src={LaminateIcon} alt="Laminate Icon" />,
+    icon: <LaminateIcon />,
     text: "برطرف نکردن مشکلات دندان قبل از لمینیت، استفاده از مواد نامرغوب و یا رنگ  نامناسب، زیبایـی دندان‌ها را از بین میبرد. ما به شما کمک می کنیم تا با مشاوره اختصاصی و اصولی با استفاده از بهترین مواد موجود، به لبخند رویایی خود دست بیابید.",
   },
   {
     name: "implant",
+    link: "/services/implant",
     display: "ایمپلنت",
-    icon: <Image src={ImplantIcon} alt="Implant Icon" />,
+    icon: <ImplantIcon />,
     text: "بسیاری از افراد به دلیل ترس از درد ایمپلنت، از اقدام به درمان خودداری می‌کنند. اما طرز انجام ایمپلنت در مجموعه ما با استفاده از تکنیک‌های مدرن،با درد بسیار کمی میباشد.",
   },
 ];
 
 function Services() {
-  const controls = useAnimation();
-  const ref = useRef(null);
-  const inView = useInView(ref, {
-    margin: "0px 100px -50px 0px",
-  });
-
-  useEffect(() => {
-    if (inView) controls.start("visible");
-  }, [controls, inView]);
+  const [ref, controls] = useScrollAnimation();
 
   return (
     <section ref={ref} className="relative w-full">
@@ -149,7 +145,7 @@ function Services() {
             <motion.div
               variants={listItemVariant}
               key={service.name}
-              className="flex max-w-xl mx-auto flex-col basis-full px-4 py-8 gap-4 items-center justify-between bg-Neutral rounded-lg"
+              className="flex max-w-xl mx-auto flex-col basis-full px-4 py-8 gap-4 items-center justify-between bg-background rounded-lg"
             >
               <div>
                 <div className="flex mb-4 text-primary w-full gap-2 items-center">
@@ -162,9 +158,11 @@ function Services() {
                 </p>
               </div>
 
-              <Button withArrow mode="block">
-                بیشتر بخوانید
-              </Button>
+              <Link className="w-full" href={service.link}>
+                <Button withArrow mode="block">
+                  بیشتر بخوانید
+                </Button>
+              </Link>
             </motion.div>
           ))}
         </motion.div>

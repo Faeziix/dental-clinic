@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import Button from "./Buttons";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import useClickOutside from "@/utils/useClickOutside";
 
 export type LinksType = {
   links: {
@@ -13,6 +15,13 @@ export type LinksType = {
 
 function HamburgerMenu({ links }: LinksType) {
   const [isOpen, setIsOpen] = useState(false);
+  const ref = React.useRef<HTMLDivElement>(null);
+
+  useClickOutside(ref, () => {
+    if (isOpen) {
+      setIsOpen(false);
+    }
+  });
 
   function toggleMenu() {
     setIsOpen(!isOpen);
@@ -21,7 +30,7 @@ function HamburgerMenu({ links }: LinksType) {
   return (
     <>
       <button
-        className="block md:hidden "
+        className="block md:hidden"
         onClick={toggleMenu}
         aria-label="Toggle Menu"
       >
@@ -38,31 +47,40 @@ function HamburgerMenu({ links }: LinksType) {
         </svg>
       </button>
 
-      <div
-        className={`${
+      <motion.div
+        className={`fixed top-0 right-0 w-full h-screen bg-black bg-opacity-30 ${
           isOpen ? "block" : "hidden"
-        } fixed top-0 right-0 w-full h-screen bg-black bg-opacity-30 z-50`}
+        }`}
+        initial={{ opacity: 0 }}
+        animate={isOpen ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ duration: 0.2 }}
+      ></motion.div>
+
+      <motion.div
+        initial={{ x: "100%" }}
+        animate={isOpen ? { x: 0 } : { x: "110%" }}
+        transition={{ duration: 0.2 }}
+        className={`w-2/3 fixed right-0 top-0 max-w-xs bg-primary h-full z-50`}
+        ref={ref}
       >
-        <div className="w-2/3 max-w-xs bg-primary h-full">
-          <div onClick={toggleMenu} className="p-5">
-            <CrossIcon />
-          </div>
-          <div className="flex flex-col pr-5 mt-20 h-full">
-            {links.map((link) => (
-              <Link
-                key={link.name}
-                className="text-2xl w-20 my-4 text-Neutral"
-                href={link.link}
-                onClick={() => {
-                  setIsOpen(false);
-                }}
-              >
-                <p className="w-full">{link.display}</p>
-              </Link>
-            ))}
-          </div>
+        <div onClick={toggleMenu} className="p-5 w-fit">
+          <CrossIcon />
         </div>
-      </div>
+        <div className="flex flex-col pr-5 mt-20 h-full">
+          {links.map((link) => (
+            <Link
+              key={link.name}
+              className="text-2xl w-20 my-4 text-Neutral"
+              href={link.link}
+              onClick={() => {
+                setIsOpen(false);
+              }}
+            >
+              <p className="w-full">{link.display}</p>
+            </Link>
+          ))}
+        </div>
+      </motion.div>
     </>
   );
 }

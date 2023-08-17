@@ -1,13 +1,15 @@
+"use client";
 import React from "react";
 import Image from "next/image";
-import QuoteIcon from "@/public/QuoteIcon.svg";
+import QuoteIcon from "@/components/icons/QuoteIcon";
 import Button from "@/components/ui/Buttons";
-import ArrowRightIcon from "@/public/ArrowRightIcon.svg";
 import Link from "next/link";
+import { Variants, motion } from "framer-motion";
 
 import localFont from "next/font/local";
+import useScrollAnimation from "@/utils/useScrollAnimation";
+import { textVariant } from "@/utils/animation-variants/variants";
 
-// Font files can be colocated inside of `app`
 const myFont = localFont({
   src: "../../public/Digi Anil Bold.ttf",
   display: "swap",
@@ -19,16 +21,71 @@ const testimonials = [
   "تنها دکتری که درد یا استرس حین خدمات دندان مخصوصا ایمپلنت و عصب‌کشی معنی نداره :)",
 ];
 
+const backgroundVariant = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeInOut",
+      delay: 0.7,
+    },
+  },
+  hidden: {
+    opacity: 0,
+    y: 10,
+  },
+};
+
+const lightBackgroundVariant: Variants = {
+  visible: {
+    opacity: 1,
+    y: -10,
+    boxShadow: "0px 10px black",
+    transition: {
+      delay: 1.4,
+      type: "spring",
+      stiffness: 300,
+      damping: 10,
+      duration: 0.7,
+    },
+  },
+
+  hidden: {
+    opacity: 0,
+    boxShadow: "0px 0px black",
+    y: 0,
+  },
+};
+
 function Testimonials() {
+  const [ref, controls] = useScrollAnimation();
+
   return (
-    <div className="max-w-5xl md:px-5">
-      <h1 className="pr-5 mb-6">نظرات مراجعه‌کنندگان عزیزمون</h1>
-      <div className="bg-accent p-4 md:rounded-[2rem]">
-        <div
+    <div ref={ref} className="max-w-5xl md:px-5">
+      <motion.h1
+        variants={textVariant}
+        initial="hidden"
+        animate={controls}
+        className="pr-5 mb-6"
+      >
+        نظرات مراجعه‌کنندگان عزیزمون
+      </motion.h1>
+
+      <motion.div
+        variants={backgroundVariant}
+        initial="hidden"
+        animate={controls}
+        transition={{ duration: 0.7, ease: "easeInOut" }}
+        className="bg-accent p-8 md:rounded-[2rem]"
+      >
+        <motion.div
           style={{
             fontFamily: myFont.style.fontFamily,
           }}
-          className="bg-Neutral shadow-[0_5px_0_black] border-2 border-solid border-black p-4 flex flex-col items-center gap-4 rounded-[2rem]"
+          animate={controls}
+          variants={lightBackgroundVariant}
+          className="bg-[#FFFCFB] border-2 border-solid border-black py-6 px-16 flex flex-col items-center gap-6 rounded-[2rem]"
         >
           {testimonials.map((testimonial) => (
             <div
@@ -39,22 +96,34 @@ function Testimonials() {
               key={testimonial}
             >
               <div className="flex">
-                <Image src={QuoteIcon} alt="Quote Icon" />
-                <Image src={QuoteIcon} alt="Quote Icon" />
+                <QuoteIcon />
+                <QuoteIcon />
               </div>
-              <h2 className="leading-9 lg:leading-10">{testimonial}</h2>
+              <h3 className="leading-9 lg:leading-[3rem]">{testimonial}</h3>
             </div>
           ))}
-        </div>
-        <Link
-          className="max-w-xs h-full mt-6 block mx-auto hover:no-underline"
-          href="https://www.instagram.com/stories/highlights/17902117297715473/"
+        </motion.div>
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 5,
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{ duration: 0.2, ease: "easeInOut", delay: 1.4 }}
         >
-          <Button withArrow radius="circle" mode="block" color="neutral">
-            مشاهده بیشتر در هایلایت اینستاگرام
-          </Button>
-        </Link>
-      </div>
+          <Link
+            className="max-w-xs h-full mt-6 block mx-auto hover:no-underline"
+            href="https://www.instagram.com/stories/highlights/17902117297715473/"
+          >
+            <Button withArrow radius="circle" color="neutral">
+              مشاهده بیشتر در هایلایت اینستاگرام
+            </Button>
+          </Link>
+        </motion.div>
+      </motion.div>
     </div>
   );
 }

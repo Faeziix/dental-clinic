@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en" className={vazirmatn.className}>
       <body>
         <Header />
-        <div className="mt-20">{children}</div>
+        <div className="md:mt-20 mt-12">{children}</div>
         <Footer />
       </body>
     </html>
