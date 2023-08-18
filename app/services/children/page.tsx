@@ -116,7 +116,7 @@ function Children() {
 
           <Image
             src={ChildPickingPic}
-            className="w-full h-full"
+            className="w-full h-full grow md:w-[160%]"
             alt="Child Picking Pic"
           />
         </section>
@@ -150,14 +150,14 @@ function Children() {
           <h2 className="md:mx-gs">چه سنی مسواک‌زدن کودکم را شروع کنم؟</h2>
 
           <div className="flex">
-            <div className="flex h-full items-center justify-center md:px-8 px-5 py-4 relative mb-5 bg-primary md:bg-none">
+            <div className="flex h-full items-center justify-center md:px-8 px-5 py-4 md:py-0 relative mb-5 bg-primary md:bg-transparent">
               <div className="absolute bg-primary bottom-0 md:top-12 w-full z-0 rounded-lg hidden md:block"></div>
               <Image
                 src={ChildAgePic}
                 alt="Child Age Pic"
-                className="object-cover z-10 hidden md:block"
+                className="object-cover w-[70%] z-10 hidden md:block"
               />
-              <h3 className="text-Neutral font-bold md:text-2xl text-center">
+              <h3 className="text-Neutral font-bold md:text-2xl text-center md:mt-12">
                 لازم است از زمان رشد اولین دندان کودک، مسواک زدن را شروع کنید.
               </h3>
             </div>
@@ -288,8 +288,8 @@ function Children() {
           </p>
         </section>
 
-        <section id="how-brush">
-          <h2>
+        <section className="mx-auto" id="how-brush">
+          <h2 className="md:mx-gs">
             ۵ راه <span className="text-yellow-500">طلایی</span> مشتاق کردن کودک
             به مسواک زدن
           </h2>
@@ -306,7 +306,7 @@ function Children() {
               ))}
             </ol>
           </OverlayBox>
-          <p className="underline-offset-4 underline">
+          <p className="underline-offset-4 underline md:mx-gs">
             احتمالاً تا حدود هفت سالگی قادر نخواهد بود خوب مسواک بزند، اما به
             محض اینکه تمایل و توانایی این کار را داشت، بهتر است بگذارید خودش به
             تنهایی این کار را کند.
