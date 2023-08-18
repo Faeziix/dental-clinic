@@ -415,7 +415,9 @@ function Children() {
 
               <ul className="list-disc list-inside">
                 {fluoride.map((i) => (
-                  <li className="mb-2">{i}</li>
+                  <li key={i} className="mb-2">
+                    {i}
+                  </li>
                 ))}
               </ul>
             </PictureCard>
@@ -448,7 +450,9 @@ function Children() {
 
             <ul className="list-disc list-inside">
               {fishur.map((i) => (
-                <li className="mb-2">{i}</li>
+                <li key={i} className="mb-2">
+                  {i}
+                </li>
               ))}
             </ul>
           </PictureCard>
