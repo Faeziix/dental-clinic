@@ -7,6 +7,7 @@ import localFont from "next/font/local";
 import QuoteIcon from "@/components/icons/QuoteIcon";
 import StarsGroupIcon from "@/components/icons/StarsGroupIcon";
 import FacePic from "@/public/implant/face.png";
+import Toc from "@/components/ui/Toc";
 
 const toc = [
   {
@@ -55,11 +56,7 @@ function ImplantPage() {
           به ایمپلنت دندان احتیاج داشته باشید.
         </p>
         <ul className="border-r-2 border-r-primary pr-4 md:mr-10 mt-4">
-          {toc.map((i) => (
-            <a key={i.href} href={i.href}>
-              <li className="mb-2 text-primary">{i.title}</li>
-            </a>
-          ))}
+          <Toc items={toc} />
         </ul>
 
         <section>

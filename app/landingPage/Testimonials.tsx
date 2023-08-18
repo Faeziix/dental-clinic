@@ -97,7 +97,6 @@ function Testimonials() {
             >
               <div className="flex">
                 <QuoteIcon />
-                <QuoteIcon />
               </div>
               <h3 className="leading-9 lg:leading-[3rem]">{testimonial}</h3>
             </div>

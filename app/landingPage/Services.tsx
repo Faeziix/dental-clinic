@@ -93,7 +93,7 @@ const imageVariant: Variants = {
 const services = [
   {
     name: "child",
-    link: "/services/child",
+    link: "/services/children",
     display: "اطفال",
     icon: <Image src={ChildToothIcon} alt="Child Tooth Icon" />,
     text: "متاسفانه برخی والدین به دلیل همکاری نکردن کودک، فرزند خود را به دندان‌پزشکی نمی‌برند که در ادامه باعث بروز مشکلات بزرگی می‌شود. ما با آموزش و تشویق دلبندتان، محیطی دوستانه و آرام برای او ایجاد میکنیم.",

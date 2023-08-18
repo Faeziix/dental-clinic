@@ -11,6 +11,8 @@ import JawPic from "@/public/implant/jaw.png";
 import OverlayBox from "@/components/sections/OverlayBox";
 import ServicesPic from "@/public/implant/services.png";
 import MaintenancePic from "@/public/implant/maintenance.png";
+import Reservation from "@/components/sections/Reservation";
+import Toc from "@/components/ui/Toc";
 
 const toc = [
   {
@@ -51,7 +53,7 @@ const myFont = localFont({
 function ImplantPage() {
   return (
     <div className="blog">
-      <article className="max-w-3xl md:mx-auto mx-5">
+      <article className="max-w-screen-desktop md:mx-auto mx-5">
         <section className="">
           <h1 className="mb-2 text-primary">همه‌چیز درباره ایمپلنت دندان</h1>
           <h3 className="text-primary text-2xl">
@@ -59,24 +61,19 @@ function ImplantPage() {
           </h3>
         </section>
 
-        <section className="flex gap-4 items-center">
-          <p className="mb-0">
+        <section className="flex gap-4 items-center mx-auto">
+          <p className="mb-0 mr-gs">
             ایمپلنت های دندانی، ساختارهای مصنوعی هستند که جراح دندان در استخوان
-            فک فرد قرار می دهد. اگر یک یا چند دندان خود را از دست داده‌اید؛ ممکن
-            است به ایمپلنت دندان احتیاج داشته باشید.
+            فک فرد قرار می دهد.
+            <br /> اگر یک یا چند دندان خود را از دست داده‌اید؛ ممکن است به
+            ایمپلنت دندان احتیاج داشته باشید.
           </p>
 
           <Image src={JawPic} alt="Jaw Pic" />
         </section>
 
         <section>
-          <ul className="border-r-2 border-r-primary pr-4">
-            {toc.map((i) => (
-              <a key={i.href} href={i.href}>
-                <li className="mb-2 text-primary">{i.title}</li>
-              </a>
-            ))}
-          </ul>
+          <Toc items={toc} />
         </section>
 
         <section id="what-is-implant">
@@ -182,7 +179,7 @@ function ImplantPage() {
 
           <h3
             style={{ fontFamily: myFont.style.fontFamily, lineHeight: "4rem" }}
-            className="text-center text-xl md:text-3xl py-8 mx-auto text-dark"
+            className="text-center text-xl md:text-3xl py-8 my-6 mx-auto text-dark"
           >
             خانم دکتر شنیده بودم ایمپلنت خیلی درد داره! <br /> از ترسش، هی
             دست‌دست میکردم دندونامو درست کنم ...
