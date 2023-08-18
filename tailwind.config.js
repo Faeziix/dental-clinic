@@ -8,13 +8,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "hsla(246, 54%, 38%, 1)",
-        accent: "hsla(21, 83%, 55%, 1)",
+        primary: "#372D95",
+        accent: "hsl(21, 83%, 55%)",
         background: "#fdfdfd",
-        Neutral: "hsla(278, 100%, 97%, 1)",
-        primaryLight: "hsla(246, 54%, 38%, 0.8)",
-        dark: "hsla(0, 0%, 15%, 1)",
+        Neutral: "hsl(278, 100%, 97%)",
+        primaryLight: "hsla(246, 54%, 38%)",
+        dark: "hsl(0, 0%, 15%)",
         lightBlue: "#EEECFF",
+      },
+      screens: {
+        desktop: "705px",
+      },
+      spacing: {
+        gs: "5.625rem",
+        grid: "4.68rem",
+        space: "15px",
       },
     },
   },

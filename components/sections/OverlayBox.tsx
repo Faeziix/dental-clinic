@@ -6,7 +6,7 @@ function OverlayBox({ imgsrc, children }) {
     <div className="flex flex-col">
       <div className="h-[calc(100%-6rem)]">
         <Image src={imgsrc} alt="Services" className="w-full" />
-        <div className="py-8 px-4 bg-background border-[1px] border-b-[5px] rounded-lg border-primary mx-20 relative -top-24">
+        <div className="py-8 px-4 bg-background border-[1px] border-b-[5px] rounded-lg border-primary mx-20 relative -top-24 -mb-16">
           {children}
         </div>
       </div>

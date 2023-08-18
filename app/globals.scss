@@ -91,11 +91,11 @@ article {
   }
 
   h2 {
-    @apply text-xl font-semibold md:text-[2rem] md:mb-14 leading-normal;
+    @apply font-semibold text-3xl md:text-[2rem] md:mb-14 leading-normal;
   }
 
   h3 {
-    @apply text-xl font-medium md:text-2xl lg:text-3xl;
+    @apply font-medium text-xl lg:text-2xl;
   }
 
   h4 {
@@ -103,8 +103,13 @@ article {
   }
 
   h5,
+  ul,
   p {
     @apply text-base mb-4 leading-6;
+  }
+
+  ol > li {
+    @apply text-base my-4;
   }
 
   h6 {
@@ -139,6 +144,10 @@ article {
       }
     }
   }
+}
+
+.highlight {
+  @apply bg-primary text-white rounded-lg p-4 mb-8 text-opacity-50;
 }
 
 // Arrow button
