@@ -99,16 +99,16 @@ const myFont = localFont({
 function Children() {
   return (
     <div className="blog">
-      <article className="max-w-screen-desktop md:mx-auto mx-5">
+      <article className="">
         <section className="">
           <h1 className="mb-4 text-primary">همه‌چیز درباره دندان اطفال</h1>
-          <h3 className="text-primary text-2xl">
+          <h3 className="text-primary md:text-2xl text-xl">
             زمان رویش دندان‌ها، مقابله با ترس کودکان و اقدامات دندانپزشکی لازم
           </h3>
         </section>
 
-        <section className="flex gap-4 items-center mx-auto">
-          <p className="mb-0 mr-gs">
+        <section className="flexColRow gap-4 items-center mx-auto">
+          <p className="mb-0 md:mr-gs">
             همانطور که می‌دانید ریشه بسیاری از مشکلات دهان و دندان در دوران
             کودکی است. بدون مراقبت دندانپزشکی مناسب، کودکان با پوسیدگی دهان و
             بیماری مواجه می‌شوند که می‌تواند یک عمر درد و عوارض ایجاد کند.
@@ -150,20 +150,20 @@ function Children() {
           <h2 className="md:mx-gs">چه سنی مسواک‌زدن کودکم را شروع کنم؟</h2>
 
           <div className="flex">
-            <div className="flex items-center justify-center px-8 relative mb-5">
-              <div className="absolute bg-primary bottom-0 top-12 w-full z-0 rounded-lg"></div>
+            <div className="flex h-full items-center justify-center md:px-8 px-5 py-4 relative mb-5 bg-primary md:bg-none">
+              <div className="absolute bg-primary bottom-0 md:top-12 w-full z-0 rounded-lg hidden md:block"></div>
               <Image
                 src={ChildAgePic}
                 alt="Child Age Pic"
-                className="object-cover z-10"
+                className="object-cover z-10 hidden md:block"
               />
-              <h3 className="text-Neutral font-bold text-2xl">
+              <h3 className="text-Neutral font-bold md:text-2xl text-center">
                 لازم است از زمان رشد اولین دندان کودک، مسواک زدن را شروع کنید.
               </h3>
             </div>
           </div>
 
-          <p className="underline underline-offset-4 md:mx-gs">
+          <p className="md:mx-gs">
             اما اقدام برای حفظ سلامت دهان و دندان کودکتان، هیچ وقت زود نیست.
           </p>
 
@@ -177,24 +177,30 @@ function Children() {
           </p>
         </section>
 
-        <section className="mx-auto">
+        <section className="mx-auto my-6 md:my-10">
           <h3 className="md:mx-gs mb-8">تولد تا ۹ ماهگی: مراقبت از لثه</h3>
           <p className="md:mx-gs">
             بیشتر نوزادان قبل از 3 ماهگی هیچ دندانی نخواهند داشت.{" "}
           </p>
-          <p className="mx-gs">
+          <p className="md:mx-gs">
             حتی اگر دندانی وجود نداشته باشد، تمیز کردن روزانه لثه ایده خوبی است.
             این کار را می توان با یک دستمال تمیز و مرطوب یا یک مسواک نرم که برای
             نوزادان ساخته شده است انجام داد.
           </p>
 
-          <div className="flex gap-4 items-center mb-5">
-            <Image src={ZeroToNinePic} alt="Zero To Nine Pic" />
-            <h4 className="font-medium leading-9 text-dark flex">
-              <Checkmark className="w-1/2" />
-              {"    "}مسواک زدن لثه‌های کودک می‌تواند به تسکین “درد ناشی از
-              بیرون آمدن دندان‌ها از لثه” و “تحریک رویش دندان” کمک کند.
-            </h4>
+          <div className="flexColRow gap-4 items-center mb-5 relative">
+            <Image
+              src={ZeroToNinePic}
+              alt="Zero To Nine Pic"
+              className="w-full"
+            />
+            <div className="relative">
+              <Checkmark className="absolute right-0 w-6 h-6 md:top-0" />
+              <h4 className="font-medium md:leading-9 text-dark flex indent-7 relative">
+                مسواک زدن لثه‌های کودک می‌تواند به تسکین “درد ناشی از بیرون آمدن
+                دندان‌ها از لثه” و “تحریک رویش دندان” کمک کند.
+              </h4>
+            </div>
           </div>
 
           <p className="md:mx-gs">
@@ -208,7 +214,7 @@ function Children() {
           </p>
         </section>
 
-        <section>
+        <section className="my-6 md:my-10">
           <h3 className="mb-8">
             ۹ تا ۱۲ ماهگی: دندان‌های جدید را مسواک بزنید.
           </h3>
@@ -227,15 +233,15 @@ function Children() {
           </p>
 
           <div className="relative">
-            <StarsGroupIcon className="w-10 absolute -right-8 -top-4" />
-            <p className="text-3xl text-accent font-medium leading-[3rem]">
+            <StarsGroupIcon className="w-10 absolute -right-4 -top-4" />
+            <p className="md:text-3xl pr-4 text-2xl md:leading-[3rem] text-accent font-medium">
               صرف نظر از تعداد دندان‌های کودک شما، زمان آن رسیده است که اولین
               ملاقات دندانپزشکی را برای دلبندتان ترتیب دهید.
             </p>
           </div>
         </section>
 
-        <section>
+        <section className="my-6 md:my-10">
           <h3 className="mb-8">
             1 تا ۳ سالگی: به مسواک زدن و ملاقات با دندانپزشک ادامه دهید.
           </h3>
@@ -264,7 +270,7 @@ function Children() {
           </p>
         </section>
 
-        <section>
+        <section className="mt-6 md:my-10">
           <h3 className="mb-8">
             ۳ تا ۶ سالگی: کودک را به استفاده از مسواک، مشتاق کنید.
           </h3>
@@ -315,11 +321,11 @@ function Children() {
           <div className="mx-auto w-fit">
             <p
               style={{ fontFamily: myFont.style.fontFamily }}
-              className="mb-5 w-fit text-3xl leading-[3rem] text-dark text-center font-medium relative "
+              className="mb-5 w-fit md:text-3xl text-2xl md:leading-[3rem] px-4 text-dark text-center font-medium relative "
             >
               خانم دکتر ! سن کودک من خیلی کمه؛ دندون‌های شیری هم که میفتن...{" "}
               <br /> پس چرا اذیتش کنم و ببرمش دندونپزشکی!؟
-              <QuoteIcon className="w-10 inline-block absolute -top-5 -right-6" />
+              <QuoteIcon className="md:w-10 w-7 inline-block absolute -top-5 -right-0" />
             </p>
           </div>
 
@@ -338,8 +344,8 @@ function Children() {
             ضروری است.
           </p>
 
-          <div className="flex mb-5">
-            <div className="mr-14">
+          <div className="flexColRow flex-col-reverse md:flex-row justify-center items-center gap-5 mb-5">
+            <div className="md:mr-14">
               <p>
                 برخی از کودکان در طول سال‌های رشد خود، دندان‌های نامناسبی دارند.
                 اینجاست که کودک، نیاز به مداخله دندانپزشک دارد.{" "}
@@ -350,7 +356,7 @@ function Children() {
               </p>
             </div>
 
-            <div className="ml-10">
+            <div className="md:pr-20">
               <SadTooth />
             </div>
           </div>
@@ -392,20 +398,22 @@ function Children() {
           </p>
         </section>
 
-        <section id="fluoride">
-          <h2>
+        <section id="fluoride" className="mx-auto">
+          <h2 className="md:mx-gs">
             فلوراید تراپی و فیشور سیلانت؛ دو راه برای مراقبت از دندان کودکان
           </h2>
-          <h4 className="mb-5">فلورایدتراپی:</h4>
-          <p>
-            شیارپوشی دندان یا فیشور سیلانت از پوسیدگی دندان در کودکان جلوگیری
-            می‌کند.
-          </p>
-          <p className="mb-6">
-            یون فلوراید در هر خمیر دندان، دهان شویه و وارنیل و ژل های حرفه ای
-            (که در مطب دندانپزشکی استفاده می شوند) به مینای دندان های نابالغ
-            نفوذ کرده و باعث می شود دندان نسبت به روند پوسیدگی مقاوم ترشود.
-          </p>
+          <div className="md:mx-gs">
+            <h4>فلورایدتراپی:</h4>
+            <p>
+              شیارپوشی دندان یا فیشور سیلانت از پوسیدگی دندان در کودکان جلوگیری
+              می‌کند.
+            </p>
+            <p className="mb-6">
+              یون فلوراید در هر خمیر دندان، دهان شویه و وارنیل و ژل های حرفه ای
+              (که در مطب دندانپزشکی استفاده می شوند) به مینای دندان های نابالغ
+              نفوذ کرده و باعث می شود دندان نسبت به روند پوسیدگی مقاوم ترشود.
+            </p>
+          </div>
 
           <div className="mb-5">
             <PictureCard imgSrc={FluoridePic}>
@@ -423,25 +431,28 @@ function Children() {
             </PictureCard>
           </div>
 
-          <h4 className="mb-5">فیشورسیلنت‌تراپی:</h4>
-          <p>
-            تقریبا اوایل شش‌سالگی، اولین دندان دائمی آسیاب که آسیای بزرگ است؛
-            رویش می‌کند.
-          </p>
-          <p>
-            در برخی از کودکان سطح جونده این دندان‌ها دارای شیارها و فرورفتگی‌های
-            عمیقی است که با مسواک‌زدن تمیز نمی‌شوند و خورده‌ها و مواد‌غذایی و
-            میکروب‌ها در این شیارها قرار گرفته و باعث پوسیدگی دندان میشود.
-          </p>
-          <p>
-            قبل از اینکه این شیارها پوسیده شوند، دندانپزشک می‌تواند شیارهای عمیق
-            را با فیشور سیلنت‌تراپی کم‌عمق کند.
-          </p>
-          <p>
-            به این ترتیب با مسواک‌زدن سطح جونده دندان کاملا تمیز شده و از تجمع
-            پلاک و خورده‌های مواد‌غذایی و میکروب‌ها در داخل شیارها و پوسیدگی
-            جلوگیری می‌شود.
-          </p>
+          <div className="md:mx-gs">
+            <h4 className="mb-2">فیشورسیلنت‌تراپی:</h4>
+            <p className="">
+              تقریبا اوایل شش‌سالگی، اولین دندان دائمی آسیاب که آسیای بزرگ است؛
+              رویش می‌کند.
+            </p>
+            <p>
+              در برخی از کودکان سطح جونده این دندان‌ها دارای شیارها و
+              فرورفتگی‌های عمیقی است که با مسواک‌زدن تمیز نمی‌شوند و خورده‌ها و
+              مواد‌غذایی و میکروب‌ها در این شیارها قرار گرفته و باعث پوسیدگی
+              دندان میشود.
+            </p>
+            <p>
+              قبل از اینکه این شیارها پوسیده شوند، دندانپزشک می‌تواند شیارهای
+              عمیق را با فیشور سیلنت‌تراپی کم‌عمق کند.
+            </p>
+            <p>
+              به این ترتیب با مسواک‌زدن سطح جونده دندان کاملا تمیز شده و از تجمع
+              پلاک و خورده‌های مواد‌غذایی و میکروب‌ها در داخل شیارها و پوسیدگی
+              جلوگیری می‌شود.
+            </p>
+          </div>
 
           <PictureCard imgSrc={FishurPic}>
             <h4 className="text-accent mb-5 font-medium">

@@ -18,6 +18,24 @@ body {
     writing-mode: vertical-rl;
     transform: rotate(-180deg);
   }
+
+  .flexRowCol {
+    display: flex;
+    flex-direction: row;
+
+    @screen md {
+      flex-direction: column;
+    }
+  }
+
+  .flexColRow {
+    display: flex;
+    flex-direction: column;
+
+    @screen md {
+      flex-direction: row;
+    }
+  }
 }
 
 .flex1 {
@@ -87,15 +105,15 @@ article {
   padding-top: theme("spacing.12");
 
   h1 {
-    @apply text-2xl font-black md:text-4xl lg:text-[2.5rem];
+    @apply text-[2rem] leading-9 font-black md:text-[2.5rem];
   }
 
   h2 {
-    @apply font-semibold text-3xl md:text-[2rem] md:mb-14 leading-normal;
+    @apply font-semibold text-2xl md:text-[2rem] leading-normal;
   }
 
   h3 {
-    @apply font-medium text-xl lg:text-2xl;
+    @apply font-medium text-xl md:text-2xl;
   }
 
   h4 {
@@ -113,7 +131,7 @@ article {
   }
 
   h6 {
-    font-size: 0.625rem;
+    @apply text-sm;
   }
 
   h1,
@@ -127,20 +145,26 @@ article {
   }
 
   section {
-    @apply mb-14 md:mb-16 md:mx-[90px];
+    @apply mb-14 md:mb-16 md:mx-gs;
     scroll-margin: 6rem;
 
-    h2 {
+    & > h2 {
+      @apply md:mb-14 mb-10;
       position: relative;
 
       &::before {
         content: "";
         position: absolute;
-        width: 270px;
         height: 3px;
+        width: 100px;
         background-color: theme("colors.primary");
-        bottom: -16px;
         right: 0;
+        bottom: -0.5rem;
+
+        @screen md {
+          width: 270px;
+          bottom: -1rem;
+        }
       }
     }
   }
