@@ -212,7 +212,7 @@ function LaminatePage() {
           </p>
 
           <div className="flexColRow rounded-lg justify-center items-center gap-4 md:px-gs py-4 bg-primary mb-5">
-            <Image src={WherePic} alt="Where" />
+            <Image src={WherePic} className="w-full" alt="Where" />
             <h3 className="font-bold text-Neutral w-fit text-center">
               ما با آخرین تکنیک ها و فناوری‌های لمینیت، به روز می‌مانیم تا
               اطمینان حاصل کنیم که بیماران ما بهترین مراقبت ممکن را دریافت
