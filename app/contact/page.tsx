@@ -69,7 +69,7 @@ function Page() {
       </section>
 
       <section className=" flex items-center flex-col md:flex-row">
-        <div className="md:h-80 text-Neutral px-5 md:pr-48 py-12 bg-primary w-full rounded-lg md:rounded-bl-none md:rounded-tl-none md:rounded-tr-lg md:rounded-br-lg">
+        <div className="md:h-80 text-Neutral px-5 md:pr-48 py-12 bg-primary w-full  ounded-lg md:rounded-bl-none md:rounded-tl-none md:rounded-tr-lg md:rounded-br-lg">
           <div className="flex gap-2 ">
             <Image src={LocationIcon} className="w-6" alt="Location" />
             <h2 className="font-bold text-2xl mb-4">آدرس ما</h2>

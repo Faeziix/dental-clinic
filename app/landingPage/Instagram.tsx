@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import InstagramImage from "@/public/instagram icon.svg";
+import InstagramImage from "@/components/icons/InstagramIconOrange";
 import BeforeAfterPic from "@/public/Post-beforeafter.jpg";
 import ImplantPic from "@/public/Post-Implant-aftercare.jpg";
 import AirflowPic from "@/public/Post-Airflow.jpg";
@@ -61,7 +61,7 @@ function Instagram() {
         href="https://www.instagram.com/dr.soheila.karimi/"
       >
         dr.soheila.karimi
-        <Image src={InstagramImage} alt="Instagram Icon" />
+        <InstagramImage />
       </Link>
     </div>
   );

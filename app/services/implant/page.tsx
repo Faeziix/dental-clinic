@@ -53,7 +53,7 @@ const myFont = localFont({
 function ImplantPage() {
   return (
     <div className="blog">
-      <article className="max-w-screen-desktop md:mx-auto mx-5">
+      <article className="max-w-screen-desktop md:mx-auto">
         <section className="">
           <h1 className="mb-2 text-primary">همه‌چیز درباره ایمپلنت دندان</h1>
           <h3 className="text-primary text-2xl">
@@ -62,14 +62,14 @@ function ImplantPage() {
         </section>
 
         <section className="flex gap-4 items-center mx-auto">
-          <p className="mb-0 mr-gs">
+          <p className="mb-0 md:mr-gs">
             ایمپلنت های دندانی، ساختارهای مصنوعی هستند که جراح دندان در استخوان
             فک فرد قرار می دهد.
             <br /> اگر یک یا چند دندان خود را از دست داده‌اید؛ ممکن است به
             ایمپلنت دندان احتیاج داشته باشید.
           </p>
 
-          <Image src={JawPic} alt="Jaw Pic" />
+          <Image src={JawPic} alt="Jaw Pic" className="hidden md:block" />
         </section>
 
         <section>
@@ -98,10 +98,10 @@ function ImplantPage() {
         </section>
 
         <section className="mx-auto" id="advantages">
-          <h2 className="mx-[90px]">
+          <h2 className="md:mx-gs">
             مزایا ایمپلنت در مقابل دندان‌مصنوعی چیست؟
           </h2>
-          <p className="mx-[90px]">
+          <p className="md:mx-gs">
             ایمپلنت‌ها، دارای چندین مزیت نسبت به دندان‌های مصنوعی متحرک هستند.{" "}
           </p>
 
@@ -122,26 +122,30 @@ function ImplantPage() {
         </section>
 
         <section className="mx-auto" id="maintenance">
-          <h2 className="mx-[90px]">
+          <h2 className="md:mx-gs">
             نگه‌داری و مراقبت از ایمپلنت دندان چگونه است؟
           </h2>
-          <p className="mx-[90px]">
+          <p className="md:mx-gs">
             دندان‌های مصنوعی مانند دندان‌های معمولی، به مراقبت و نگهداری نیاز
             دارند.{" "}
           </p>
-          <p className="mx-[90px]">
+          <p className="md:mx-gs">
             پس از اینکه تحت عمل جراحی ایمپلنت دندان قرار گرفتید، باید به مسواک
             زدن و نخ‌دندان کشیدن منظم ادامه دهید(این کار علاوه بر سلامت
             دندان‌ها، به افزایش عمر ایمپلنت شما، کمک میکند.).
           </p>
 
-          <div className="flex gap-4 items-center">
-            <Image src={MaintenancePic} alt="Maintenance Pic" />
-            <h4 className="font-medium leading-9 text-dark">
+          <div className="flexColRow gap-4 items-center">
+            <Image
+              src={MaintenancePic}
+              alt="Maintenance Pic"
+              className="w-full"
+            />
+            <h5 className="md:font-medium font-normal md:leading-9 text-dark">
               برای نظارت بر ایمپلنت‌ها و اطمینان از سالم بودن دندان‌ها و لثه‌های
               شما، مهم است که هر 6 ماه یک بار برای تمیز کردن حرفه‌ای به مطب
               مراجعه کنید.
-            </h4>
+            </h5>
           </div>
         </section>
 
@@ -161,25 +165,25 @@ function ImplantPage() {
         </section>
 
         <section id="pain" className="mx-auto relative">
-          <h2 className="mx-[90px]">ایمپلنت دندان درد دارد؟</h2>
-          <p className="mx-[90px]">
+          <h2 className="md:mx-gs">ایمپلنت دندان درد دارد؟</h2>
+          <p className="md:mx-gs">
             در حین انجام کار شما تحت بی حسی موضعی قرار دارید؛ پس دردی نخواهید
             داشت.
           </p>
-          <p className="mx-[90px]">
+          <p className="md:mx-gs">
             بعد از آن، با گذاشتن پرس یخ، می‌توانید تا حد بسیاری درد را کاهش
             دهید. همچنین، برای شما مسکن‌هایی را تجویز میکنیم تا با درد خداحافظی
             کنید!
           </p>
-          <p className="mx-[90px]">
+          <p className="md:mx-gs">
             البته شایان به ذکر هست که تحمل درد در افراد متفاوت می‌باشد و برخی
             مراجعه کننده‌ها، درد ایمپلنت را شبیه به درد کشیدن دندان توصیف
             میکنند.
           </p>
 
           <h3
-            style={{ fontFamily: myFont.style.fontFamily, lineHeight: "4rem" }}
-            className="text-center text-xl md:text-3xl py-8 my-6 mx-auto text-dark"
+            style={{ fontFamily: myFont.style.fontFamily }}
+            className="text-center md:leading-[4rem] text-2xl md:text-3xl py-8 my-6 mx-auto text-dark"
           >
             خانم دکتر شنیده بودم ایمپلنت خیلی درد داره! <br /> از ترسش، هی
             دست‌دست میکردم دندونامو درست کنم ...
@@ -192,12 +196,12 @@ function ImplantPage() {
             </div>
           </h3>
 
-          <p className="mx-[90px]">
+          <p className="md:mx-gs">
             بسیاری از افراد به دلیل ترس از درد ایمپلنت، از اقدام به درمان
             خودداری می‌کنند. اما به تاخیر انداختن درمان، فقط باعث بیشتر شدن درد
             و هزینه در آینده خواهد شد...
           </p>
-          <p className="mx-[90px]">
+          <p className="md:mx-gs">
             نگران نباشید و برای خوب شدن دندونتون اقدام کنید.
           </p>
         </section>
@@ -219,22 +223,22 @@ function ImplantPage() {
           </p>
 
           <div className="mt-7 mx-auto">
-            <h3 className="relative text-2xl font-bold text-accent">
+            <h3 className="relative text-2xl font-bold text-accent pr-4">
               همه شایسته لبخند زیبا هستند. مهم نیست چه بودجه‌ای داری! با طرح‌های
               پرداخت و شرایط اقساطی‌ای که تدارک دیدیم؛ توهم میتونی به دستش
               بیاری.
-              <StarsGroupIcon className="absolute w-10 -right-8 -top-4" />
+              <StarsGroupIcon className="absolute w-10 md:-right-8 -right-4 -top-4" />
             </h3>
           </div>
         </section>
 
         <section id="summary" className="mx-auto">
-          <h2 className="mx-[90px]">ایمپلنت دندان در یک نگاه</h2>
-          <p className="mx-[90px]">
+          <h2 className="md:mx-gs">ایمپلنت دندان در یک نگاه</h2>
+          <p className="md:mx-gs">
             ایمپلنت‌های دندانی جایگزین دندان‌های از دست رفته می‌شوند و مزایای
             بلندمدتی دارند.
           </p>
-          <p className="mx-[90px] mb-5">
+          <p className="md:mx-gs mb-5">
             پس از معاینه و عکس‌برداری‌های مورد نیاز، میتوان مشخص کرد که ایمپلنت
             دندانی، درمان مناسبی برای شما می‌باشد یا خیر.
           </p>
