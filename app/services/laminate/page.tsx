@@ -49,7 +49,7 @@ const myFont = localFont({
 function LaminatePage() {
   return (
     <div className="blog">
-      <article className="max-w-screen-desktop md:mx-auto mx-5">
+      <article className="max-w-screen-desktop md:mx-auto">
         <section className="">
           <h1 className="mb-4 text-primary">همه‌چیز درباره دندان اطفال</h1>
           <h3 className="text-primary text-2xl">
@@ -58,7 +58,7 @@ function LaminatePage() {
         </section>
 
         <section className="flex gap-4 items-center mx-auto">
-          <p className="mb-0 mr-gs">
+          <p className="mb-0 md:mr-gs">
             همه‌ی ما در زندگی، نیازمند لبخندی زیبا با دندان‌های مرتب و سفید
             هستیم.
             <br /> لمینیت،یکی از راه‌های رسیدن به این لبخندهای هالیوودی است.
@@ -68,7 +68,7 @@ function LaminatePage() {
 
           <Image
             src={HeroPic}
-            className="w-full h-full"
+            className="w-full h-full hidden md:block "
             alt="Child Picking Pic"
           />
         </section>
@@ -142,8 +142,8 @@ function LaminatePage() {
           </p>
 
           <div className="relative mt-6">
-            <StarsGroupIcon className="w-10 absolute -right-8 -top-4" />
-            <p className="text-3xl text-accent font-medium leading-[3rem]">
+            <StarsGroupIcon className="w-10 absolute md:-right-8 -right-4 -top-4" />
+            <p className="md:text-3xl text-2xl text-accent font-medium md:leading-[3rem] leading-9 pr-4">
               با مشاوره اختصاصی و بالا بردن آگاهی شما، به شما کمک میکنیم بهترین
               راه را برای زیبایی دندان‌هایتان انتخاب کنید.
             </p>
@@ -173,7 +173,7 @@ function LaminatePage() {
             <li>استفاده کردن از فلوراید به میزان زیاد</li>
           </ul>
 
-          <div className="mr-10">
+          <div className="md:mr-10">
             <PictureCard imgSrc={OverlayPic}>
               <h4 className="text-accent font-bold">
                 اقدامات لازم برای پیشگیری:
@@ -211,9 +211,9 @@ function LaminatePage() {
             کنید.{" "}
           </p>
 
-          <div className="flex items-center gap-4 md:px-gs py-4 bg-primary mb-5">
-            <Image src={WherePic} />
-            <h3 className="font-bold text-Neutral">
+          <div className="flexColRow rounded-lg justify-center items-center gap-4 md:px-gs py-4 bg-primary mb-5">
+            <Image src={WherePic} alt="Where" />
+            <h3 className="font-bold text-Neutral w-fit text-center">
               ما با آخرین تکنیک ها و فناوری‌های لمینیت، به روز می‌مانیم تا
               اطمینان حاصل کنیم که بیماران ما بهترین مراقبت ممکن را دریافت
               می‌کنند.
