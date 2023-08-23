@@ -20,24 +20,14 @@ const quickAccessLinks = [
     display: "ایمپلنت",
   },
   {
-    name: "kids",
-    link: "/services/kids",
+    name: "children",
+    link: "/services/children",
     display: "اطفال",
   },
   {
     name: "Portofolio",
     link: "/portfolio",
     display: "نمونه کارها",
-  },
-  {
-    name: "Q&A",
-    link: "/qna",
-    display: "سوالات متداول",
-  },
-  {
-    name: "About",
-    link: "/about",
-    display: "درباره ما",
   },
 ];
 
@@ -46,20 +36,20 @@ const ContactUs = [
     name: "Phone",
     title: "شماره تماس",
     display: <a href="tel:04133321028">04133321028</a>,
-    icons: <Image src={Phone} alt="Phone" />,
+    icons: <Image className="w-6 h-6" src={Phone} alt="Phone" />,
   },
   {
     name: "Work Hours",
     title: "ساعات کاری",
     display: "شنبه تا چهارشنبه 16 تا 21 - پنج‌شنبه‌ها 11تا 15",
-    icons: <Image src={Clock} alt="Clock" />,
+    icons: <Image className="w-6 h-6" src={Clock} alt="Clock" />,
   },
   {
     name: "Address",
     title: "آدرس",
     display:
       "تبریز، ولیعصر، خیابان پروین اعتصامی، روبروی قنادی پاک، ساختمان پزشکان 1، طبقه هفتم، واحدB",
-    icons: <Image src={Address} alt="Address" />,
+    icons: <Image className="w-12" src={Address} alt="Address" />,
   },
 ];
 

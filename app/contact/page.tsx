@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import InstagramIcon from "@/public/InstagramIcon.png";
+import InstagramIcon from "@/public/icons/InstagramIcon.png";
 import WhatsAppIcon from "@/components/icons/WhatsappIcon";
 import PhoneIcon from "@/components/icons/PhoneIcon";
 import ClockIcon from "@/components/icons/ClockIcon";
 import LocationIcon from "@/public/footer/address.svg";
-import TelephoneIcon from "@/public/TelephoneIcon.png";
-import ContactBanner from "@/public/ContactBanner.png";
+import TelephoneIcon from "@/public/icons/TelephoneIcon.png";
+import ContactBanner from "@/public/contact-us/ContactBanner.png";
 import style from "./contact.module.scss";
 import Button from "@/components/ui/Buttons";
 import Link from "next/link";
@@ -40,10 +40,10 @@ function Page() {
           />
           <h1 className="">ارتباط با ما</h1>
         </div>
-        <h3 className="md:pr-20 pt-6 pb-24 p-5">
+        <h4 className="md:pr-20 pt-6 pb-24 p-5">
           برای مشاوره تلفنی اختصاصی و رزرو وقت، کافیست در ساعات کاری با ما تماس
           بگیرید.
-        </h3>
+        </h4>
       </div>
 
       <section className="">
@@ -62,7 +62,7 @@ function Page() {
                 <div className="mb-10">{contact.icon}</div>
                 <h2 className="font-bold text-center">{contact.title}</h2>
               </div>
-              <h5>{contact.description}</h5>
+              <h5 className="text-center">{contact.description}</h5>
             </div>
           ))}
         </div>
@@ -70,15 +70,15 @@ function Page() {
 
       <section className=" flex items-center flex-col md:flex-row">
         <div className="md:h-80 text-Neutral px-5 md:pr-48 py-12 bg-primary w-full  ounded-lg md:rounded-bl-none md:rounded-tl-none md:rounded-tr-lg md:rounded-br-lg">
-          <div className="flex gap-2 ">
+          <div className="flex gap-2 items-center">
             <Image src={LocationIcon} className="w-6" alt="Location" />
-            <h2 className="font-bold text-2xl mb-4">آدرس ما</h2>
+            <h3 className="font-bold">آدرس ما</h3>
           </div>
           <div className="flex gap-2 md:mt-16">
-            <h3>
+            <h4>
               تبریز، ولیعصر، خیابان پروین اعتصامی، روبروی قنادی پاک، ساختمان
               پزشکان 1، طبقه هفتم، واحد B
-            </h3>
+            </h4>
           </div>
         </div>
         <div className="bg-accent relative w-[90%] mx-auto mr-auto z-0 py-4 pr-4 pl-4 md:pl-0 max-w-3xl md:w-full rounded-lg md:rounded-bl-none md:rounded-tl-none md:rounded-tr-lg md:rounded-br-lg md:h-[36.5rem]">
@@ -95,10 +95,10 @@ function Page() {
 
       <section className="md:mx-20 py-20 mx-5 mt-32">
         <h1 className="mb-8">صفحات مجازی مطب دکتر سهیلا کریمی</h1>
-        <h3>
+        <h4>
           در خارج از ساعات کاری، در اینستاگرام یا واتس‌اپ پیام دهید. همکاران ما
           در اسرع وقت پاسخگوی شما هستند.
-        </h3>
+        </h4>
 
         <div className="flex flex-col md:flex-row gap-8 mt-16 w-full justify-center max-w-sm mx-auto">
           <Link
