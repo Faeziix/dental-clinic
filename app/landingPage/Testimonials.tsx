@@ -63,14 +63,14 @@ function Testimonials() {
 
   return (
     <div ref={ref} className="max-w-5xl md:px-5">
-      <motion.h1
+      <motion.h2
         variants={textVariant}
         initial="hidden"
         animate={controls}
         className="pr-5 mb-6"
       >
         نظرات مراجعه‌کنندگان عزیزمون
-      </motion.h1>
+      </motion.h2>
 
       <motion.div
         variants={backgroundVariant}

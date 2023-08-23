@@ -1,9 +1,9 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Image from "next/image";
 import DocImage from "@/public/Doctor-image.jpeg";
-import DentistIcon from "@/public/DentistIcon.png";
-import { motion, useAnimation, useInView, Variants } from "framer-motion";
+import DentistIcon from "@/public/icons/DentistIcon.png";
+import { motion } from "framer-motion";
 import {
   variantGenerator,
   textVariant,
@@ -32,7 +32,7 @@ function Introduction() {
         className="flex items-center gap-2 mb-6"
       >
         <Image src={DentistIcon} alt="Dentist Icon" width={40} />
-        <h1>دکتر سهیلا کریمی</h1>
+        <h2>دکتر سهیلا کریمی</h2>
       </motion.div>
 
       <div className="flex flex-col md:flex-row gap-4">
@@ -54,10 +54,16 @@ function Introduction() {
           animate={controls}
           className="basis-7/12"
         >
-          من دکتر سهیلا کریمی، خوشحالم که در طی ۵ سال گذشته به بیش از ۵۰۰ زیباجو
-          کمک کردم که دندون های سالم‌تر و لبخندی جذاب‌تری داشته باشند. مهم‌ترین
-          ویژگی خدمات دندانپزشکی من ارایه بهترین طرح درمان منحصر به فرد هر شخص و
-          انجام کار با ضمانت با به‌روزترین تجهیزات و متریال دندانپزشکی است.
+          من دکتر سهیلا کریمی، خوشحالم که در طی <b>۵ سال</b> گذشته به بیش از{" "}
+          <b>۵۰۰ زیباجو</b> کمک کردم که دندون های سالم‌تر و لبخندی جذاب‌تری
+          داشته باشند.
+          <br />
+          <br />
+          مهم‌ترین ویژگی خدمات دندانپزشکی من ارایه بهترین طرح درمان منحصر به فرد
+          هر شخص و انجام کار با ضمانت با به‌روزترین تجهیزات و متریال دندانپزشکی
+          است.
+          <br />
+          <br />
           مراجعه‌کننده‌های ما کسانی هستند که به سالم بودن دندان‌هایشان اهمیت می
           دهند و با لبخندی زیباتر می‌خواهند به بهترین خودشان تبدیل شوند.
         </motion.p>

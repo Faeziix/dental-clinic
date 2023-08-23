@@ -1,9 +1,18 @@
+"use client";
 import React from "react";
 import Logo from "@/public/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import HamburgerMenu from "../ui/HamburgerMenu";
 import Button from "../ui/Buttons";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuLabel,
+  DropdownMenuPortal,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "../ui/dropdown-menu";
 
 const Links = [
   {
@@ -15,6 +24,39 @@ const Links = [
     display: "خدمات",
     link: "/services",
     name: "Services",
+    render: () => (
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <a>خدمات</a>
+        </DropdownMenuTrigger>
+        <DropdownMenuPortal>
+          <DropdownMenuContent className="w-56">
+            <DropdownMenuLabel className="text-right">
+              <Link href="/services/implant">ایمپلنت</Link>
+            </DropdownMenuLabel>
+            <DropdownMenuLabel className="text-right">
+              <Link href="/services/laminate">لمینیت</Link>
+            </DropdownMenuLabel>
+            <DropdownMenuLabel className="text-right">
+              <Link href="/services/children">اطفال</Link>
+            </DropdownMenuLabel>
+          </DropdownMenuContent>
+        </DropdownMenuPortal>
+      </DropdownMenu>
+    ),
+    mobileRender: () => (
+      <div className="flex flex-col gap-2">
+        <Link className="text-2xl my-4 text-Neutral" href="/services/implant">
+          ایمپلنت
+        </Link>
+        <Link className="text-2xl my-4 text-Neutral" href="/services/laminate">
+          لمینیت
+        </Link>
+        <Link className="text-2xl my-4 text-Neutral" href="/services/children">
+          اطفال
+        </Link>
+      </div>
+    ),
   },
   {
     display: "نمونه کارها",
@@ -26,11 +68,6 @@ const Links = [
     link: "/contact",
     name: "Contact",
   },
-  {
-    display: "درباره ما",
-    link: "/about",
-    name: "About",
-  },
 ];
 
 function Header() {
@@ -41,19 +78,23 @@ function Header() {
           <Image className="h-full w-full" src={Logo} alt="Logo" />
         </Link>
         <div className="md:flex hidden gap-6 items-center">
-          {Links.map((link) => (
-            <Link href={link.link} key={link.name}>
-              {link.display}
-            </Link>
-          ))}
+          {Links.map((link) => {
+            if (link.render) return link.render();
+            return (
+              <Link href={link.link} key={link.name}>
+                {link.display}
+              </Link>
+            );
+          })}
         </div>
-        <Button
-          color="primary"
+        <Link
+          href="/reservation"
           className="md:mr-auto mr-0 ml-auto md:ml-0 hidden md:block"
-          size="md"
         >
-          رزرو وقت
-        </Button>
+          <Button color="primary" size="md">
+            رزرو وقت
+          </Button>
+        </Link>
         <div className="block md:hidden">
           <HamburgerMenu links={Links} />
         </div>

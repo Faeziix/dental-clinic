@@ -10,6 +10,7 @@ export type LinksType = {
     display: string;
     link: string;
     name: string;
+    mobileRender?: () => JSX.Element;
   }[];
 };
 
@@ -67,18 +68,22 @@ function HamburgerMenu({ links }: LinksType) {
           <CrossIcon />
         </div>
         <div className="flex flex-col pr-5 mt-20 h-full">
-          {links.map((link) => (
-            <Link
-              key={link.name}
-              className="text-2xl w-20 my-4 text-Neutral"
-              href={link.link}
-              onClick={() => {
-                setIsOpen(false);
-              }}
-            >
-              <p className="w-full">{link.display}</p>
-            </Link>
-          ))}
+          {links.map((link) => {
+            if (link.mobileRender) return link.mobileRender();
+
+            return (
+              <Link
+                key={link.name}
+                className="text-2xl my-4 text-Neutral"
+                href={link.link}
+                onClick={() => {
+                  setIsOpen(false);
+                }}
+              >
+                {link.display}
+              </Link>
+            );
+          })}
         </div>
       </motion.div>
     </>

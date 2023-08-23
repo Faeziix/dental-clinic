@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import ChildToothIcon from "@/public/ChildToothIcon.png";
+import ChildToothIcon from "@/public/icons/ChildToothIcon.png";
 import LaminateIcon from "@/components/icons/LaminateIcon";
 import ImplantIcon from "@/components/icons/ImplantIcon";
-import ServicesGirlImage from "@/public/ServicesGirl.png";
+import ServicesGirlImage from "@/public/services/ServicesGirl.png";
 import { motion, Variants } from "framer-motion";
 import Button from "@/components/ui/Buttons";
 import useScrollAnimation from "@/utils/useScrollAnimation";
@@ -119,14 +119,14 @@ function Services() {
 
   return (
     <section ref={ref} className="relative w-full">
-      <motion.h1
+      <motion.h2
         variants={textVariant}
         initial="hidden"
         animate={controls}
         className="mb-4 pr-5 max-w-5xl mx-auto"
       >
         محبوب‌ترین خدمات ما
-      </motion.h1>
+      </motion.h2>
       <div className="relative mx-10 lg:pl-10 items-end flex">
         <motion.div
           variants={backgroundVariant}
@@ -150,7 +150,7 @@ function Services() {
               <div>
                 <div className="flex mb-4 text-primary w-full gap-2 items-center">
                   {service.icon}
-                  <h2 className="">{service.display}</h2>
+                  <h3 className="">{service.display}</h3>
                 </div>
 
                 <p className="leading-8 text-base text-justify">

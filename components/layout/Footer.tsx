@@ -1,7 +1,7 @@
 import React from "react";
-import ToothFamily from "@/public/tooth-family.png";
+import ToothFamily from "@/public/icons/tooth-family.png";
 import Logo from "@/public/logo.png";
-import FooterBkg from "@/public/footer-bkg.png";
+import FooterBkg from "@/public/footer/footer-bkg.png";
 import Image from "next/image";
 import Link from "next/link";
 import Phone from "@/public/footer/phone.svg";
@@ -82,9 +82,10 @@ function Footer() {
               />
             </div>
             <p>
-              {" "}
-              دکتر سهیلا کریمی دکتر سهیلا کریمی دکتر سهیلا کریمی دکتر سهیلا
-              کریمی دکتر سهیلا کریمی دکتر سهیلا کریمی دکتر سهیلا کریمی
+              مطب دندانپزشکی دکتر سهیلا کریمی، واقع در ولیعصر تبریز با بهره‌گیری
+              از جدیدترین امکانات روز دنیا در خدمت شما عزیزان خواهد بود. این
+              مطب، علاوه بر اینکه جایی مناسب برای درمان شماست، آسودگی خاطر شما
+              را از نظر دسترسی همیشگی تأمین خواهد کرد.
             </p>
           </div>
 

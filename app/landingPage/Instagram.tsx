@@ -2,10 +2,10 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import InstagramImage from "@/components/icons/InstagramIconOrange";
-import BeforeAfterPic from "@/public/Post-beforeafter.jpg";
-import ImplantPic from "@/public/Post-Implant-aftercare.jpg";
-import AirflowPic from "@/public/Post-Airflow.jpg";
-import YellowTeethPic from "@/public/Post-Yellowteeth.jpg";
+import BeforeAfterPic from "@/public/instagram/Post-beforeafter.jpg";
+import ImplantPic from "@/public/instagram/Post-Implant-aftercare.jpg";
+import AirflowPic from "@/public/instagram/Post-Airflow.jpg";
+import YellowTeethPic from "@/public/instagram/Post-Yellowteeth.jpg";
 
 const posts = [
   {

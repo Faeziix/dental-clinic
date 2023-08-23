@@ -4,11 +4,11 @@ import Image from "next/image";
 import CheckmarkIcon from "@/components/icons/Checkmark";
 import TaskIcon from "@/components/icons/TaskIcon";
 import StarIcon from "@/components/icons/StarIcon";
-import JourneyBkgPrimary from "@/public/JourneyBackgroundPrimary.png";
-import JourneyBkgAccent from "@/public/JourneyBackgroundAccent.png";
-import Journey1 from "@/public/Journey1.png";
-import Journey2 from "@/public/Journey2.png";
-import Journey3 from "@/public/Journey3.png";
+import JourneyBkgPrimary from "@/public/journey/JourneyBackgroundPrimary.png";
+import JourneyBkgAccent from "@/public/journey/JourneyBackgroundAccent.png";
+import Journey1 from "@/public/journey/Journey1.png";
+import Journey2 from "@/public/journey/Journey2.png";
+import Journey3 from "@/public/journey/Journey3.png";
 import { Variants, motion } from "framer-motion";
 import { textVariant } from "@/utils/animation-variants/variants";
 import Layers from "./journey/Layers";
@@ -112,14 +112,14 @@ function Journey() {
 
   return (
     <motion.section ref={ref} className="px-5 md:px-0">
-      <motion.h1
+      <motion.h2
         variants={textVariant}
         initial="hidden"
         animate={controls}
         className="mb-16"
       >
         سفر سلامت شما همراه با ما
-      </motion.h1>
+      </motion.h2>
 
       <div className="flex flex-col gap-20 max-w-5xl">
         {journey.map((step, i) => (

@@ -96,7 +96,7 @@ function Layers({ step, i }) {
       >
         <div className="flex items-center gap-2">
           {step.icon}
-          <h2 className="h-full">{step.title}</h2>
+          <h3 className="h-full">{step.title}</h3>
         </div>
         <p className="text-justify">{step.description}</p>
       </motion.div>
