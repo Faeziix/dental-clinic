@@ -101,10 +101,10 @@ function Children() {
     <div className="blog">
       <article className="">
         <section className="">
-          <h1 className="mb-4 text-primary">همه‌چیز درباره دندان اطفال</h1>
-          <h3 className="text-primary md:text-2xl text-xl">
+          <h1 className="mb-2 text-primary">همه‌چیز درباره دندان اطفال</h1>
+          <h4 className="text-primary">
             زمان رویش دندان‌ها، مقابله با ترس کودکان و اقدامات دندانپزشکی لازم
-          </h3>
+          </h4>
         </section>
 
         <section className="flexColRow gap-4 items-center mx-auto">

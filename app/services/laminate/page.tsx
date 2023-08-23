@@ -50,11 +50,13 @@ function LaminatePage() {
   return (
     <div className="blog">
       <article className="max-w-screen-desktop md:mx-auto">
-        <section className="">
-          <h1 className="mb-4 text-primary">همه‌چیز درباره دندان اطفال</h1>
-          <h3 className="text-primary text-2xl">
+        <section className="mx-auto md:mr-gs">
+          <h1 className="mb-4 text-primary w-full">
+            همه‌چیز درباره لمینت دندان
+          </h1>
+          <h4 className="text-primary text-2xl">
             تعریف، مراقبت‌ها و مشاوره رایگان
-          </h3>
+          </h4>
         </section>
 
         <section className="flex gap-4 items-center mx-auto">
