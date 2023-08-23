@@ -8,6 +8,7 @@ import Button from "../ui/Buttons";
 import {
   DropdownMenu,
   DropdownMenuContent,
+  DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuPortal,
   DropdownMenuSeparator,
@@ -31,15 +32,21 @@ const Links = [
         </DropdownMenuTrigger>
         <DropdownMenuPortal>
           <DropdownMenuContent className="w-56">
-            <DropdownMenuLabel className="text-right">
-              <Link href="/services/implant">ایمپلنت</Link>
-            </DropdownMenuLabel>
-            <DropdownMenuLabel className="text-right">
-              <Link href="/services/laminate">لمینیت</Link>
-            </DropdownMenuLabel>
-            <DropdownMenuLabel className="text-right">
-              <Link href="/services/children">اطفال</Link>
-            </DropdownMenuLabel>
+            <DropdownMenuItem className="text-right w-full">
+              <Link className="w-full block" href="/services/implant">
+                ایمپلنت
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem className="text-right w-full">
+              <Link className="w-full block" href="/services/laminate">
+                لمینیت
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem className="text-right w-full">
+              <Link className="w-full block" href="/services/children">
+                اطفال
+              </Link>
+            </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenuPortal>
       </DropdownMenu>

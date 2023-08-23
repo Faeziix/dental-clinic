@@ -67,8 +67,8 @@ function Footer() {
   return (
     <footer className="relative mt-32 px-5 py-20 text-Neutral">
       <section className="flex h-full max-w-5xl mx-auto items-center justify-center">
-        <div className="flex flex-col lg:flex-row gap-8">
-          <div className="flex flex-col basis-full">
+        <div className="flex flex-col lg:flex-row gap-12">
+          <div className="flex flex-col basis-3/5">
             <div className="flex mb-4">
               <Image
                 className="w-20 object-contain h-20"
@@ -89,14 +89,14 @@ function Footer() {
             </p>
           </div>
 
-          <div className="flex gap-4 w-fit flex-col basis-full">
+          <div className="flex gap-4 flex-col basis-1/5">
             <h3 className="text-2xl whitespace-nowrap font-bold">
               دسترسی سریع
             </h3>
             <div className="flex gap-2 flex-col">
               {quickAccessLinks.map((link) => (
                 <Link
-                  className="hover:text-purple-300"
+                  className="hover:text-purple-300 inline"
                   href={link.link}
                   key={link.name}
                 >
@@ -105,7 +105,7 @@ function Footer() {
               ))}
             </div>
           </div>
-          <div className="flex gap-4 flex-col basis-full">
+          <div className="flex gap-4 flex-col">
             <h3 className="text-2xl font-bold">ارتباط با ما</h3>
             <div className="flex gap-2 flex-col">
               {ContactUs.map((link) => (
