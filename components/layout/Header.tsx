@@ -82,7 +82,7 @@ function Header() {
     <div className="md:h-20 h-16 fixed top-0 z-20 bg-background py-2 w-full shadow-xl">
       <div className="flex gap-4 flex-row-reverse md:flex-row justify-center items-center h-full w-full lg:px-16 px-5">
         <Link href="/" className="mr-auto ml-0 md:ml-auto h-full md:mr-0 w-fit">
-          <Image className="h-full w-full" src={Logo} alt="Logo" />
+          <Image className="h-full w-fit" src={Logo} alt="Logo" />
         </Link>
         <div className="md:flex hidden gap-6 items-center">
           {Links.map((link) => {
