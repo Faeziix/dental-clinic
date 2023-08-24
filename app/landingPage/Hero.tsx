@@ -8,11 +8,11 @@ function Hero() {
     <section className="py-16 relative text-Neutral h-[70vh] w-full md:px-24 lg:px-44 px-5 flex flex-col justify-center gap-2 font-semibold">
       <h2 className="">در تلاشیم برای خلق بهترین لبخند شما</h2>
       <p className="max-w-md">
-        لورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم ایپسوملورم
-        ایپسوملورم ایپسوملورم
+        بهترین طرح درمان منحصر به فرد هر شخص و انجام کار با ضمانت با به‌روزترین
+        تجهیزات و متریال دندانپزشکی
       </p>
       <Link href="/reservation">
-        <Button color="primary" size="lg" className="mt-11">
+        <Button color="primary" size="lg" className="mt-4">
           <span className="w-full text-lg font-bolder grow block">
             رزرو وقت
           </span>

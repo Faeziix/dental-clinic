@@ -55,7 +55,7 @@ function ImplantPage() {
     <div className="blog">
       <article className="max-w-screen-desktop md:mx-auto">
         <section className="mx-auto md:mr-gs">
-          <h1 className="mb-2 text-primary">همه‌چیز درباره ایمپلنت دندان</h1>
+          <h1 className="mb-4 text-primary">همه‌چیز درباره ایمپلنت دندان</h1>
           <h4 className="text-primary">
             مزایا، شرایط درمان، نگه‌داری، هزینه و مشاوره رایگان
           </h4>

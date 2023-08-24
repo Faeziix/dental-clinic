@@ -45,7 +45,7 @@ body {
 
 a {
   &:hover {
-    color: theme("colors.purple.500");
+    color: theme("colors.primary");
     text-decoration: underline;
     cursor: pointer;
   }
