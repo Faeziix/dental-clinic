@@ -8,52 +8,53 @@ import Phone from "@/public/footer/phone.svg";
 import Clock from "@/public/footer/clock.svg";
 import Address from "@/public/footer/address.svg";
 
-const quickAccessLinks = [
-  {
-    name: "laminate",
-    link: "/services/laminate",
-    display: "لمینت",
-  },
-  {
-    name: "implant",
-    link: "/services/implant",
-    display: "ایمپلنت",
-  },
-  {
-    name: "children",
-    link: "/services/children",
-    display: "اطفال",
-  },
-  {
-    name: "Portofolio",
-    link: "/portfolio",
-    display: "نمونه کارها",
-  },
-];
+function Footer({ dict }) {
+  const ContactUs = [
+    {
+      name: "Phone",
+      title: dict.footer.contactUs.phone.title,
+      display: <a href="tel:04133321028">04133321028</a>,
+      icons: <Image className="w-6 h-6" src={Phone} alt="Phone" />,
+    },
+    {
+      name: "Work Hours",
+      title: dict.footer.contactUs.clock.title,
+      display: dict.footer.contactUs.clock.hours.map((hour) => (
+        <p key={hour}>{hour}</p>
+      )),
+      icons: <Image className="w-6 h-6" src={Clock} alt="Clock" />,
+    },
+    {
+      name: "Address",
+      title: dict.footer.contactUs.address.title,
+      display: dict.footer.contactUs.address.text,
+      icons: <Image className="w-12" src={Address} alt="Address" />,
+    },
+  ];
 
-const ContactUs = [
-  {
-    name: "Phone",
-    title: "شماره تماس",
-    display: <a href="tel:04133321028">04133321028</a>,
-    icons: <Image className="w-6 h-6" src={Phone} alt="Phone" />,
-  },
-  {
-    name: "Work Hours",
-    title: "ساعات کاری",
-    display: "شنبه تا چهارشنبه 16 تا 21 - پنج‌شنبه‌ها 11تا 15",
-    icons: <Image className="w-6 h-6" src={Clock} alt="Clock" />,
-  },
-  {
-    name: "Address",
-    title: "آدرس",
-    display:
-      "تبریز، ولیعصر، خیابان پروین اعتصامی، روبروی قنادی پاک، ساختمان پزشکان 1، طبقه هفتم، واحدB",
-    icons: <Image className="w-12" src={Address} alt="Address" />,
-  },
-];
+  const quickAccessLinks = [
+    {
+      name: "laminate",
+      link: "/services/laminate",
+      display: dict.footer.quick_access.laminate,
+    },
+    {
+      name: "implant",
+      link: "/services/implant",
+      display: dict.footer.quick_access.implant,
+    },
+    {
+      name: "children",
+      link: "/services/children",
+      display: dict.footer.quick_access.children,
+    },
+    {
+      name: "Portofolio",
+      link: "/portfolio",
+      display: dict.footer.quick_access.portfolio,
+    },
+  ];
 
-function Footer() {
   return (
     <footer className="relative mt-32 px-5 py-20 text-Neutral">
       <section className="flex h-full max-w-5xl mx-auto items-center justify-center">
@@ -71,17 +72,12 @@ function Footer() {
                 alt="Logo"
               />
             </div>
-            <p>
-              مطب دندانپزشکی دکتر سهیلا کریمی، واقع در ولیعصر تبریز با بهره‌گیری
-              از جدیدترین امکانات روز دنیا در خدمت شما عزیزان خواهد بود. این
-              مطب، علاوه بر اینکه جایی مناسب برای درمان شماست، آسودگی خاطر شما
-              را از نظر دسترسی همیشگی تأمین خواهد کرد.
-            </p>
+            <p className="text-base leading-7">{dict.footer.description}</p>
           </div>
 
           <div className="flex gap-4 flex-col basis-1/5">
             <h3 className="text-2xl whitespace-nowrap font-bold">
-              دسترسی سریع
+              {dict.footer.quick_access.title}
             </h3>
             <div className="flex gap-2 flex-col">
               {quickAccessLinks.map((link) => (
@@ -96,7 +92,9 @@ function Footer() {
             </div>
           </div>
           <div className="flex gap-4 flex-col">
-            <h3 className="text-2xl font-bold">ارتباط با ما</h3>
+            <h3 className="text-2xl font-bold">
+              {dict.footer.contactUs.title}
+            </h3>
             <div className="flex gap-2 flex-col">
               {ContactUs.map((link) => (
                 <div className="flex gap-2 items-baseline" key={link.name}>
@@ -130,7 +128,7 @@ function Footer() {
 
       <div className="bg-blue-950 absolute bottom-0 w-full left-0">
         <p className="text-center py-4 text-sm">
-          کلیه حقوق این سایت برای مطب دکتر سهیلا کریمی محفوظ می‌باشد. ©
+          {dict.footer.copyright} © {new Date().getFullYear()}
         </p>
       </div>
     </footer>

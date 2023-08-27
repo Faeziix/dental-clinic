@@ -8,6 +8,7 @@ import QuoteIcon from "@/components/icons/QuoteIcon";
 import StarsGroupIcon from "@/components/icons/StarsGroupIcon";
 import FacePic from "@/public/implant/face.png";
 import Toc from "@/components/ui/Toc";
+import { digiFont } from "@/utils/utils";
 
 const toc = [
   {
@@ -39,11 +40,6 @@ const toc = [
     href: "#summary",
   },
 ];
-
-const myFont = localFont({
-  src: "../../../public/Digi Anil Bold.ttf",
-  display: "swap",
-});
 
 function ImplantPage() {
   return (
@@ -132,7 +128,7 @@ function ImplantPage() {
 
           <div className="border-2 mb-4 border-black relative rounded-[32px] py-4 shadow-[0px_7px_0px_0px_black]">
             <h4
-              style={{ fontFamily: myFont.style.fontFamily }}
+              style={{ fontFamily: digiFont.style.fontFamily }}
               className="max-w-xs relative text-center text-xl md:text-2xl py-8 mx-auto"
             >
               خانم دکتر شنیده بودم ایمپلنت خیلی درد داره! از ترسش، هی دست‌دست

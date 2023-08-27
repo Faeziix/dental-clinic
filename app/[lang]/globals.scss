@@ -9,7 +9,6 @@ $neutral: theme("colors.Neutral");
 body {
   background-color: theme("colors.background");
   color: hsla(0, 0%, 15%, 1);
-  direction: rtl;
   scroll-behavior: smooth;
 }
 
@@ -62,11 +61,11 @@ button {
 }
 
 h1 {
-  @apply text-3xl font-extrabold lg:text-5xl;
+  @apply text-3xl font-extrabold md:text-4xl lg:text-5xl capitalize;
 }
 
 h2 {
-  @apply text-2xl font-bold lg:text-4xl;
+  @apply text-2xl font-bold lg:text-4xl capitalize;
 }
 
 h3 {
@@ -74,17 +73,15 @@ h3 {
 }
 
 h4 {
-  @apply text-lg md:text-lg lg:text-xl;
-  font-weight: 400;
+  @apply text-lg md:text-lg lg:text-xl font-normal;
 }
 
 h5 {
-  @apply text-sm md:text-base lg:text-lg;
-  font-weight: 400;
+  @apply text-sm lg:text-lg;
 }
 
 h6 {
-  font-size: 0.625rem;
+  @apply text-sm lg:text-base;
   font-weight: 300;
 }
 
@@ -141,7 +138,6 @@ article {
         height: 3px;
         width: 100px;
         background-color: theme("colors.primary");
-        right: 0;
         bottom: -0.5rem;
 
         @screen md {

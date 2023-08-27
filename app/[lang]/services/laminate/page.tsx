@@ -41,11 +41,6 @@ const toc = [
   },
 ];
 
-const myFont = localFont({
-  src: "../../../public/Digi Anil Bold.ttf",
-  display: "swap",
-});
-
 function LaminatePage() {
   return (
     <div className="blog">

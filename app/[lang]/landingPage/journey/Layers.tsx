@@ -1,48 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { Variants, motion, useAnimation, useInView } from "framer-motion";
 
-const imageRightVariant: Variants = {
-  initial: {
-    opacity: 0,
-    x: 100,
-  },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.5,
-      ease: "easeInOut",
-    },
-  },
-};
-
-const imageLeftVariant: Variants = {
-  initial: {
-    opacity: 0,
-    x: -100,
-  },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.5,
-      ease: "easeInOut",
-    },
-  },
-};
-
-const descriptionVariant: Variants = {
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.5,
-      ease: "easeInOut",
-    },
-  },
-};
-
-function Layers({ step, i }) {
+function Layers({ step, i, lang }) {
   const ref = useRef(null);
   const controls = useAnimation();
   const inView = useInView(ref, {
@@ -54,6 +13,47 @@ function Layers({ step, i }) {
       controls.start("visible");
     }
   }, [inView]);
+
+  const imageRightVariant: Variants = {
+    initial: {
+      opacity: 0,
+      x: lang === "en" ? 100 : -100,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+      },
+    },
+  };
+
+  const imageLeftVariant: Variants = {
+    initial: {
+      opacity: 0,
+      x: lang === "en" ? -100 : 100,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+      },
+    },
+  };
+
+  const descriptionVariant: Variants = {
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+      },
+    },
+  };
 
   return (
     <motion.section
@@ -71,7 +71,7 @@ function Layers({ step, i }) {
         },
         hidden: {
           opacity: 0,
-          x: i == 1 ? -100 : 100,
+          x: i == 1 ? (lang === "en" ? 100 : -100) : lang === "en" ? -100 : 100,
         },
       }}
       initial="hidden"
@@ -98,7 +98,7 @@ function Layers({ step, i }) {
           {step.icon}
           <h3 className="h-full">{step.title}</h3>
         </div>
-        <p className="text-justify">{step.description}</p>
+        <p className="">{step.description}</p>
       </motion.div>
     </motion.section>
   );

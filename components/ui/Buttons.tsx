@@ -91,7 +91,7 @@ const arrowVarient = cva(["arrow"], {
   variants: {
     color: {
       default: [
-        "text-dark border-dark group-hover:before:bg-Neutral group-hover:border-Neutral",
+        "text-dark border-dark group-hover:before:bg-Neutral group-hover:border-Neutral rtl:-scale-x-100",
       ],
       primary: ["text-primary border-primary group-hover:before:bg-primary"],
       accent: ["text-accent border-accent group-hover:before:bg-accent"],
@@ -130,8 +130,8 @@ function Button({
         withArrow ? "arrow-button" : ""
       )}
     >
-      {withArrow && <span className={cn(arrowVarient({ color, size }))} />}
       {children}
+      {withArrow && <span className={cn(arrowVarient({ color, size }))} />}
     </button>
   );
 }

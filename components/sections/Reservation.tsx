@@ -1,10 +1,14 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import FormGirl from "@/public/FormGirl.png";
 import Button from "@/components/ui/Buttons";
 import styles from "./Form.module.scss";
+import { useTranslations } from "next-intl";
 
 function Reservation({ withImage = false }) {
+  const dict = useTranslations("reservation");
+
   return (
     <div
       id={styles.reservation_form}
@@ -13,38 +17,38 @@ function Reservation({ withImage = false }) {
       }`}
     >
       <div className={styles.title}>
-        <h3 className="mb-6 text-3xl font-semibold">رزرو وقت</h3>
+        <h3 className="mb-6 text-3xl font-semibold">{dict("title")}</h3>
       </div>
 
       <form className={`${styles.form}`}>
         <div className="flex gap-4 w-full">
           <div className="mb-4 w-full">
             <label className="mb-2 text-xl" htmlFor="name">
-              نام
+              {dict("fields.first_name")}
             </label>
             <input className="w-full" type="text" id="name" />
           </div>
           <div className="mb-4 w-full">
             <label className="mb-2 text-xl" htmlFor="familyName">
-              نام‌خانوادگی
+              {dict("fields.last_name")}
             </label>
             <input className="w-full" type="text" id="familyName" />
           </div>
         </div>
         <div className="mb-4">
           <label className="mb-2 text-xl" htmlFor="phone">
-            شماره تماس
+            {dict("fields.phone")}
           </label>
           <input type="text" id="phone" />
         </div>
         <div className="mb-4">
           <label className="mb-2 text-xl" htmlFor="description">
-            توضیحات
+            {dict("fields.note")}
           </label>
           <textarea className="lg:min-h-[6rem]" id="description" />
         </div>
         <Button className="text-xl" mode="block" color="primary">
-          رزرو وقت
+          {dict("button")}
         </Button>
       </form>
 

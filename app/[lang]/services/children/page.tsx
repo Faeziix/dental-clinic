@@ -17,6 +17,7 @@ import FluoridePic from "@/public/children/fluoride.png";
 import FishurPic from "@/public/children/fishur.png";
 import FiveWaysPic from "@/public/children/5way.png";
 import Toc from "@/components/ui/Toc";
+import { digiFont } from "@/utils/utils";
 
 const toc = [
   {
@@ -90,11 +91,6 @@ const fiveWays = [
       "از یک لیوان برای آبکشی مخصوص با رنگ‌ و طرح شاد استفاده کنید تا هم یاد بگیرد که شیر آب را باز نگذارد و هم ماجرا برایش جذاب‌تر شود، چون بدون شک این پر و خالی کردن آب در دهان و سپس توی روشور، بخش مورد علاقه‌ٔ یک کودک نوپاست!",
   },
 ];
-
-const myFont = localFont({
-  src: "../../../public/Digi Anil Bold.ttf",
-  display: "swap",
-});
 
 function Children() {
   return (
@@ -320,7 +316,7 @@ function Children() {
 
           <div className="mx-auto w-fit">
             <p
-              style={{ fontFamily: myFont.style.fontFamily }}
+              style={{ fontFamily: digiFont.style.fontFamily }}
               className="mb-5 w-fit md:text-3xl text-2xl md:leading-[3rem] px-4 text-dark text-center font-medium relative "
             >
               خانم دکتر ! سن کودک من خیلی کمه؛ دندون‌های شیری هم که میفتن...{" "}

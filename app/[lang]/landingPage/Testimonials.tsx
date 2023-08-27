@@ -1,25 +1,13 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import QuoteIcon from "@/components/icons/QuoteIcon";
 import Button from "@/components/ui/Buttons";
 import Link from "next/link";
 import { Variants, motion } from "framer-motion";
 
-import localFont from "next/font/local";
 import useScrollAnimation from "@/utils/useScrollAnimation";
-import { textVariant } from "@/utils/animation-variants/variants";
-
-const myFont = localFont({
-  src: "../../public/Digi Anil Bold.ttf",
-  display: "swap",
-});
-
-const testimonials = [
-  "لمینیت‌ها خیلی طبیعی و خوشگل شدن. تو راه خونه، نمیتونستم تو آینه چشم از دندونام بردارم :) خیلی خوب به نظر میرسن. انگار که 10 سال جوون‌تر شدم! خیلی از خانم دکتر و تیم حرفه‌ایشون ممنونم.",
-  "من امروز عصب‌کشی انجام دادم پیشتون. عالی بود! با اومدن کنار شما ترس و استرس از دندون‌پزشکی تموم شد. کاش زدتر با شما آشنا میشدم؛ ممنونم از مهربونیتون.",
-  "تنها دکتری که درد یا استرس حین خدمات دندان مخصوصا ایمپلنت و عصب‌کشی معنی نداره :)",
-];
+import { digiFont } from "@/utils/utils";
+import { variantGenerator } from "@/utils/animation-variants/variants";
 
 const backgroundVariant = {
   visible: {
@@ -58,18 +46,15 @@ const lightBackgroundVariant: Variants = {
   },
 };
 
-function Testimonials() {
+function Testimonials({ dict, lang }) {
   const [ref, controls] = useScrollAnimation();
+
+  const testimonials = dict.landingPage.testimonials.testimonials;
 
   return (
     <div ref={ref} className="max-w-5xl md:px-5">
-      <motion.h2
-        variants={textVariant}
-        initial="hidden"
-        animate={controls}
-        className="pr-5 mb-6"
-      >
-        نظرات مراجعه‌کنندگان عزیزمون
+      <motion.h2 initial="hidden" animate={controls} className="pr-5 mb-6">
+        {dict.landingPage.testimonials.title}
       </motion.h2>
 
       <motion.div
@@ -81,7 +66,7 @@ function Testimonials() {
       >
         <motion.div
           style={{
-            fontFamily: myFont.style.fontFamily,
+            fontFamily: digiFont.style.fontFamily,
           }}
           animate={controls}
           variants={lightBackgroundVariant}
@@ -90,7 +75,7 @@ function Testimonials() {
           {testimonials.map((testimonial) => (
             <div
               style={{
-                fontFamily: myFont.style.fontFamily,
+                fontFamily: digiFont.style.fontFamily,
               }}
               className="flex w-full flex-col gap-2 rounded-lg"
               key={testimonial}
@@ -118,7 +103,7 @@ function Testimonials() {
             href="https://www.instagram.com/stories/highlights/17902117297715473/"
           >
             <Button withArrow radius="circle" color="neutral">
-              مشاهده بیشتر در هایلایت اینستاگرام
+              {dict.landingPage.testimonials.button}
             </Button>
           </Link>
         </motion.div>

@@ -3,18 +3,15 @@ import styles from "./Hero.module.scss";
 import Button from "@/components/ui/Buttons";
 import Link from "next/link";
 
-function Hero() {
+function Hero({ dict }) {
   return (
     <section className="py-16 relative text-Neutral h-[70vh] w-full md:px-24 lg:px-44 px-5 flex flex-col justify-center gap-2 font-semibold">
-      <h2 className="">در تلاشیم برای خلق بهترین لبخند شما</h2>
-      <p className="max-w-md">
-        بهترین طرح درمان منحصر به فرد هر شخص و انجام کار با ضمانت با به‌روزترین
-        تجهیزات و متریال دندانپزشکی
-      </p>
+      <h1 className="leading-[3.5rem]">{dict.landingPage.hero.title}</h1>
+      <h4 className="max-w-md leading-7">{dict.landingPage.hero.subtitle}</h4>
       <Link href="/reservation">
         <Button color="primary" size="lg" className="mt-4">
           <span className="w-full text-lg font-bolder grow block">
-            رزرو وقت
+            {dict.landingPage.hero.button}
           </span>
         </Button>
       </Link>
