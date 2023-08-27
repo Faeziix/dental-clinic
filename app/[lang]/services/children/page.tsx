@@ -270,7 +270,11 @@ function Children() {
                   <p className="md:text-3xl text-2xl">{children}</p>
                 ),
               })}
-              <QuoteIcon className="md:w-10 w-7 inline-block absolute -top-5 -right-0" />
+              <QuoteIcon
+                className={`md:w-10 w-7 inline-block absolute -top-5 ${
+                  locale == "fa" ? "right-0" : "left-0"
+                }`}
+              />
             </p>
           </div>
 
