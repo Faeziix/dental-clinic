@@ -34,31 +34,31 @@ function ImplantPage() {
 
   const toc = [
     {
-      title: dict("toc.whatIsImplant.title"),
+      title: dict("toc.whatIsImplant"),
       href: "#what-is-implant",
     },
     {
-      title: dict("toc.advantages.title"),
+      title: dict("toc.advantages"),
       href: "#advantages",
     },
     {
-      title: dict("toc.maintenance.title"),
+      title: dict("toc.maintenance"),
       href: "#maintenance",
     },
     {
-      title: dict("toc.suitable.title"),
+      title: dict("toc.suitable"),
       href: "#suitable",
     },
     {
-      title: dict("toc.pain.title"),
+      title: dict("toc.pain"),
       href: "#pain",
     },
     {
-      title: dict("toc.cost.title"),
+      title: dict("toc.cost"),
       href: "#cost",
     },
     {
-      title: dict("toc.summary.title"),
+      title: dict("toc.summary"),
       href: "#summary",
     },
   ];

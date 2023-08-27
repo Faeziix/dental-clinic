@@ -73,7 +73,7 @@ let dictionary = {
       title: "Testimonials from our cherished visitors",
       button: "Watch More in Instagram Highlights",
       testimonials: [
-        "Veneers have truly enhanced the natural beauty. On my way home, I couldn't take my eyes off my teeth in the mirror :) They look incredibly good. It's like I've become 10 years younger! Many thanks to Dr. [Name] and her professional team.",
+        "Veneers have truly enhanced the natural beauty. On my way home, I couldn't take my eyes off my teeth in the mirror :) They look incredibly good. It's like I've become 10 years younger! Many thanks to Dr. Soheila and her professional team.",
         "Just had a root canal done at your place today. Gotta say, it was awesome! Being around you guys totally killed the dental jitters. Wish I'd found you sooner; thanks a bunch for being so cool and caring!",
         "The only dentist where pain or stress during dental procedures, especially implants and root canals, is non-existent :)",
       ],
@@ -93,27 +93,13 @@ let dictionary = {
       description:
         "Implants are the most natural and durable solution for replacing missing teeth. They are made of titanium and are placed in the jawbone. After a few months, the implant is integrated into the bone and can be used as a base for a crown, bridge, or denture.",
       toc: {
-        whatIsImplant: {
-          title: "What is a Dental Implant?",
-        },
-        advantages: {
-          title: "Advantages of Implants vs. Dentures",
-        },
-        maintenance: {
-          title: "How to Maintain and Care for Dental Implants?",
-        },
-        suitable: {
-          title: "Is Dental Implant Suitable for Everyone?",
-        },
-        pain: {
-          title: "Does Dental Implant Cause Pain?",
-        },
-        cost: {
-          title: "Cost of Dental Implants",
-        },
-        summary: {
-          title: "Dental Implants at a Glance",
-        },
+        whatIsImplant: "What is a Dental Implant?",
+        advantages: "Advantages of Implants vs. Dentures",
+        maintenance: "How to Maintain and Care for Dental Implants?",
+        suitable: "Is Dental Implant Suitable for Everyone?",
+        pain: "Does Dental Implant Cause Pain?",
+        cost: "Cost of Dental Implants",
+        summary: "Dental Implants at a Glance",
       },
       sections: {
         section1: {
@@ -225,199 +211,218 @@ let dictionary = {
       title: "Everything you need to know about children's dentistry",
       subtitle:
         "Timing of Tooth Eruption, Dealing with Children's Fear, and Necessary Dental Actions",
-      paragraph:
+      description:
         "As you are aware, many oral and dental issues stem from childhood. Without proper dental care, children may face tooth decay and diseases that can lead to a lifetime of pain and complications.",
-      toc: [
-        {
-          title: "Why Brush Baby Teeth?",
-          href: "#why-brush",
-        },
-        {
-          title: "When Should I Start Brushing My Child's Teeth?",
-          href: "#when-brush",
-        },
-        {
-          title: "5 Golden Ways to Encourage Child for Brushing",
-          href: "#how-brush",
-        },
-        {
-          title: "Why Take Our Children to the Dentist from an Early Age?",
-          href: "#why-visit",
-        },
-        {
-          title: "How to Ease Your Child's Fear of Dentistry?",
-          href: "#how-visit",
-        },
-        {
-          title:
-            "Fluoride Therapy and Sealant: Two Ways to Care for Children's Teeth",
-          href: "#fluoride",
-        },
-        {
-          title: "A Word with You, Dear Parents",
-          href: "#parents",
-        },
-      ],
-      sections: [
-        {
+      toc: {
+        "why-brush": "Why Brush Baby Teeth?",
+        "when-brush": "When Should I Start Brushing My Child's Teeth?",
+        "how-brush": "5 Golden Ways to Encourage Child for Brushing",
+        "why-visit": "Why Take Our Children to the Dentist from an Early Age?",
+        "how-visit": "How to Ease Your Child's Fear of Dentistry?",
+        fluoride:
+          "Fluoride Therapy and Sealant: Two Ways to Care for Children's Teeth",
+        parents: "A Word with You, Dear Parents",
+      },
+      sections: {
+        "why-brush": {
           title: "Why Should We Brush Baby Teeth?",
-          content: [
-            "Caring for and maintaining the oral health of children during their early years promotes proper gum growth, ensuring the necessary space for future tooth growth. Decayed baby teeth can lead to disruptions in a child's nutrition and speech.",
-            "Decayed baby teeth can create an unfavorable environment for the growth of permanent teeth if they fall out prematurely, potentially causing misalignment.",
-            "Additionally, not all baby teeth have permanent replacements. In some individuals, baby teeth might last throughout their lifetime.",
-          ],
+          content: {
+            point1:
+              "Caring for and maintaining the oral health of children during their early years promotes proper gum growth, ensuring the necessary space for future tooth growth. Decayed baby teeth can lead to disruptions in a child's nutrition and speech.",
+            point2:
+              "Decayed baby teeth can create an unfavorable environment for the growth of permanent teeth if they fall out prematurely, potentially causing misalignment.",
+            point3:
+              "Additionally, not all baby teeth have permanent replacements. In some individuals, baby teeth might last throughout their lifetime.",
+          },
         },
-        {
+        "when-brush": {
           title: "When Should I Start Brushing My Child's Teeth?",
-          content: [
-            "It's important to start brushing your child's teeth from the time their first tooth emerges. However, taking steps to maintain your child's oral and dental health is never too early.",
-            "Even before your child's teeth become visible, the health of their gums is essential. Teeth have already formed beneath the gums while your child is still in the womb.",
-            "Early oral care contributes to the healthy development of emerging teeth, encouraging them to come in properly.",
-          ],
+          content: {
+            point1:
+              "It's important to start brushing your child's teeth from the time their first tooth emerges. However, taking steps to maintain your child's oral and dental health is never too early.",
+            point2:
+              "Even before your child's teeth become visible, the health of their gums is essential. Teeth have already formed beneath the gums while your child is still in the womb.",
+            point3:
+              "Early oral care contributes to the healthy development of emerging teeth, encouraging them to come in properly.",
+          },
         },
-        {
+        "0-9": {
           title: "Birth to 9 Months: Gum Care",
-          content: [
-            "Most infants won't have any teeth before 3 months of age.",
-            "Even if there are no teeth yet, daily cleaning of the gums is a good idea. You can do this with a clean, damp cloth or a soft infant toothbrush.",
-            "Brushing your child's gums can help alleviate the discomfort of teething and stimulate tooth growth.",
-            "If any of your child's teeth have come in by this age, brush them with a soft toothbrush and a small amount of fluoride toothpaste twice a day.",
-            "The best time for this is after feeding.",
-          ],
+          content: {
+            point1: "Most infants won't have any teeth before 3 months of age.",
+            point2:
+              "Even if there are no teeth yet, daily cleaning of the gums is a good idea. You can do this with a clean, damp cloth or a soft infant toothbrush.",
+            point3:
+              "Brushing your child's gums can help alleviate the discomfort of teething and stimulate tooth growth.",
+            point4:
+              "If any of your child's teeth have come in by this age, brush them with a soft toothbrush and a small amount of fluoride toothpaste twice a day.",
+            point5: "The best time for this is after feeding.",
+          },
         },
-        {
+        "9-12": {
           title: "9 to 12 Months: Brushing New Teeth",
-          content: [
-            "By now, your child probably has a few teeth that have erupted from the gums.",
-            "Brush these teeth twice a day (using only a smear of fluoride toothpaste) and the gums where no teeth have come in yet.",
-            "If your child still doesn't have any teeth by their first birthday, don't worry and continue brushing.",
-            "Regardless of the number of your child's teeth, it's time to schedule their first dental visit.",
-          ],
+          content: {
+            point1:
+              "By now, your child probably has a few teeth that have erupted from the gums.",
+            point2:
+              "Brush these teeth twice a day (using only a smear of fluoride toothpaste) and the gums where no teeth have come in yet.",
+            point3:
+              "If your child still doesn't have any teeth by their first birthday, don't worry and continue brushing.",
+            point4:
+              "Regardless of the number of your child's teeth, it's time to schedule their first dental visit.",
+          },
         },
-        {
+        "1-3": {
           title: "1 to 3 Years: Continue Brushing and Dental Visits",
-          content: [
-            "As your child's mouth fills with teeth, it's important to establish a regular routine of brushing at least twice a day with fluoride toothpaste.",
-            "Encourage your child to spit out the toothpaste after brushing.",
-            "If your child is 18 months old and still doesn't have teeth, be sure to have a dental visit to discuss any concerns about delayed tooth growth.",
-          ],
+          content: {
+            point1:
+              "As your child's mouth fills with teeth, it's important to establish a regular routine of brushing at least twice a day with fluoride toothpaste.",
+            point2:
+              "Encourage your child to spit out the toothpaste after brushing.",
+            point3:
+              "If your child is 18 months old and still doesn't have teeth, be sure to have a dental visit to discuss any concerns about delayed tooth growth.",
+          },
           image_description: "Kimia, one of our young patients at the clinic",
         },
-        {
+        "3-6": {
           title: "3 to 6 Years: Encourage Enthusiastic Brushing",
-          content: [
-            "At this stage, your child should start learning how to brush their teeth. It's recommended to increase the amount of fluoride toothpaste on the toothbrush to about the size of a pea.",
-            "You should still assist your child in brushing their teeth to ensure effective cleaning.",
-            "Encourage your child to spit out the excess toothpaste and avoid swallowing it.",
-          ],
+          content: {
+            point1:
+              "At this stage, your child should start learning how to brush their teeth. It's recommended to increase the amount of fluoride toothpaste on the toothbrush to about the size of a pea.",
+            point2:
+              "You should still assist your child in brushing their teeth to ensure effective cleaning.",
+            point3:
+              "Encourage your child to spit out the excess toothpaste and avoid swallowing it.",
+          },
         },
-        {
-          title: "5 Golden Ways to Excite Your Child About Brushing",
+        "how-brush": {
+          title:
+            "5 <gold>Golden </gold> Ways to Excite Your Child About Brushing",
           content:
             "Likely until around the age of seven, they may not be able to brush well, but as soon as they show interest and capability, it's better to let them do it on their own.",
-          sections: [
-            {
+          sections: {
+            "choose-toothbrush": {
               title: "Let Them Choose Their Toothbrush:",
-              paragraph:
+              description:
                 "Set a specific day to buy a toothbrush and take your child to the pharmacy, or look at children's toothbrushes online together and let them choose the shape and color of their toothbrush.",
             },
-            {
+            "watch-you-brush": {
               title: "Let Them Watch You Brush:",
-              paragraph:
+              description:
                 "Young children love imitating everything their parents do, so it's worth ensuring that one of these activities is brushing teeth. Let them see you using a toothbrush and how you do it, so they try to imitate.",
             },
-            {
+            "name-teeth": {
               title: "Name Their Teeth:",
-              paragraph:
+              description:
                 "Putting names on each tooth while brushing might help your child remember to brush every tooth. This activity fosters a sense of fairness in kids and helps in keeping their mouth open.",
             },
-            {
+            "find-plaque-spots": {
               title: "Find the Plaque Spots:",
-              paragraph:
+              description:
                 "After brushing, examine each other's teeth to see if they're clean or not. Tell them that you found certain spots where they missed while brushing their teeth, and let them find plaque spots on your teeth too.",
             },
-            {
+            "make-rinsing-fun": {
               title: "Make Rinsing More Fun:",
-              paragraph:
+              description:
                 "Use a colorful and patterned cup for rinsing to make the rinsing step more appealing. This not only helps them learn not to swallow water but also makes the process more enjoyable for them. Undoubtedly, the favorite part of a young child is swishing water in their mouth and then spitting it into the sink!",
             },
-          ],
+          },
         },
-        {
+        "why-visit": {
           title:
             "Why should we take our child to the dentist from a young age?",
           quote:
-            "Hey Doc! My kid is really young; they're just baby teeth anyway. So why bother taking them to the dentist and making them uncomfortable? ",
-          quote_bubble: [
-            "I haven't fully popped out yet!",
-            "Please, pretty please, watch over me so I can grow up strong and healthy from my cozy gum home :(",
-          ],
-          content: [
-            "We have many kids who, due to their parents' misconception, don't visit the dentist's office. They always want to know why it's necessary to take care of baby teeth when they're meant to fall out naturally and make way for a set of new teeth!",
-            "Apart from tooth decay, other developmental changes also need evaluation. Proper alignment of teeth in a child's mouth is crucial for natural growth and jaw development.",
-            "Some kids exhibit improper teeth alignment during their growing years. This is where a child requires dental intervention.",
-            "Neglecting issues related to improper teeth alignment in a child can lead to dental and skeletal deformities.",
-            "We try to ensure that the child feels warmth and intimacy throughout the services so that they can collaborate with the dentist and parents on the journey of oral and dental health.",
-          ],
+            "<p>Hey Doc! My kid is really young; they're just baby teeth anyway.</p><p> So why bother taking them to the dentist and making them uncomfortable? </p>",
+          quote_bubble: {
+            line1: "Please, watch over me.I haven't fully popped out yet!:(",
+          },
+          content: {
+            point1:
+              "We have many kids who, due to their parents' misconception, don't visit the dentist's office. ",
+            point2:
+              "They always want to know why it's necessary to take care of baby teeth when they're meant to fall out naturally and make way for a set of new teeth!",
+            point3:
+              "Apart from tooth decay, other developmental changes also need evaluation. Proper alignment of teeth in a child's mouth is crucial for natural growth and jaw development.",
+            point4:
+              "Some kids exhibit improper teeth alignment during their growing years. This is where a child requires dental intervention.",
+            point5:
+              "Neglecting issues related to improper teeth alignment in a child can lead to dental and skeletal deformities.",
+            point6:
+              "We aim to make the child feel warmth and intimacy during the services, fostering collaboration with the dentist and parents for their oral and dental health journey.",
+          },
         },
-        {
+        "how-visit": {
           title: "How to Ease Your Child's Fear of Dentistry?",
-          content: [
-            "Fear of the dentist is quite common. While having some anxiety about dentistry is understandable, it shouldn't hinder the health and hygiene of your precious one's mouth and teeth. 'Going to the dentist' is an essential part of it.",
-            "That's why the dental team of Dr. Soheila Karimi strives to make the experience of going to the dentist as enjoyable and safe as possible for children.",
-            "To schedule an appointment, give us a call. With the guidance of our colleagues through phone consultation, your dear child can comfortably and fearlessly visit the clinic with your presence and informed consent.",
-          ],
+          content: {
+            point1:
+              "Fear of the dentist is quite common. While having some anxiety about dentistry is understandable, it shouldn't hinder the health and hygiene of your precious one's mouth and teeth. 'Going to the dentist' is an essential part of it.",
+            point2:
+              "That's why the dental team of Dr. Soheila Karimi strives to make the experience of going to the dentist as enjoyable and safe as possible for children.",
+            point3:
+              "To schedule an appointment, give us a <a>call</a>. With the guidance of our colleagues through phone consultation, your dear child can comfortably and fearlessly visit the clinic with your presence and informed consent.",
+          },
         },
-        {
+        fluoride: {
           title:
             "Fluoride Therapy and Dental Sealants; Two Ways to Care for Children's Teeth",
-          sections: [
-            {
-              title: "Fluoride therapy:",
-              content: [
-                "Dental sealants or fissure sealants prevent tooth decay in children.",
-                "Fluoride ions in toothpaste, mouthwash, varnish, and professional gels (used in dental clinics) penetrate the enamel of immature teeth, making them more resistant to the decay process.",
-              ],
-            },
-            {
-              title: "Tips about Fluoride Therapy:",
-              points: [
-                "Fluoride therapy does not require local anesthesia.",
+          "fluoride-therapy": {
+            title: "Fluoride therapy:",
+            point1:
+              "Dental sealants or fissure sealants prevent tooth decay in children.",
+            point2:
+              "Fluoride ions in toothpaste, mouthwash, varnish, and professional gels (used in dental clinics) penetrate the enamel of immature teeth, making them more resistant to the decay process.",
+          },
+          "tips-fluoride-therapy": {
+            title: "Tips about Fluoride Therapy:",
+            points: {
+              point1: "Fluoride therapy does not require local anesthesia.",
+              point2:
                 "After fluoride therapy, your child should avoid rinsing their mouth or drinking water for at least half an hour.",
+              point3:
                 "It's usually recommended not to brush teeth for a few hours following fluoride therapy to allow the fluoride to remain on the teeth longer.",
+              point4:
                 "To enhance the effectiveness of fluoride and its retention, it's better to avoid eating hard or abrasive foods on the day following the fluoride therapy.",
-              ],
             },
-            {
-              title: "Fissure Sealant Therapy:",
-              content: [
-                "Around the age of six, the first permanent molar, which is a large molar, starts to erupt.",
-                "In some children, the chewing surfaces of these molars have deep grooves and fissures that cannot be cleaned effectively by brushing, allowing food particles, debris, and bacteria to accumulate in these grooves and lead to tooth decay.",
-                "Before these grooves develop cavities, a dentist can apply a shallow fissure sealant therapy to make them shallower.",
-                "By doing so, the brushing can effectively clean the chewing surfaces of the tooth, preventing the accumulation of plaque, debris, and bacteria inside the grooves and consequently preventing decay.",
-              ],
-            },
-            {
-              title: "Fissure Sealant Therapy Tips:",
-              points: [
+          },
+          "fissure-sealant-therapy": {
+            title: "Fissure Sealant Therapy:",
+            point1:
+              "Around the age of six, the first permanent molar, which is a large molar, starts to erupt.",
+            point2:
+              "In some children, the chewing surfaces of these molars have deep grooves and fissures that cannot be cleaned effectively by brushing, allowing food particles, debris, and bacteria to accumulate in these grooves and lead to tooth decay.",
+            point3:
+              "Before these grooves develop cavities, a dentist can apply a shallow fissure sealant therapy to make them shallower.",
+            point4:
+              "By doing so, the brushing can effectively clean the chewing surfaces of the tooth, preventing the accumulation of plaque, debris, and bacteria inside the grooves and consequently preventing decay.",
+          },
+          "tips-fissure-sealant-therapy": {
+            title: "Fissure Sealant Therapy Tips:",
+            points: {
+              point1:
                 "The optimal age for fissure sealant therapy is the first permanent molar from ages six to eight, and for the second permanent molar and premolars, it's between eleven to thirteen years old.",
+              point2:
                 "This procedure can also be performed on primary teeth with deep grooves that are susceptible to decay, typically around the age of 4 to 3 years old.",
+              point3:
                 "Fissure sealant therapy is painless, non-invasive, and does not require local anesthesia.",
+              point4:
                 "Fissure sealant therapy can significantly prevent decay on the chewing surfaces of teeth.",
-              ],
             },
-          ],
+          },
         },
-        {
+        parents: {
           title: "A Word to Our Dear Parents",
-          content: [
-            "Your child's mouth undergoes constant changes as they grow.",
-            "While an adult's oral conditions are relatively stable, with dental visits, we can ensure that your precious child's teeth develop correctly and healthily.",
-            "By creating a calm and healthy environment and offering necessary guidance, we provide you, esteemed parents, with the path to a perfectly healthy smile.",
-            "For free consultation and specialized assessment, fill out the appointment reservation form or give us a call.",
-          ],
+          content: {
+            point1:
+              "Your child's mouth undergoes constant changes as they grow.",
+            point2:
+              "While an adult's oral conditions are relatively stable, with dental visits, we can ensure that your precious child's teeth develop correctly and healthily.",
+            point3:
+              "By creating a calm and healthy environment and offering necessary guidance, we provide you, esteemed parents, with the path to a perfectly healthy smile.",
+            point4:
+              "For free consultation and specialized assessment, fill out the appointment reservation form or give us a call.",
+          },
         },
-      ],
+      },
     },
     laminate: {
       title: "Everything about Dental Veneers",

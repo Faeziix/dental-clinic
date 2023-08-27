@@ -77,125 +77,140 @@ const dictionary = {
   },
   Services: {
     implant: {
-      title: "Everything you need to know about implants",
-      subtitle:
-        "Benefits, treatment details, maintenance, costs, and complimentary consultations",
+      title: "همه‌چیز درباره ایمپلنت دندان",
+      subtitle: "مزایا، شرایط درمان، نگه‌داری، هزینه و مشاوره رایگان",
       description:
-        "Implants are the most natural and durable solution for replacing missing teeth. They are made of titanium and are placed in the jawbone. After a few months, the implant is integrated into the bone and can be used as a base for a crown, bridge, or denture.",
+        "ایمپلنت های دندانی، ساختارهای مصنوعی هستند که جراح دندان در استخوان فک فرد قرار می دهد. اگر یک یا چند دندان خود را از دست داده‌اید؛ ممکن است به ایمپلنت دندان احتیاج داشته باشید. ",
       toc: {
         whatIsImplant: {
-          title: "What is a Dental Implant?",
-          href: "#what-is-implant",
+          title: "ایمپلنت دندان چیست؟",
         },
         advantages: {
-          title: "Advantages of Implants vs. Dentures",
-          href: "#advantages",
+          title: "مزایا ایمپلنت در مقابل دندان‌مصنوعی چیست؟",
         },
 
         maintenance: {
-          title: "How to Maintain and Care for Dental Implants?",
-          href: "#maintenance",
+          title: "نگه‌داری و مراقبت از ایمپلنت دندان چگونه است؟",
         },
         suitable: {
-          title: "Is Dental Implant Suitable for Everyone?",
-          href: "#suitable",
+          title: "آیا ایمپلنت برای همه افراد مناسب هست؟",
         },
         pain: {
-          title: "Does Dental Implant Cause Pain?",
-          href: "#pain",
+          title: "ایمپلنت درد دارد؟",
         },
         cost: {
-          title: "Cost of Dental Implants",
-          href: "#cost",
+          title: "هزینه ایمپلنت دندان",
         },
         summary: {
-          title: "Dental Implants at a Glance",
-          href: "#summary",
+          title: "ایمپلنت دندان در یک نگاه",
         },
       },
-      sections: [
-        {
-          title: "ایمپلنت چیست؟",
-          content: [
-            "ایمپلنت دندان، جایگزین دندان ازدست‌رفته می شود. ما با دستگاه‌های پیچ مانند، ایمپلنت را در استخوان فک قرار می‌دهیم. ",
-            "We craft custom crowns (veneers) to perfectly match the shape and color of your teeth.",
-            "We assure you that the appearance and feel of the veneers will be just like your natural teeth.",
-          ],
-        },
-        {
-          title: "What are the advantages of implants compared to dentures?",
-          content: "Implants offer several advantages over removable dentures.",
-          list: {
-            title: "Advantages of Implants:",
-            points: [
-              "More natural and comfortable.",
-              "Higher success rate.",
-              "Improves chewing function.",
-              "Reduces the risk of cavities in neighboring teeth.",
-              "Preserves bone health at the implant site.",
-              "Decreases sensitivity in adjacent teeth.",
-              "No need to remove and clean every night.",
-            ],
+      sections: {
+        section1: {
+          title: "ایمپلنت دندانی چیست؟",
+          content: {
+            point1:
+              "ایمپلنت دندان، جایگزین دندان ازدست‌رفته می شود. ما با دستگاه‌های پیچ مانند، ایمپلنت را در استخوان فک قرار می‌دهیم.",
+            point2:
+              "تاج(روکش) را به صورت سفارشی، متناسب با فرم دهان و رنگ دندان‌هایتان می‌سازیم. ",
+            point3:
+              "این تضمین را به شما می‌دهیم که ظاهر و حس روکش‌ها، مانند دندان‌های طبیعی شما خواهند بود.",
           },
         },
-        {
-          title: "Care and Maintenance of Dental Implants",
-          content: [
-            "Dental implants, like regular teeth, require care and maintenance.",
-            "After undergoing dental implant surgery, it's important to continue regular brushing and flossing (this not only maintains oral health but also contributes to the longevity of your implants).",
-            "To monitor your implants and ensure the health of your teeth and gums, it's crucial to visit the dental office every 6 months for professional cleaning.",
-            "Proper care and regular dental visits play a key role in maintaining the health and durability of your dental implants.",
-          ],
-        },
-        {
-          title: "Are Dental Implants Suitable for Everyone?",
-          content: [
-            "Dental implants, despite their numerous advantages, are not suitable for everyone.",
-            "We ensure that implant devices bond with the jawbone securely.",
-            "Therefore, your bones must be healthy prior to implant surgery.",
-          ],
-        },
-        {
-          title: "Does Dental Implant Surgery Hurt?",
-          quote:
-            "Hey Doctor, I heard getting implants hurts a lot! I was so freaked out, I kept putting off fixing my teeth... Now, I'm seriously regretting it :(",
-          content: [
-            "During the procedure, you will be under local anesthesia, so you won't experience any pain.",
-            "Additionally, using a cold compress can help reduce a significant amount of discomfort. We also provide you with pain relievers to bid farewell to any pain!",
-            "However, it's worth mentioning that pain tolerance varies among individuals, and some patients describe implant pain similar to toothache.",
-            "Many individuals refrain from seeking treatment due to their fear of implant-related pain. However, postponing treatment will only lead to an exacerbation of discomfort and potential future expenses.",
-            "Rest assured, taking proactive steps toward improving your dental health is advisable.",
-          ],
-        },
-        {
-          title: "Cost of Dental Implants",
-          quote: {
-            title: "A Beautiful Smile for Everyone",
-            content: {
-              paragraph:
-                "Everyone deserves a beautiful smile, regardless of their budget! With our designed payment plans and installment options, you can achieve it too.",
+        section2: {
+          title: "مزایای ایمپلنت در مقابل دندان‌مصنوعی چیست؟",
+          content:
+            "ایمپلنت‌ها، دارای چندین مزیت نسبت به دندان‌های مصنوعی متحرک هستند. ",
+          list: {
+            title: "مزایای ایمپلنت:",
+            points: {
+              point1: "طبیعی‌تر و راحت‌تر است.",
+              point2: "درصد موفقیت بالاتری دارد.",
+              point3: "عملکرد جویدن را بهبود می‌بخشد.",
+              point4: "منجر به کاهش خطر ایجاد حفره در دندان‌های مجاور می‌شود.",
+              point5:
+                "باعث نگهداری بهتر استخوان در محل دندان ازدست‌رفته می‌شود.",
+              point6: "حساسیت در دندان‌های مجاور را کاهش می‌دهد.",
+              point7: "لازم نیست هر شب بیرون آورده و تمیز شود.",
             },
           },
-          paragraph: [
-            "The cost of dental implant surgery varies for each individual and can be influenced by the following factors:",
-            "After examination, we will provide you with several of the best treatment plans tailored to your teeth and prioritize the necessary services according to your budget.",
-          ],
-          factors: [
-            "The number and types of implants required.",
-            "The location of the implants within the jaw.",
-          ],
         },
-        {
-          title: "Dental Implants at a Glance",
-          content: [
-            "Dental implants serve as replacements for lost teeth and offer long-term benefits.",
-            "After an examination and necessary imaging, it can be determined whether dental implants are a suitable treatment for you.",
-            "Implant pain is minimal, and delaying treatment will only prolong any discomfort.",
-            "Implant maintenance is akin to caring for natural teeth, requiring professional visits every six months.",
-            "The cost of dental implants varies based on factors such as the number and types of implants needed and their placement within the jaw.",
-          ],
+        section3: {
+          title: "نگه‌داری و مراقبت از ایمپلنت دندان چگونه است؟",
+          content: {
+            point1:
+              "دندان‌های مصنوعی مانند دندان‌های معمولی، به مراقبت و نگهداری نیاز دارند.",
+            point2:
+              "پس از اینکه تحت عمل جراحی ایمپلنت دندان قرار گرفتید، باید به مسواک زدن و نخ‌دندان کشیدن منظم ادامه دهید (این کار علاوه بر سلامت دندان‌ها، به افزایش عمر ایمپلنت شما، کمک میکند).",
+            point3:
+              "برای نظارت بر ایمپلنت‌ها و اطمینان از سالم بودن دندان‌ها و لثه‌های شما، مهم است که هر 6 ماه یک بار برای تمیز کردن حرفه‌ای به مطب مراجعه کنید.",
+            point4:
+              "مراقبت مناسب و بازدیدهای مرتب از دندان‌پزشک نقش کلیدی در حفظ سلامت و دوام ایمپلنت‌های دندانی دارند.",
+          },
         },
-      ],
+        section4: {
+          title: "آیا ایمپلنت برای همه افراد مناسب هست؟",
+          content: {
+            point1:
+              "ایمپلنت دندان با وجود همه مزایایی که دارد، برای همه مناسب نیست.",
+            point2:
+              "ما اطمینان خاطر پیدا می‌کنیم که دستگاه‌های کاشت با استخوان فک پیوند داشته باشند.",
+            point3:
+              "بنابراین، استخوان‌های شما قبل از انجام جراحی ایمپلنت، باید سالم باشند.",
+          },
+        },
+        section5: {
+          title: "ایمپلنت دندان درد دارد؟",
+          quote:
+            "خانم دکتر شنیده بودم ایمپلنت خیلی درد داره! از ترسش، هی دست‌دست میکردم دندونامو درست کنم ...\nالان خیلی پشیمونم :(",
+          content: {
+            point1:
+              "در حین انجام کار شما تحت بی حسی موضعی قرار دارید؛ پس دردی نخواهید داشت.",
+            point2:
+              "بعد از آن، با گذاشتن پرس یخ، می‌توانید تا حد بسیاری درد را کاهش دهید. همچنین، برای شما مسکن‌هایی را تجویز میکنیم تا با درد خداحافظی کنید!",
+            point3:
+              "البته شایان به ذکر هست که تحمل درد در افراد متفاوت می‌باشد و برخی مراجعه کننده‌ها، درد ایمپلنت را شبیه به درد کشیدن دندان توصیف میکنند.",
+            point4:
+              "بسیاری از افراد به دلیل ترس از درد ایمپلنت، از اقدام به درمان خودداری می‌کنند. اما به تاخیر انداختن درمان، فقط باعث بیشتر شدن درد و هزینه در آینده خواهد شد...",
+            point5: "نگران نباشید و برای خوب شدن دندونتون اقدام کنید.",
+          },
+        },
+        section6: {
+          title: "هزینه ایمپلنت دندان",
+          quote: {
+            title: "همه شایسته لبخند زیبا هستند",
+            content: {
+              paragraph:
+                "همه شایسته لبخند زیبا هستند. مهم نیست چه بودجه‌ای داری! با طرح‌های پرداخت و شرایط اقساطی‌ای که تدارک دیدیم؛ توهم میتونی به دستش بیاری.",
+            },
+          },
+          paragraph: {
+            point1:
+              "هزینه جراحی ایمپلنت دندان برای هر فرد، متفاوت است و عوامل زیر می‌توانند بر آن تأثیر بگذارند:",
+            point2:
+              "پس از معاینه، چندتا از بهترین طرح درمانی، مخصوص دندان‌های شما را می‌نویسیم و خدمات لازم را متناسب با بودجه شما، اولویت‌بندی می‌کنیم.",
+          },
+          factors: {
+            factor1: "تعداد و انواع ایمپلنت‌های مورد نیاز.",
+            factor2: "محل ایمپلنت‌ها در داخل فک.",
+          },
+        },
+        section7: {
+          title: "ایمپلنت دندان در یک نگاه",
+          content: {
+            point1:
+              "ایمپلنت‌های دندانی جایگزین دندان‌های از دست رفته می‌شوند و مزایای بلندمدتی دارند.",
+            point2:
+              "پس از معاینه و عکس‌برداری‌های مورد نیاز، میتوان مشخص کرد که ایمپلنت دندانی، درمان مناسبی برای شما می‌باشد یا خیر.",
+            point3:
+              "درد ایمپلنت بسیار کم میباشد و به تعویق انداختن درمان، مدت و درد آن را بیشتر خواهد کرد.",
+            point4:
+              "نگه‌داری ایمپلنت، همانند دندان طبیعی می‌باشد و هر شش‌ماه، برای تمیز کردن حرفه‌ای، باید به مطب مراجعه کنید.",
+            point5:
+              "هزینه ایمپلنت به موارد مختلفی، مانند تعداد و انواع ایمپلنت‌های مورد نیاز و محل آن‌ها در داخل فک بستگی دارد.",
+          },
+        },
+      },
     },
     children: {
       title: "Everything you need to know about children's dentistry",
