@@ -110,9 +110,7 @@ function Children() {
           <div className="mb-6 mx-auto w-fit">
             <People />
           </div>
-          <p className="text-center">
-            {dict("sections.why-brush.content.point3")}
-          </p>
+          <p className="">{dict("sections.why-brush.content.point3")}</p>
         </section>
 
         <section id="when-brush" className="mx-auto">
@@ -156,7 +154,11 @@ function Children() {
               className="w-full"
             />
             <div className="relative">
-              <Checkmark className="absolute right-0 w-6 h-6 md:top-0" />
+              <Checkmark
+                className={`absolute ${
+                  locale == "en" ? "left-0" : "right-0"
+                } w-6 h-6 md:top-0`}
+              />
               <h4 className="font-medium md:leading-9 text-dark flex indent-7 relative">
                 {dict("sections.0-9.content.point3")}
               </h4>
@@ -177,8 +179,16 @@ function Children() {
           <p className="mb-5">{dict("sections.9-12.content.point3")}</p>
 
           <div className="relative">
-            <StarsGroupIcon className="w-10 absolute -right-4 -top-4" />
-            <p className="md:text-3xl pr-4 text-2xl md:leading-[3rem] text-accent font-medium">
+            <StarsGroupIcon
+              className={`w-10 absolute ${
+                locale == "fa" ? "-right-4" : "-left-6"
+              } -top-4`}
+            />
+            <p
+              className={`md:text-3xl ${
+                locale == "fa" ? "pr-4" : "pl-4"
+              } text-2xl md:leading-[3rem] text-accent font-medium`}
+            >
               {dict("sections.9-12.content.point4")}
             </p>
           </div>

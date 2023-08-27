@@ -213,202 +213,221 @@ const dictionary = {
       },
     },
     children: {
-      title: "Everything you need to know about children's dentistry",
+      title: "همه‌چیز درباره دندان اطفال",
       subtitle:
-        "Timing of Tooth Eruption, Dealing with Children's Fear, and Necessary Dental Actions",
-      paragraph:
-        "As you are aware, many oral and dental issues stem from childhood. Without proper dental care, children may face tooth decay and diseases that can lead to a lifetime of pain and complications.",
+        "زمان رویش دندان‌ها، مقابله با ترس کودکان و اقدامات دندانپزشکی لازم",
+      description:
+        "همانطور که می‌دانید ریشه بسیاری از مشکلات دهان و دندان در دوران کودکی است. بدون مراقبت دندانپزشکی مناسب، کودکان با پوسیدگی دهان و بیماری مواجه می‌شوند که می‌تواند یک عمر درد و عوارض ایجاد کند.",
       toc: {
-        whyBrush: {
-          title: "Why Brush Baby Teeth?",
-          href: "#why-brush",
+        "why-brush": "چرا دندان‌های شیری را مسواک بزنیم؟",
+        "when-brush": "چه سنی مسواک‌زدن کودکم را شروع کنم؟",
+        "how-brush": "5 راه طلایی برای ترغیب کودک به مسواک‌زدن",
+        "why-visit": "چرا از سن کم، کودکمان را به دندانپزشکی ببریم؟",
+        "how-visit": "چگونه ترس کودک خود از دندانپزشکی از بین ببریم؟",
+        fluoride:
+          "فلوراید تراپی و فیشور سیلانت؛ دو راه برای مراقبت از دندان کودکان",
+        parents: "پیامی به شما، والدین عزیز",
+      },
+      sections: {
+        "why-brush": {
+          title: "چرا دندان‌های کودک باید مسواک زده شوند؟",
+          content: {
+            point1:
+              "مراقبت از و حفظ سلامت دهان و دندان کودکان در دوران ابتدایی زندگی، رشد مناسب لثه‌ها را ترویج می‌دهد و اطمینان می‌یابد که فضای لازم برای رشد دندان‌های آینده فراهم شود. دندان‌های شیری پوسیده می‌توانند باعث اختلال در تغذیه و گفتار کودک شوند.",
+            point2:
+              "دندان‌های شیری پوسیده محیط نامناسبی را برای رشد دندان‌های دائمی ایجاد می‌کنند اگر زودتر از موعد از دندان‌های پوسیده خود رها شوند، این موضوع می‌تواند منجر به عدم تراز دندان‌ها شود.",
+            point3:
+              "علاوه بر این، تمامی دندان‌های شیری جایگزین‌های دائمی ندارند. در برخی افراد، دندان‌های شیری ممکن است تا زمانی که بزرگ شوند، باقی بمانند.",
+          },
         },
-        whenBrush: {
-          title: "When Should I Start Brushing My Child's Teeth?",
-          href: "#when-brush",
+        "when-brush": {
+          title: "چه سنی مسواک‌زدن کودکم را شروع کنم؟",
+          content: {
+            point1:
+              " لازم است از زمان رشد اولین دندان کودک، مسواک زدن را شروع کنید. ",
+            point2:
+              " اما اقدام برای حفظ سلامت دهان و دندان کودکتان، هیچ وقت زود نیست. ",
+            point3:
+              " حتی قبل از ظاهر شدن دندان‌های کودک، سلامت لثه او مهم است. هنگامی که کودک هنوز در رحم است، دندان‌ها در زیر لثه‌ها تشکیل شده‌اند. ",
+            point4:
+              "مراقبت زودهنگام از دهان، به سالم ماندن دندان‌های رشد نکرده، کمک می‌کند و آنها را تشویق می‌کند تا به درستی وارد شوند. ",
+          },
         },
-        howBrush: {
-          title: "5 Golden Ways to Encourage Child for Brushing",
-          href: "#how-brush",
+        "0-9": {
+          title: "از تولد تا 9 ماهگی: مراقبت از لثه",
+          content: {
+            point1: "بیشتر نوزادان تا 3 ماهگی هیچ دندانی ندارند.",
+            point2:
+              "حتی اگر هنوز دندانی وجود نداشته باشد، تمیز کردن روزانه لثه‌ها ایده‌ای خوب است. می‌توانید از یک دستمال تمیز و مرطوب یا مسواک نرم ویژه نوزادان برای انجام این کار استفاده کنید.",
+            point3:
+              "مسواک زدن لثه‌های کودک می‌تواند به کاهش ناراحتی از عوارض رشد دندان‌ها و تحریک رویش آنها کمک کند.",
+            point4:
+              "اگر هر کدام از دندان‌های کودک تا این سن بیرون زده شده باشند، آنها را با مسواک نرم و کمی خمیر دندان حاوی فلوراید دو بار در روز مسواک بزنید.",
+            point5: "بهترین زمان برای این کار پس از تغذیه است.",
+          },
         },
-        whyVisit: {
-          title: "Why Take Our Children to the Dentist from an Early Age?",
-          href: "#why-visit",
+        "9-12": {
+          title: "از 9 تا 12 ماهگی: مسواک‌زدن دندان‌های جدید",
+          content: {
+            point1:
+              "در حال حاضر، کم‌کم دندان‌های کودک شما از لثه خارج می‌شوند.",
+            point2:
+              "این دندان‌ها را دو بار در روز (با استفاده از کمی خمیر دندان حاوی فلوراید) و همچنین لثه‌هایی که هنوز دندانی در آنها ظاهر نشده، مسواک بزنید.",
+            point3:
+              "اگر کودک تا اولین سالگرد تولدش هنوز دندانی ندارد، نگران نباشید و مسواک‌زدن را ادامه دهید.",
+            point4:
+              "به طور ناگفته از تعداد دندان‌های کودک شما، زمان مناسبی برای ترتیب اولین ویزیت دندانپزشکی است.",
+          },
         },
-        howVisit: {
-          title: "How to Ease Your Child's Fear of Dentistry?",
-          href: "#how-visit",
+        "1-3": {
+          title: "1 تا ۳ سالگی: به مسواک زدن و ملاقات با دندانپزشک ادامه دهید.",
+          content: {
+            point1:
+              "از آنجایی که دهان کودک شما پر از دندان می شود، مهم است که یک روال منظم مسواک زدن حداقل دو بار در روز با خمیر دندان حاوی فلوراید را رعایت کنید.",
+            point2:
+              "سعی کنید کودک خود را تشویق کنید تا بعد از مسواک زدن عادت به تف کردن کند.",
+            point3:
+              "اگر کودک شما تا 18 ماهگی هنوز دندان نداشت، حتماً با دندانپزشک خود ملاقاتی داشته باشید تا در مورد تاخیر در رشد دندان‌ها صحبت کنید.",
+          },
+          image_description: "کیمیا جون، یکی از کوچولوهای مطبمون",
+        },
+        "3-6": {
+          title: "۳ تا ۶ سالگی: کودک را به استفاده از مسواک، مشتاق کنید.",
+          content: {
+            point1:
+              "در این مرحله کودک باید یادگیری مسواک زدن را شروع کند. توصیه می شود که میزان فلوراید خمیردندان را روی مسواک به اندازه نخود افزایش دهید.",
+            point2:
+              "شما همچنان باید به کودک خود در مسواک زدن کمک کنید تا مطمئن شوید که مسواک زدن موثر است.",
+            point3:
+              "کودک خود را تشویق کنید تا خمیر دندان اضافی را بیرون بی‌اندازد و از قورت دادن آن خودداری کند.",
+          },
+        },
+        "how-brush": {
+          title: "5 راه طلایی مشتاق کردن کودک به مسواک زدن",
+          content:
+            "احتمالاً تا حدود هفت سالگی قادر نخواهد بود خوب مسواک بزند، اما به محض اینکه تمایل و توانایی این کار را داشت، بهتر است بگذارید خودش به تنهایی این کار را کند.",
+          sections: {
+            "choose-toothbrush": {
+              title: "بگذارید مسواکش را خودش انتخاب کند:",
+              description:
+                "یک روز را برای خرید مسواک مشخص و کودکتان را به داروخانه ببرید یا به شکل آنلاین مسواک‌های مخصوص کودکان را با هم نگاه کنید و اجازه دهید خودش شکل و رنگ مسواکش را انتخاب کند.",
+            },
+            "watch-you-brush": {
+              title: "بگذارید به مسواک زدنتان نگاه کند:",
+              description:
+                "کودکان نوپا عاشق تقلید کردن هر کاری هستند که والدین‌شان انجام می‌دهند، بنابراین ارزشش را دارد که مطمئن شوید یکی از این کارها مسواک زدن است. اجازه دهید او ببیند شما با مسواک چه کاری انجام می‌دهید و چگونه مسواک می‌زنید تا سعی کند آن را تقلید کند.",
+            },
+            "name-teeth": {
+              title: "روی دندان‌هایش اسم بگذارید:",
+              description:
+                "شاید اسم گذاشتن روی هر دندان در حین مسواک زدن، به کودک کمک کند تا دندانی را برای مسواک زدن، فراموش نکند. این کار حس عدالت‌خواهی بچه‌ها را تحریک می‌کند و به باز نگه داشتن دهانش هم کمک خواهد کرد.",
+            },
+            "find-plaque-spots": {
+              title: "نقاط جاافتاده را پیدا کنید:",
+              description:
+                "بعد از مسواک زدن دندان‌های یکدیگر را نگاه کنید تا ببینید آیا تمیز شده‌اند یا نه. به او بگویید شما برخی نقاطی را که او در دندان‌هایش جا انداخته پیدا می‌کنید و اجازه دهید او هم نقاط جاافتاده‌ٔ روی دندان‌های شما را پیدا کند.",
+            },
+            "make-rinsing-fun": {
+              title: "مرحلهٔ آبکشی را جذاب‌تر کنید:",
+              description:
+                "از یک لیوان برای آبکشی مخصوص با رنگ‌ و طرح شاد استفاده کنید تا هم یاد بگیرد که شیر آب را باز نگذارد و هم ماجرا برایش جذاب‌تر شود، چون بدون شک این پر و خالی کردن آب در دهان و سپس توی روشور، بخش مورد علاقه‌ٔ یک کودک نوپاست!",
+            },
+          },
+        },
+        "why-visit": {
+          title: "چرا از سن کم، کودکمان را به دندانپزشکی ببریم؟",
+          quote:
+            "<p>خانم دکتر ! سن کودک من خیلی کمه؛ دندون‌های شیری هم که میفتن...</p><p>پس چرا اذیتش کنم و ببرمش دندونپزشکی!؟</p>",
+          quote_bubble: {
+            line1:
+              "من هنوز کامل درنیومدم!\nتروخدا مراقبم باش تا سالم رشد کنم :(",
+          },
+          content: {
+            point1:
+              "کودکان بسیاری داریم که با این تفکر اشتباه والدینشان، به مطب دندانپزشکی مراجعه نمی‌کنند.",
+            point2:
+              "آنها همیشه مایلند بدانند که چرا حفظ دندان اولیه اجباری است، در حالی که قرار است به طور طبیعی بیفتند و راه را برای مجموعه ای از دندان های جدید باز کنند!",
+            point3:
+              "به غیر از پوسیدگی دندان، سایر تغییرات رشدی نیز، نیاز به ارزیابی دارند. تراز مناسب دندان‌ها در دهان کودک برای رشد طبیعی و رشد فک ضروری است.",
+            point4:
+              "برخی از کودکان در طول سال‌های رشد خود، دندان‌های نامناسبی دارند. اینجاست که کودک، نیاز به مداخله دندانپزشک دارد.",
+            point5:
+              "نادیده گرفتن مسائل مربوط به تراز نامناسب دندان در کودک می‌تواند منجر به نقص های دندانی و همچنین اسکلتی در کودک شود.",
+            point6:
+              "ما می‌کوشیم که کودک در طول خدمات، احساس گرمی و صمیمیت داشته باشد تا بتواند با دندانپزشک و والدین در سفر سلامت دهان و دندان خود، همکاری کند.",
+          },
+        },
+        "how-visit": {
+          title: "چگونه ترس کودک خود از دندانپزشکی از بین ببریم؟",
+          content: {
+            point1:
+              "ترس از دندانپزشک بسیار رایج است. در حالی که داشتن مقداری اضطراب در مورد دندانپزشک قابل درک است، اما نباید مانع سلامت و بهداشت دهان و دندان دلبندتان شود. 'رفتن به دندانپزشک' بخش مهمی از آن است.",
+            point2:
+              "به همین دلیل است که تیم دندانپزشکی دکتر سهیلا کریمی تلاش می‌کند تا تجربه رفتن به دندانپزشک را تا حد امکان برای کودکان سرگرم کننده و ایمن کند.",
+            point3:
+              "برای رزرو وقت تماس بگیرید؛ با مشاوره تلفنی همکاران ما، کودک عزیزتان همراه شما و با اطلاع او، به راحتی و بدون ترس به مطب مراجعه کند.",
+          },
         },
         fluoride: {
           title:
-            "Fluoride Therapy and Sealant: Two Ways to Care for Children's Teeth",
-          href: "#fluoride",
+            "فلوراید تراپی و فیشور سیلانت؛ دو راه برای مراقبت از دندان کودکان",
+          "fluoride-therapy": {
+            title: "فلورایدتراپی:",
+            point1:
+              "شیارپوشی دندان یا فیشور سیلانت از پوسیدگی دندان در کودکان جلوگیری می‌کند.",
+            point2:
+              "یون فلوراید در هر خمیر دندان، دهان شویه و وارنیل و ژل های حرفه ای (که در مطب دندانپزشکی استفاده می شوند) به مینای دندان های نابالغ نفوذ کرده و باعث می شود دندان نسبت به روند پوسیدگی مقاوم ترشود.",
+          },
+          "tips-fluoride-therapy": {
+            title: "نکاتی در مورد فلورایدتراپی:",
+            points: {
+              point1: "برای انجام فلوراید تراپی نیاز به بی حسی موضعی نیست.",
+              point2:
+                "بعد از فلوراید تراپی، کودک نباید تا نیم ساعت دهان را شسته و یا آب بنوشید.",
+              point3:
+                "معمولا تا چند ساعت بعد از فلوراید تراپی بهتر است مسواک زده نشود تا فلوراید مدت بیشتری روی دندان ها باقی بماند.",
+              point4:
+                "جهت افزایش اثر فلوراید و باقی ماندن بیشتر آن بهتر است از خوردن غذاهای سفت و ساینده در آن روز بعد از فلوراید تراپی پرهیز شود.",
+            },
+          },
+          "fissure-sealant-therapy": {
+            title: "فیشورسیلنت‌تراپی:",
+            point1:
+              "تقریبا اوایل شش‌سالگی، اولین دندان دائمی آسیاب که آسیای بزرگ است؛ رویش می‌کند.",
+            point2:
+              "در برخی از کودکان سطح جونده این دندان‌ها دارای شیارها و فرورفتگی‌های عمیقی است که با مسواک‌زدن تمیز نمی‌شوند و خورده‌ها و مواد‌غذایی و میکروب‌ها در این شیارها قرار گرفته و باعث پوسیدگی دندان میشود.",
+            point3:
+              "قبل از اینکه این شیارها پوسیده شوند، دندانپزشک می‌تواند شیارهای عمیق را با فیشور سیلنت‌تراپی کم‌عمق کند.",
+            point4:
+              "به این ترتیب با مسواک‌زدن سطح جونده دندان کاملا تمیز شده و از تجمع پلاک و خورده‌های مواد‌غذایی و میکروب‌ها در داخل شیارها و پوسیدگی جلوگیری می‌شود.",
+          },
+          "tips-fissure-sealant-therapy": {
+            title: "نکاتی در مورد فیشورسیلنت‌تراپی:",
+            points: {
+              point1:
+                "بهترین سن جهت فیشور سیلنت تراپی اولین مولر دائمی از سن شش تا هشت سالگی و برای دندان مولر دوم دائمی و آسیاهای کوچک یازده تا سیزده سالگی است.",
+              point2:
+                "این عمل میتواند برای دندانهای شیری که شیارهای عمیقی دارند و مستعد پوسیدگی هستند نیز انجام گیرد که حدود ۴-۳ سالگی انجام میشود.",
+              point3:
+                "فیشور سیلنت تراپی بدون درد و بدون تراش دندان بوده و نیازی به تزریق بی حسی ندارد.",
+              point4:
+                "با فیشور سیلنت تراپی میتوان تا حد زیادی از پوسیدگی های سطح جونده دندان پیشگیری کرد.",
+            },
+          },
         },
         parents: {
-          title: "A Word with You, Dear Parents",
-          href: "#parents",
+          title: "سخنی با شما والدین عزیز",
+          content: {
+            point1: "دهان کودک به طور مداوم دستخوش تغییرات مختلفی می شود.",
+            point2:
+              "در حالی که شرایط دهان یک بزرگسال نسبتاً پایدار است. از این رو، با مراجعه به دندانپزشکی می‌توانیم این اطمینان را بدهیم که دندان‌های فرزند دلبندتان به درستی و سالم رشد کنند.",
+            point3:
+              "با ایجاد محیطی آرام و سالم و همچنین ارایه مشاوره لازم خدمت شما والدین گرامی، راه را برای لبخندی کاملا سالم باز می‌کنیم.",
+            point4:
+              "برای مشاوره رایگان و ارزیابی تخصصی، فرم رزرو وقت را پر کرده و یا تماس حاصل فرمایید.",
+          },
         },
       },
-      sections: [
-        {
-          title: "Why Should We Brush Baby Teeth?",
-          content: [
-            "Caring for and maintaining the oral health of children during their early years promotes proper gum growth, ensuring the necessary space for future tooth growth. Decayed baby teeth can lead to disruptions in a child's nutrition and speech.",
-            "Decayed baby teeth can create an unfavorable environment for the growth of permanent teeth if they fall out prematurely, potentially causing misalignment.",
-            "Additionally, not all baby teeth have permanent replacements. In some individuals, baby teeth might last throughout their lifetime.",
-          ],
-        },
-        {
-          title: "When Should I Start Brushing My Child's Teeth?",
-          content: [
-            "It's important to start brushing your child's teeth from the time their first tooth emerges. However, taking steps to maintain your child's oral and dental health is never too early.",
-            "Even before your child's teeth become visible, the health of their gums is essential. Teeth have already formed beneath the gums while your child is still in the womb.",
-            "Early oral care contributes to the healthy development of emerging teeth, encouraging them to come in properly.",
-          ],
-        },
-        {
-          title: "Birth to 9 Months: Gum Care",
-          content: [
-            "Most infants won't have any teeth before 3 months of age.",
-            "Even if there are no teeth yet, daily cleaning of the gums is a good idea. You can do this with a clean, damp cloth or a soft infant toothbrush.",
-            "Brushing your child's gums can help alleviate the discomfort of teething and stimulate tooth growth.",
-            "If any of your child's teeth have come in by this age, brush them with a soft toothbrush and a small amount of fluoride toothpaste twice a day.",
-            "The best time for this is after feeding.",
-          ],
-        },
-        {
-          title: "9 to 12 Months: Brushing New Teeth",
-          content: [
-            "By now, your child probably has a few teeth that have erupted from the gums.",
-            "Brush these teeth twice a day (using only a smear of fluoride toothpaste) and the gums where no teeth have come in yet.",
-            "If your child still doesn't have any teeth by their first birthday, don't worry and continue brushing.",
-            "Regardless of the number of your child's teeth, it's time to schedule their first dental visit.",
-          ],
-        },
-        {
-          title: "1 to 3 Years: Continue Brushing and Dental Visits",
-          content: [
-            "As your child's mouth fills with teeth, it's important to establish a regular routine of brushing at least twice a day with fluoride toothpaste.",
-            "Encourage your child to spit out the toothpaste after brushing.",
-            "If your child is 18 months old and still doesn't have teeth, be sure to have a dental visit to discuss any concerns about delayed tooth growth.",
-          ],
-          image_description: "Kimia, one of our young patients at the clinic",
-        },
-        {
-          title: "3 to 6 Years: Encourage Enthusiastic Brushing",
-          content: [
-            "At this stage, your child should start learning how to brush their teeth. It's recommended to increase the amount of fluoride toothpaste on the toothbrush to about the size of a pea.",
-            "You should still assist your child in brushing their teeth to ensure effective cleaning.",
-            "Encourage your child to spit out the excess toothpaste and avoid swallowing it.",
-          ],
-        },
-        {
-          title: "5 Golden Ways to Excite Your Child About Brushing",
-          content:
-            "Likely until around the age of seven, they may not be able to brush well, but as soon as they show interest and capability, it's better to let them do it on their own.",
-          sections: [
-            {
-              title: "Let Them Choose Their Toothbrush:",
-              paragraph:
-                "Set a specific day to buy a toothbrush and take your child to the pharmacy, or look at children's toothbrushes online together and let them choose the shape and color of their toothbrush.",
-            },
-            {
-              title: "Let Them Watch You Brush:",
-              paragraph:
-                "Young children love imitating everything their parents do, so it's worth ensuring that one of these activities is brushing teeth. Let them see you using a toothbrush and how you do it, so they try to imitate.",
-            },
-            {
-              title: "Name Their Teeth:",
-              paragraph:
-                "Putting names on each tooth while brushing might help your child remember to brush every tooth. This activity fosters a sense of fairness in kids and helps in keeping their mouth open.",
-            },
-            {
-              title: "Find the Plaque Spots:",
-              paragraph:
-                "After brushing, examine each other's teeth to see if they're clean or not. Tell them that you found certain spots where they missed while brushing their teeth, and let them find plaque spots on your teeth too.",
-            },
-            {
-              title: "Make Rinsing More Fun:",
-              paragraph:
-                "Use a colorful and patterned cup for rinsing to make the rinsing step more appealing. This not only helps them learn not to swallow water but also makes the process more enjoyable for them. Undoubtedly, the favorite part of a young child is swishing water in their mouth and then spitting it into the sink!",
-            },
-          ],
-        },
-        {
-          title:
-            "Why should we take our child to the dentist from a young age?",
-          quote:
-            "Hey Doc! My kid is really young; they're just baby teeth anyway. So why bother taking them to the dentist and making them uncomfortable? ",
-          quote_bubble: [
-            "I haven't fully popped out yet!",
-            "Please, pretty please, watch over me so I can grow up strong and healthy from my cozy gum home :(",
-          ],
-          content: [
-            "We have many kids who, due to their parents' misconception, don't visit the dentist's office. They always want to know why it's necessary to take care of baby teeth when they're meant to fall out naturally and make way for a set of new teeth!",
-            "Apart from tooth decay, other developmental changes also need evaluation. Proper alignment of teeth in a child's mouth is crucial for natural growth and jaw development.",
-            "Some kids exhibit improper teeth alignment during their growing years. This is where a child requires dental intervention.",
-            "Neglecting issues related to improper teeth alignment in a child can lead to dental and skeletal deformities.",
-            "We try to ensure that the child feels warmth and intimacy throughout the services so that they can collaborate with the dentist and parents on the journey of oral and dental health.",
-          ],
-        },
-        {
-          title: "How to Ease Your Child's Fear of Dentistry?",
-          content: [
-            "Fear of the dentist is quite common. While having some anxiety about dentistry is understandable, it shouldn't hinder the health and hygiene of your precious one's mouth and teeth. 'Going to the dentist' is an essential part of it.",
-            "That's why the dental team of Dr. Soheila Karimi strives to make the experience of going to the dentist as enjoyable and safe as possible for children.",
-            "To schedule an appointment, give us a call. With the guidance of our colleagues through phone consultation, your dear child can comfortably and fearlessly visit the clinic with your presence and informed consent.",
-          ],
-        },
-        {
-          title:
-            "Fluoride Therapy and Dental Sealants; Two Ways to Care for Children's Teeth",
-          sections: [
-            {
-              title: "Fluoride therapy:",
-              content: [
-                "Dental sealants or fissure sealants prevent tooth decay in children.",
-                "Fluoride ions in toothpaste, mouthwash, varnish, and professional gels (used in dental clinics) penetrate the enamel of immature teeth, making them more resistant to the decay process.",
-              ],
-            },
-            {
-              title: "Tips about Fluoride Therapy:",
-              points: [
-                "Fluoride therapy does not require local anesthesia.",
-                "After fluoride therapy, your child should avoid rinsing their mouth or drinking water for at least half an hour.",
-                "It's usually recommended not to brush teeth for a few hours following fluoride therapy to allow the fluoride to remain on the teeth longer.",
-                "To enhance the effectiveness of fluoride and its retention, it's better to avoid eating hard or abrasive foods on the day following the fluoride therapy.",
-              ],
-            },
-            {
-              title: "Fissure Sealant Therapy:",
-              content: [
-                "Around the age of six, the first permanent molar, which is a large molar, starts to erupt.",
-                "In some children, the chewing surfaces of these molars have deep grooves and fissures that cannot be cleaned effectively by brushing, allowing food particles, debris, and bacteria to accumulate in these grooves and lead to tooth decay.",
-                "Before these grooves develop cavities, a dentist can apply a shallow fissure sealant therapy to make them shallower.",
-                "By doing so, the brushing can effectively clean the chewing surfaces of the tooth, preventing the accumulation of plaque, debris, and bacteria inside the grooves and consequently preventing decay.",
-              ],
-            },
-            {
-              title: "Fissure Sealant Therapy Tips:",
-              points: [
-                "The optimal age for fissure sealant therapy is the first permanent molar from ages six to eight, and for the second permanent molar and premolars, it's between eleven to thirteen years old.",
-                "This procedure can also be performed on primary teeth with deep grooves that are susceptible to decay, typically around the age of 4 to 3 years old.",
-                "Fissure sealant therapy is painless, non-invasive, and does not require local anesthesia.",
-                "Fissure sealant therapy can significantly prevent decay on the chewing surfaces of teeth.",
-              ],
-            },
-          ],
-        },
-        {
-          title: "A Word to Our Dear Parents",
-          content: [
-            "Your child's mouth undergoes constant changes as they grow.",
-            "While an adult's oral conditions are relatively stable, with dental visits, we can ensure that your precious child's teeth develop correctly and healthily.",
-            "By creating a calm and healthy environment and offering necessary guidance, we provide you, esteemed parents, with the path to a perfectly healthy smile.",
-            "For free consultation and specialized assessment, fill out the appointment reservation form or give us a call.",
-          ],
-        },
-      ],
     },
     laminate: {
       title: "Everything about Dental Veneers",

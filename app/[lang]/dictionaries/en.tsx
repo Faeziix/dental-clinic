@@ -239,10 +239,12 @@ let dictionary = {
           title: "When Should I Start Brushing My Child's Teeth?",
           content: {
             point1:
-              "It's important to start brushing your child's teeth from the time their first tooth emerges. However, taking steps to maintain your child's oral and dental health is never too early.",
+              "It's important to start brushing your child's teeth from the time their first tooth emerges. ",
             point2:
-              "Even before your child's teeth become visible, the health of their gums is essential. Teeth have already formed beneath the gums while your child is still in the womb.",
+              "However, taking steps to maintain your child's oral and dental health is never too early.",
             point3:
+              "Even before your child's teeth become visible, the health of their gums is essential. Teeth have already formed beneath the gums while your child is still in the womb.",
+            point4:
               "Early oral care contributes to the healthy development of emerging teeth, encouraging them to come in properly.",
           },
         },
