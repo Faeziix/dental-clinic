@@ -1,3 +1,4 @@
+"use client";
 import Hero from "./landingPage/Hero";
 import Introduction from "./landingPage/Introduction";
 import Services from "./landingPage/Services";
@@ -5,10 +6,10 @@ import Journey from "./landingPage/Journey";
 import Testimonials from "./landingPage/Testimonials";
 import Instagram from "./landingPage/Instagram";
 import ReservationForm from "./landingPage/ReservationForm";
-import { useDictionary } from "./dictionaries";
+import { useTranslations } from "next-intl";
 
 export default function Home({ params: { lang } }) {
-  const [dict] = useDictionary("landingPage"); // en
+  const dict = useTranslations("landingPage");
 
   return (
     <main className="flex flex-col items-center justify-between gap-16 md:gap-32 pb-8">

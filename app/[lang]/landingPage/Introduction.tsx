@@ -37,7 +37,7 @@ function Introduction({ lang, dict }) {
         className="flex items-center gap-2 mb-6"
       >
         <Image src={DentistIcon} alt="Dentist Icon" width={40} />
-        <h2>{dict.landingPage.introduction.title}</h2>
+        <h2>{dict("introduction.title")}</h2>
       </motion.div>
 
       <div className="flex flex-col md:flex-row gap-4">
@@ -59,8 +59,10 @@ function Introduction({ lang, dict }) {
           animate={controls}
           className="basis-7/12"
         >
-          {dict.landingPage.introduction.subtitle.map((i) => (
-            <p className="mb-4">{i}</p>
+          {[1, 2, 3].map((i) => (
+            <p key={i} className="mb-4">
+              {dict(`introduction.description.point${i}`)}
+            </p>
           ))}
         </motion.p>
       </div>

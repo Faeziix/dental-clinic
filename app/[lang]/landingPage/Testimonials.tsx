@@ -49,12 +49,14 @@ const lightBackgroundVariant: Variants = {
 function Testimonials({ dict, lang }) {
   const [ref, controls] = useScrollAnimation();
 
-  const testimonials = dict.landingPage.testimonials.testimonials;
+  const testimonials = [1, 2, 3].map((i) =>
+    dict(`testimonials.testimonials.t${i}`)
+  );
 
   return (
     <div ref={ref} className="max-w-5xl md:px-5">
       <motion.h2 initial="hidden" animate={controls} className="pr-5 mb-6">
-        {dict.landingPage.testimonials.title}
+        {dict("testimonials.title")}
       </motion.h2>
 
       <motion.div
@@ -103,7 +105,7 @@ function Testimonials({ dict, lang }) {
             href="https://www.instagram.com/stories/highlights/17902117297715473/"
           >
             <Button withArrow radius="circle" color="neutral">
-              {dict.landingPage.testimonials.button}
+              {dict("testimonials.button")}
             </Button>
           </Link>
         </motion.div>

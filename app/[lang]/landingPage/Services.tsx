@@ -97,23 +97,23 @@ function Services({ dict, lang }) {
     {
       name: "child",
       link: "/services/children",
-      display: dict.landingPage.services.children.title,
+      display: dict("services.children.title"),
       icon: <Image src={ChildToothIcon} alt="Child Tooth Icon" />,
-      text: dict.landingPage.services.children.description,
+      text: dict("services.children.description"),
     },
     {
       name: "laminate",
       link: "/services/laminate",
-      display: dict.landingPage.services.laminate.title,
+      display: dict("services.laminate.title"),
       icon: <LaminateIcon />,
-      text: dict.landingPage.services.laminate.description,
+      text: dict("services.laminate.description"),
     },
     {
       name: "implant",
       link: "/services/implant",
-      display: dict.landingPage.services.implant.title,
+      display: dict("services.implant.title"),
       icon: <ImplantIcon />,
-      text: dict.landingPage.services.implant.description,
+      text: dict("services.implant.description"),
     },
   ];
 
@@ -126,7 +126,7 @@ function Services({ dict, lang }) {
           animate={controls}
           className="mb-6 max-w-5xl mx-auto"
         >
-          {dict.landingPage.services.title}
+          {dict("services.title")}
         </motion.h2>
         <div
           className={`relative items-end flex ${
@@ -173,7 +173,7 @@ ${
 
                 <Link className="w-full" href={service.link}>
                   <Button withArrow mode="block">
-                    {dict.landingPage.services.button}
+                    {dict("services.button")}
                   </Button>
                 </Link>
               </motion.div>

@@ -55,7 +55,7 @@ function Journey({ lang, dict }) {
 
   const journey = [
     {
-      title: dict.landingPage.journey.first.title,
+      title: dict("journey.first.title"),
       icon: <CheckmarkIcon className="w-9 h-9" />,
       image: (
         <>
@@ -69,10 +69,10 @@ function Journey({ lang, dict }) {
           </motion.div>
         </>
       ),
-      description: dict.landingPage.journey.first.description,
+      description: dict("journey.first.description"),
     },
     {
-      title: dict.landingPage.journey.second.title,
+      title: dict("journey.second.title"),
       icon: <TaskIcon className="w-9 h-9" />,
       image: (
         <>
@@ -89,10 +89,10 @@ function Journey({ lang, dict }) {
           </motion.div>
         </>
       ),
-      description: dict.landingPage.journey.second.description,
+      description: dict("journey.second.description"),
     },
     {
-      title: dict.landingPage.journey.third.title,
+      title: dict("journey.third.title"),
       icon: <StarIcon className="w-9 h-9" />,
       image: (
         <>
@@ -106,7 +106,7 @@ function Journey({ lang, dict }) {
           </motion.div>
         </>
       ),
-      description: dict.landingPage.journey.third.description,
+      description: dict("journey.third.description"),
     },
   ];
 
@@ -121,7 +121,7 @@ function Journey({ lang, dict }) {
         animate={controls}
         className="mb-16"
       >
-        {dict.landingPage.journey.title}
+        {dict("journey.title")}
       </motion.h2>
 
       <div className="flex flex-col gap-20 max-w-5xl">

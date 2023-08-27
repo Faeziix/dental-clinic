@@ -3,7 +3,7 @@ import "./globals.scss";
 import type { Metadata } from "next";
 import Footer from "@/components/layout/Footer";
 import { Raleway, Vazirmatn } from "next/font/google";
-import { useDictionary } from "./dictionaries";
+import { getDictionary } from "./dictionaries";
 
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
@@ -35,7 +35,7 @@ export default async function RootLayout({
 }) {
   let dict;
   try {
-    dict = await useDictionary(params.lang);
+    dict = await getDictionary(params.lang);
   } catch (e) {
     notFound();
   }

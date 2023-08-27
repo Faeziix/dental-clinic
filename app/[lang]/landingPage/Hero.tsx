@@ -6,12 +6,12 @@ import Link from "next/link";
 function Hero({ dict }) {
   return (
     <section className="py-16 relative text-Neutral h-[70vh] w-full md:px-24 lg:px-44 px-5 flex flex-col justify-center gap-2 font-semibold">
-      <h1 className="leading-[3.5rem]">{dict.landingPage.hero.title}</h1>
-      <h4 className="max-w-md leading-7">{dict.landingPage.hero.subtitle}</h4>
+      <h1 className="leading-[3.5rem] max-w-xl">{dict("hero.title")}</h1>
+      <h4 className="max-w-md leading-7">{dict("hero.subtitle")}</h4>
       <Link href="/reservation">
         <Button color="primary" size="lg" className="mt-4">
           <span className="w-full text-lg font-bolder grow block">
-            {dict.landingPage.hero.button}
+            {dict("hero.button")}
           </span>
         </Button>
       </Link>

@@ -33,7 +33,7 @@ const posts = [
 function Instagram({ lang, dict }) {
   return (
     <div className="px-5 max-w-5xl w-full">
-      <h1 className="mb-4">{dict.landingPage.instagram.title}</h1>
+      <h1 className="mb-4">{dict("instagram.title")}</h1>
       <div className="grid grid-cols-2 lg:grid-cols-4 justify-items-center justify-center items-center flex-wrap gap-2 mb-4">
         {posts.map((post) => (
           <div
@@ -51,9 +51,7 @@ function Instagram({ lang, dict }) {
           </div>
         ))}
       </div>
-      <h4 className="text-center mb-2">
-        {dict.landingPage.instagram.description}
-      </h4>
+      <h4 className="text-center mb-2">{dict("instagram.description")}</h4>
       <Link
         className="flex justify-center gap-2 text-accent hover:text-orange-700"
         target="_blank"

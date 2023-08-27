@@ -12,7 +12,7 @@ let dictionary = {
 
   landingPage: {
     hero: {
-      title: "Crafting Radiant Smiles <br /> with Precision and Care",
+      title: "Crafting Radiant Smiles with Precision and Care",
       subtitle:
         "Embark on a Journey to Achieving Your Ideal Smile, Guided by Personalized Care, Guaranteed Results, and State-of-the-Art Techniques.",
       button: "Book Now",
@@ -20,11 +20,14 @@ let dictionary = {
 
     introduction: {
       title: "Dr. Soheila Karimi",
-      subtitle: [
-        "I am Dr. Soheila Karimi, delighted to have assisted over 500 valued individuals during the past 5 years in achieving healthier teeth and more captivating smiles.",
-        "The crucial aspect of my dental services revolves around providing tailored treatment plans for each individual, coupled with guaranteed execution using the most up-to-date dental equipment and materials.",
-        "Our visitors are those who prioritize the health of their teeth and aspire to transform into their best selves with a more beautiful smile.",
-      ],
+      description: {
+        point1:
+          "I am Dr. Soheila Karimi, delighted to have assisted over 500 valued individuals during the past 5 years in achieving healthier teeth and more captivating smiles.",
+        point2:
+          "The crucial aspect of my dental services revolves around providing tailored treatment plans for each individual, coupled with guaranteed execution using the most up-to-date dental equipment and materials.",
+        point3:
+          "Our visitors are those who prioritize the health of their teeth and aspire to transform into their best selves with a more beautiful smile.",
+      },
     },
 
     services: {
@@ -72,11 +75,11 @@ let dictionary = {
     testimonials: {
       title: "Testimonials from our cherished visitors",
       button: "Watch More in Instagram Highlights",
-      testimonials: [
-        "Veneers have truly enhanced the natural beauty. On my way home, I couldn't take my eyes off my teeth in the mirror :) They look incredibly good. It's like I've become 10 years younger! Many thanks to Dr. Soheila and her professional team.",
-        "Just had a root canal done at your place today. Gotta say, it was awesome! Being around you guys totally killed the dental jitters. Wish I'd found you sooner; thanks a bunch for being so cool and caring!",
-        "The only dentist where pain or stress during dental procedures, especially implants and root canals, is non-existent :)",
-      ],
+      testimonials: {
+        t1: "Veneers have truly enhanced the natural beauty. On my way home, I couldn't take my eyes off my teeth in the mirror :) They look incredibly good. It's like I've become 10 years younger! Many thanks to Dr. Soheila and her professional team.",
+        t2: "Just had a root canal done at your place today. Gotta say, it was awesome! Being around you guys totally killed the dental jitters. Wish I'd found you sooner; thanks a bunch for being so cool and caring!",
+        t3: "The only dentist where pain or stress during dental procedures, especially implants and root canals, is non-existent :)",
+      },
     },
     instagram: {
       title: "Our Instagram",

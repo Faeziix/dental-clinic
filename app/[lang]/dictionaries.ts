@@ -5,6 +5,6 @@ const dictionaries = {
   fa: () => import("./dictionaries/fa").then((module) => module.default),
 };
 
-export const useDictionary = async (locale: keyof typeof dictionaries) => {
+export const getDictionary = async (locale: keyof typeof dictionaries) => {
   return await dictionaries[locale]();
 };
