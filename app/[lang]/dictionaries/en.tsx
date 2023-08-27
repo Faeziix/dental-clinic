@@ -214,11 +214,11 @@ let dictionary = {
       description:
         "As you are aware, many oral and dental issues stem from childhood. Without proper dental care, children may face tooth decay and diseases that can lead to a lifetime of pain and complications.",
       toc: {
-        "why-brush": "Why Brush Baby Teeth?",
-        "when-brush": "When Should I Start Brushing My Child's Teeth?",
-        "how-brush": "5 Golden Ways to Encourage Child for Brushing",
-        "why-visit": "Why Take Our Children to the Dentist from an Early Age?",
-        "how-visit": "How to Ease Your Child's Fear of Dentistry?",
+        whyBrush: "Why Brush Baby Teeth?",
+        whenBrush: "When Should I Start Brushing My Child's Teeth?",
+        howBrush: "5 Golden Ways to Encourage Child for Brushing",
+        whyVisit: "Why Take Our Children to the Dentist from an Early Age?",
+        howVisit: "How to Ease Your Child's Fear of Dentistry?",
         fluoride:
           "Fluoride Therapy and Sealant: Two Ways to Care for Children's Teeth",
         parents: "A Word with You, Dear Parents",
@@ -429,106 +429,102 @@ let dictionary = {
     laminate: {
       title: "Everything about Dental Veneers",
       subtitle: "Definition, Care, and Free Consultation",
-      paragraph:
+      description:
         "In life, we all long for a beautiful smile with well-aligned and white teeth. Dental veneers are one of the pathways to achieve those Hollywood-worthy smiles. If you wish to comfortably smile in your photos and gift happiness to your loved ones, don't miss out on this section!",
-      toc: [
-        {
+      toc: {
+        whatIsLaminate: "What is Dental Veneer?",
+        whyLaminate: "Why Should We Get Dental Veneers?",
+        damage: "Can Dental Veneers Damage Your Teeth?",
+        maintenance: "Maintenance and Care for Dental Veneers",
+        where: "Where to Get Dental Veneers?",
+        consultation: "Free Consultation",
+      },
+      sections: {
+        whatIsLaminate: {
           title: "What is Dental Veneer?",
-          href: "#what-is-laminate",
-        },
-        {
-          title: "Why Should We Get Dental Veneers?",
-          href: "#why-laminate",
-        },
-        {
-          title: "Can Dental Veneers Damage Your Teeth?",
-          href: "#damage",
-        },
-        {
-          title: "Maintenance and Care for Dental Veneers",
-          href: "#maintenance",
-        },
-        {
-          title: "Where to Get Dental Veneers?",
-          href: "#where",
-        },
-        {
-          title: "Free Consultation",
-          href: "#consultation",
-        },
-      ],
-      sections: [
-        {
-          title: "What is Dental Veneer?",
-          content: [
-            "These shells are attached to the front surface of teeth to change their color, shape, size, or length, and enhance their appearance.",
-            "If primary teeth decay, they won't provide proper space for permanent teeth to grow, which can lead to misalignment of permanent teeth.",
-            "In addition to their aesthetic aspect, proper functionality of dental veneers is essential. Correct and strong bonding of natural and porcelain veneers is necessary.",
-          ],
+          content: {
+            point1:
+              "These shells are attached to the front surface of teeth to change their color, shape, size, or length, and enhance their appearance.",
+            point2:
+              "If primary teeth decay, they won't provide proper space for permanent teeth to grow, which can lead to misalignment of permanent teeth.",
+            point3:
+              "In addition to their aesthetic aspect, proper functionality of dental veneers is essential. Correct and strong bonding of natural and porcelain veneers is necessary.",
+          },
           sampleWorkImage: "Sample Work of Dr. Soheila Karimi",
         },
-        {
+        whyLaminate: {
           title: "Why Choose Dental Veneers?",
-          content: [
-            "Since we create veneers for individuals just like their natural teeth and on a case-by-case basis, it's almost impossible to distinguish between veneers and natural teeth.",
-            "Due to our use of high-tech and modern materials, your veneers will be highly resistant to stains from tea and coffee.",
-          ],
-          list: [
-            "Protecting your teeth against abrasion and wear",
-            "Correcting dental imperfections",
-            "Closing dental gaps",
-            "Fixing minor misalignments of teeth",
-          ],
+          content: {
+            point1:
+              "Since we create veneers for individuals just like their natural teeth and on a case-by-case basis, it's almost impossible to distinguish between veneers and natural teeth.",
+            point2:
+              "Due to our use of high-tech and modern materials, your veneers will be highly resistant to stains from tea and coffee.",
+          },
+          list: {
+            point1: "Protecting your teeth against abrasion and wear",
+            point2: "Correcting dental imperfections",
+            point3: "Closing dental gaps",
+            point4: "Fixing minor misalignments of teeth",
+          },
         },
-        {
+        damage: {
           title: "Can Dental Laminate Damage Your Teeth?",
-          content: [
-            "No, we ask you to take X-ray images of your mouth and jaw, and then we examine your teeth to make sure dental laminate is suitable for you.",
-            "If we determine that laminate isn't the right choice for you, we recommend other options such as composite veneers, dental bonding, orthodontics, teeth whitening, or just tooth contouring.",
-            "With personalized consultation and raising your awareness, we assist you in choosing the best path for enhancing the beauty of your teeth.",
-          ],
+          content: {
+            point1:
+              "No, we ask you to take X-ray images of your mouth and jaw, and then we examine your teeth to make sure dental laminate is suitable for you.",
+            point2:
+              "If we determine that laminate isn't the right choice for you, we recommend other options such as composite veneers, dental bonding, orthodontics, teeth whitening, or just tooth contouring.",
+            point3:
+              "With personalized consultation and raising your awareness, we assist you in choosing the best path for enhancing the beauty of your teeth.",
+          },
         },
-        {
+        maintenance: {
           title: "Taking Care of Your Smile After Dental Laminate",
-          paragraphs: [
-            "Now that you've found a way to enhance your smile, it's essential to consider necessary care and scheduled visits to the dentist.",
-            "Brushing these teeth twice a day (using just a pea-sized amount of fluoride toothpaste) and taking care of your gums where no teeth have emerged yet is important.",
-            "Factors that can cause discoloration of your laminate:",
-          ],
-          sections: [
-            {
-              title: "Factors that can cause discoloration of your laminate:",
-              points: [
-                "Consuming excessive colored beverages and foods",
-                "Overuse of improper mouthwash",
-                "Using certain specific medications",
-                "Neglecting oral and dental hygiene",
-                "Excessive use of fluoride",
-              ],
-            },
-            {
-              title: "Steps to prevent:",
-              points: [
-                "Try to brush your teeth at least twice a day.",
-                "Use dental floss daily.",
-                "Use an appropriate mouthwash with the advice of your dentist.",
-                "Reduce the consumption of colored drinks and foods.",
-                "Avoid smoking and tobacco products.",
-                "Visit the dental clinic every few months for a check-up on your teeth's condition.",
-              ],
-            },
-          ],
+          content: {
+            point1:
+              "Now that you've found a way to enhance your smile, it's essential to consider necessary care and scheduled visits to the dentist.",
+            point2:
+              "Brushing these teeth twice a day (using just a pea-sized amount of fluoride toothpaste) and taking care of your gums where no teeth have emerged yet is important.",
+            point3: "Factors that can cause discoloration of your laminate:",
+          },
+          factorsDiscoloration: {
+            title: "Factors that can cause discoloration of your laminate:",
+
+            point1: "Consuming excessive colored beverages and foods",
+            point2: "Overuse of improper mouthwash",
+            point3: "Using certain specific medications",
+            point4: "Neglecting oral and dental hygiene",
+            point5: "Excessive use of fluoride",
+          },
+          stepsPrevent: {
+            title: "Steps to prevent:",
+
+            point1: "Try to brush your teeth at least twice a day.",
+            point2: "Use dental floss daily.",
+            point3:
+              "Use an appropriate mouthwash with the advice of your dentist.",
+            point4: "Reduce the consumption of colored drinks and foods.",
+            point5: "Avoid smoking and tobacco products.",
+            point6:
+              "Visit the dental clinic every few months for a check-up on your teeth's condition.",
+          },
         },
-        {
+        where: {
           title: "Where Should We Get Veneers Done?",
-          paragraphs: [
-            "The goal of many beauty enthusiasts in getting veneers is to have whiter and more natural-looking teeth. Therefore, considering your unique circumstances, we create a personalized treatment plan to fulfill the needs and goals of your teeth.",
-            "The primary aim for many individuals seeking veneers is to achieve whiter teeth. Given that dental veneers come with a relatively higher cost and require a considerable level of skill to be carried out, it's advisable to consult an experienced dentist for their installation.",
-            "We stay up-to-date with the latest veneer techniques and technologies to ensure that our patients receive the best possible care. Dr. Soheila Karimi, with years of experience, offers all dental services to visitors in the beautiful city of Tabriz.",
-            "For a free consultation and specialized evaluation, please fill out the appointment reservation form or feel free to give us a call.",
-          ],
+          content: {
+            point1:
+              "The goal of many beauty enthusiasts in getting veneers is to have whiter and more natural-looking teeth. Therefore, considering your unique circumstances, we create a personalized treatment plan to fulfill the needs and goals of your teeth.",
+            point2:
+              "The primary aim for many individuals seeking veneers is to achieve whiter teeth. Given that dental veneers come with a relatively higher cost and require a considerable level of skill to be carried out, it's advisable to consult an experienced dentist for their installation.",
+            point3:
+              "We stay up-to-date with the latest veneer techniques and technologies to ensure that our patients receive the best possible care. ",
+            point4:
+              "Dr. Soheila Karimi, with years of experience, offers all dental services to visitors in the beautiful city of Tabriz.",
+            point5:
+              "For a free consultation and specialized evaluation, please fill out the appointment reservation form or feel free to give us a call.",
+          },
         },
-      ],
+      },
     },
   },
 

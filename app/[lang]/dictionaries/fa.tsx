@@ -430,108 +430,102 @@ const dictionary = {
       },
     },
     laminate: {
-      title: "Everything about Dental Veneers",
-      subtitle: "Definition, Care, and Free Consultation",
-      paragraph:
-        "In life, we all long for a beautiful smile with well-aligned and white teeth. Dental veneers are one of the pathways to achieve those Hollywood-worthy smiles. If you wish to comfortably smile in your photos and gift happiness to your loved ones, don't miss out on this section!",
+      title: "همه‌چیز درباره لمینت دندان",
+      subtitle: "تعریف، مراقبت‌ها و مشاوره رایگان",
+      description:
+        "همه‌ی ما در زندگی، نیازمند لبخندی زیبا با دندان‌های مرتب و سفید هستیم. لمینیت، یکی از راه‌های رسیدن به این لبخندهای هالیوودی است. اگر دوست دارید در عکس‌هایتان راحت بخندید و شادی را به اطرافیانتان هدیه دهید؛ این بخش را از دست ندید!",
       toc: {
+        whatIsLaminate: "لمینیت دندان چیست؟",
+        whyLaminate: "چرا دندان‌ها را لمینیت کنیم؟",
+        damage: "آیا لمینت دندان می‌تواند دندان‌های شما را خراب کند؟",
+        maintenance: "نگهداری و مراقبت از لمینت دندان",
+        where: "کجا لمینیت انجام بدیم؟",
+        consultation: "مشاوره رایگان",
+      },
+      sections: {
         whatIsLaminate: {
-          title: "What is Dental Veneer?",
-          href: "#what-is-laminate",
+          title: "لمینیت دندان چیست؟",
+          content: {
+            point1:
+              "این پوسته‌ها به منظور تغییر رنگ، شکل، اندازه یا طول دندان‌ها و بهبود ظاهر آن‌ها به سطح جلویی دندان‌ها چسبانده می‌شوند.",
+            point2:
+              "اگر دندان‌های شیری پوسیده بی‌افتند، جای مناسبی برای دندان‌های آینده نمی‌گیرند که می‌تواند باعث کج شدن دندان‌های دائمی شود.",
+            point3:
+              "در کنار جنبه زیبایی، عملکرد صحیح لمینت نیز مهم است و چسباندن صحیح و قوی دندان طبیعی و لمینت چینی ضروری است.",
+          },
+          sampleWorkImage: "نمونه کار لمینیت دکتر سهیلا کریمی",
         },
         whyLaminate: {
-          title: "Why Should We Get Dental Veneers?",
-          href: "#why-laminate",
+          title: "چرا دندان‌ها را لمینیت کنیم؟",
+          content: {
+            point1:
+              "از آنجایی که لمینت را برای همه افراد همانند دندان‌های اصلی و به صورت جداگانه می‌سازیم؛ بنابراین تشخیص تفاوت بین لمینت و دندان طبیعی غیرممکن است.",
+            point2:
+              "به دلیل استفاده ما از مواد با تکنولوژی بالا و مدرن، لمینیت‌های شما بسیار دربرابر لکه‌های چای و قهوه مقاوم خواهند بود.",
+          },
+          list: {
+            point1: "محافظت از دندان‌های شما در برابر سایش و فرسودگی",
+            point2: "اصلاح بدشکلی دندان",
+            point3: "برطرف نمودن فواصل دندانی",
+            point4: "رفع به‌هم‌ریختگی جزئی دندان‌ها",
+          },
         },
         damage: {
-          title: "Can Dental Veneers Damage Your Teeth?",
-          href: "#damage",
+          title: "آیا لمینت دندان می‌تواند دندان‌های شما را خراب کند؟",
+          content: {
+            point1:
+              "خیر؛ ما از شما می‌خواهیم که از دهان و فک خود با اشعه ایکس تصویربرداری کنید سپس دندان‌های شما را معاینه می‌کنیم تا مطمئن بشویم لمینت دندان برای شما مناسب است.",
+            point2:
+              "اگر تشخیص بدهیم که لمینت انتخاب مناسبی برای شما نیست، گزینه‌های دیگری مانند ونیرهای کامپوزیت، باندینگ دندان، ارتودنسی، سفید کردن دندان یا فقط کانتورینگ دندان را پیشنهاد می‌کنیم.",
+            point3:
+              "با مشاوره اختصاصی و بالا بردن آگاهی شما، به شما کمک می‌کنیم بهترین راه را برای زیبایی دندان‌هایتان انتخاب کنید.",
+          },
         },
-        care: {
-          title: "Maintenance and Care for Dental Veneers",
-          href: "#maintenance",
+        maintenance: {
+          title: "نگهداری و مراقبت از لمینت دندان",
+          content: {
+            point1:
+              "حالا که راهی برای اصلاح لبخند خود پیدا کرده‌اید؛ خیلی خوب است که مراقبت‌های لازم و ملاقات با پزشک در وقت‌های معین را مهم بشمارید.",
+            point2:
+              "مسواک‌زدن این دندان‌ها دو بار در روز (فقط با یک‌ذره از خمیر دندان حاوی فلوراید) و لثه‌هایی که هنوز هیچ دندانی در آنها ظاهر نشده است، مهم است.",
+            point3: "مواردی که باعث کدر شدن رنگ لمینت شما می‌شود:",
+          },
+          factorsDiscoloration: {
+            title: "مواردی که باعث کدر شدن رنگ لمینت شما می‌شود:",
+            point1: "مصرف بیش از اندازه نوشیدنی‌ها و مواد غذایی رنگی",
+            point2: "استفاده کردن زیاد از دهان‌شویه نامناسب",
+            point3: "مصرف برخی از داروهای خاص",
+            point4: "رعایت نکردن بهداشت دهان و دندان",
+            point5: "استفاده کردن از فلوراید به میزان زیاد",
+          },
+          stepsPrevent: {
+            title: "اقدامات لازم برای پیشگیری:",
+            point1: "سعی کنید حداقل روزی دوبار مسواک بزنید.",
+            point2: "روزانه از نخ‌دندان استفاده کنید.",
+            point3:
+              "با مشورت دندانپزشک خود از یک دهان‌شویه مناسب استفاده کنید.",
+            point4: "مصرف نوشیدنی‌ها و خوراکی‌های رنگی را کاهش دهید.",
+            point5: "از استعمال سیگار و دخانیات اجتناب کنید.",
+            point6:
+              "هر چند وقت یک بار برای چکاپ وضعیت دندان‌های خود به مطب دندانپزشکی مراجعه داشته باشید.",
+          },
         },
         where: {
-          title: "Where to Get Dental Veneers?",
-          href: "#where",
-        },
-        consultation: {
-          title: "Free Consultation",
-          href: "#consultation",
+          title: "کجا لمینیت انجام بدیم؟",
+          content: {
+            point1:
+              "هدف بسیاری از زیباجویان از انجام لمینیت، داشتن دندان‌های سفیدتر و طبیعی می‌باشد. از این رو، با توجه به شرایط منحصربه‌فرد شما، یک برنامه درمانی سفارشی ایجاد می‌کنیم که نیازها و اهداف دندان‌هایتان را برآورده کنیم.",
+            point2:
+              "به دلیل استفاده ما از مواد با تکنولوژی بالا و مدرن، لمینیت‌های شما بسیار دربرابر لکه‌های چای و قهوه مقاوم خواهند بود.",
+            point3:
+              "ما با آخرین تکنیک‌ها و فناوری‌های لمینیت، به روز می‌مانیم تا اطمینان حاصل کنیم که بیماران ما بهترین مراقبت ممکن را دریافت می‌کنند.",
+            point4:
+              "دکتر سهیلا کریمی دارای سال‌ها تجربه ارائه کلیه خدمات دندانپزشکی به مراجعه‌کنندگان را در شهر زیبای تبریز دارد.",
+            point5:
+              "برای مشاوره رایگان و ارزیابی تخصصی، فرم رزرو وقت را پر کرده و یا تماس حاصل فرمایید.",
+          },
         },
       },
-      sections: [
-        {
-          title: "What is Dental Veneer?",
-          content: [
-            "These shells are attached to the front surface of teeth to change their color, shape, size, or length, and enhance their appearance.",
-            "If primary teeth decay, they won't provide proper space for permanent teeth to grow, which can lead to misalignment of permanent teeth.",
-            "In addition to their aesthetic aspect, proper functionality of dental veneers is essential. Correct and strong bonding of natural and porcelain veneers is necessary.",
-          ],
-          sampleWorkImage: "Sample Work of Dr. Soheila Karimi",
-        },
-        {
-          title: "Why Choose Dental Veneers?",
-          content: [
-            "Since we create veneers for individuals just like their natural teeth and on a case-by-case basis, it's almost impossible to distinguish between veneers and natural teeth.",
-            "Due to our use of high-tech and modern materials, your veneers will be highly resistant to stains from tea and coffee.",
-          ],
-          list: [
-            "Protecting your teeth against abrasion and wear",
-            "Correcting dental imperfections",
-            "Closing dental gaps",
-            "Fixing minor misalignments of teeth",
-          ],
-        },
-        {
-          title: "Can Dental Laminate Damage Your Teeth?",
-          content: [
-            "No, we ask you to take X-ray images of your mouth and jaw, and then we examine your teeth to make sure dental laminate is suitable for you.",
-            "If we determine that laminate isn't the right choice for you, we recommend other options such as composite veneers, dental bonding, orthodontics, teeth whitening, or just tooth contouring.",
-            "With personalized consultation and raising your awareness, we assist you in choosing the best path for enhancing the beauty of your teeth.",
-          ],
-        },
-        {
-          title: "Taking Care of Your Smile After Dental Laminate",
-          paragraphs: [
-            "Now that you've found a way to enhance your smile, it's essential to consider necessary care and scheduled visits to the dentist.",
-            "Brushing these teeth twice a day (using just a pea-sized amount of fluoride toothpaste) and taking care of your gums where no teeth have emerged yet is important.",
-            "Factors that can cause discoloration of your laminate:",
-          ],
-          sections: [
-            {
-              title: "Factors that can cause discoloration of your laminate:",
-              points: [
-                "Consuming excessive colored beverages and foods",
-                "Overuse of improper mouthwash",
-                "Using certain specific medications",
-                "Neglecting oral and dental hygiene",
-                "Excessive use of fluoride",
-              ],
-            },
-            {
-              title: "Steps to prevent:",
-              points: [
-                "Try to brush your teeth at least twice a day.",
-                "Use dental floss daily.",
-                "Use an appropriate mouthwash with the advice of your dentist.",
-                "Reduce the consumption of colored drinks and foods.",
-                "Avoid smoking and tobacco products.",
-                "Visit the dental clinic every few months for a check-up on your teeth's condition.",
-              ],
-            },
-          ],
-        },
-        {
-          title: "Where Should We Get Veneers Done?",
-          paragraphs: [
-            "The goal of many beauty enthusiasts in getting veneers is to have whiter and more natural-looking teeth. Therefore, considering your unique circumstances, we create a personalized treatment plan to fulfill the needs and goals of your teeth.",
-            "The primary aim for many individuals seeking veneers is to achieve whiter teeth. Given that dental veneers come with a relatively higher cost and require a considerable level of skill to be carried out, it's advisable to consult an experienced dentist for their installation.",
-            "We stay up-to-date with the latest veneer techniques and technologies to ensure that our patients receive the best possible care. Dr. Soheila Karimi, with years of experience, offers all dental services to visitors in the beautiful city of Tabriz.",
-            "For a free consultation and specialized evaluation, please fill out the appointment reservation form or feel free to give us a call.",
-          ],
-        },
-      ],
     },
   },
   contact: {

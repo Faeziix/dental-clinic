@@ -52,23 +52,23 @@ function Children() {
 
   const toc = [
     {
-      title: dict("toc.why-brush"),
+      title: dict("toc.whyBrush"),
       href: "#why-brush",
     },
     {
-      title: dict("toc.when-brush"),
+      title: dict("toc.whenBrush"),
       href: "#when-brush",
     },
     {
-      title: dict("toc.how-brush"),
+      title: dict("toc.howBrush"),
       href: "#how-brush",
     },
     {
-      title: dict("toc.why-visit"),
+      title: dict("toc.whyVisit"),
       href: "#why-visit",
     },
     {
-      title: dict("toc.how-visit"),
+      title: dict("toc.howVisit"),
       href: "#how-visit",
     },
     {
