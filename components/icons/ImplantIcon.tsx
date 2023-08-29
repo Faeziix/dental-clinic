@@ -8,7 +8,7 @@ export default function ImplantIcon({ ...props }) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g id="Layer_2" clip-path="url(#clip0_302_89)">
+      <g id="Layer_2" clipPath="url(#clip0_302_89)">
         <path
           id="Vector"
           d="M9.24609 24.3526L10.5327 42.5828L15.088 49.4605L18.9479 42.6835L20.4153 24.2734L9.24609 24.3526Z"

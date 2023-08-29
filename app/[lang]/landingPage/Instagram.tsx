@@ -47,8 +47,8 @@ function Instagram({}) {
               <Image
                 src={post.src}
                 alt="Instagram Post"
-                layout="fill"
-                objectFit="cover"
+                fill
+                className="object-cover"
               />
             </Link>
           </div>

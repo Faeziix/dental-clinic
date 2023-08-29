@@ -51,9 +51,7 @@ function Testimonials({ lang }) {
   const dict = useTranslations("landingPage");
   const [ref, controls] = useScrollAnimation();
 
-  const testimonials = [1, 2, 3].map((i) =>
-    dict(`testimonials.testimonials.t${i}`)
-  );
+  const testimonials = [1, 2, 3].map((i) => dict(`testimonials.t${i}`));
 
   return (
     <div ref={ref} className="max-w-5xl md:px-5">

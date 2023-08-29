@@ -82,11 +82,10 @@ let dictionary = {
     testimonials: {
       title: "Testimonials from our cherished visitors",
       button: "Watch More in Instagram Highlights",
-      testimonials: {
-        t1: "Veneers have truly enhanced the natural beauty. On my way home, I couldn't take my eyes off my teeth in the mirror :) They look incredibly good. It's like I've become 10 years younger! Many thanks to Dr. Soheila and her professional team.",
-        t2: "Just had a root canal done at your place today. Gotta say, it was awesome! Being around you guys totally killed the dental jitters. Wish I'd found you sooner; thanks a bunch for being so cool and caring!",
-        t3: "The only dentist where pain or stress during dental procedures, especially implants and root canals, is non-existent :)",
-      },
+
+      t1: "Veneers have truly enhanced the natural beauty. On my way home, I couldn't take my eyes off my teeth in the mirror :) They look incredibly good. It's like I've become 10 years younger! Many thanks to Dr. Soheila and her professional team.",
+      t2: "Just had a root canal done at your place today. Gotta say, it was awesome! Being around you guys totally killed the dental jitters. Wish I'd found you sooner; thanks a bunch for being so cool and caring!",
+      t3: "The only dentist where pain or stress during dental procedures, especially implants and root canals, is non-existent :)",
     },
     instagram: {
       title: "Our Instagram",

@@ -4,6 +4,7 @@ import Button from "./Buttons";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import useClickOutside from "@/utils/useClickOutside";
+import { useLocale } from "next-intl";
 
 export type LinksType = {
   links: {
@@ -15,6 +16,7 @@ export type LinksType = {
 };
 
 function HamburgerMenu({ links }: LinksType) {
+  const locale = useLocale();
   const [isOpen, setIsOpen] = useState(false);
   const ref = React.useRef<HTMLDivElement>(null);
 
@@ -59,22 +61,24 @@ function HamburgerMenu({ links }: LinksType) {
 
       <motion.div
         initial={{ x: "100%" }}
-        animate={isOpen ? { x: 0 } : { x: "110%" }}
+        animate={isOpen ? { x: 0 } : { x: locale === "fa" ? "100%" : "-100%" }}
         transition={{ duration: 0.2 }}
-        className={`w-2/3 fixed right-0 top-0 max-w-xs bg-primary h-full z-50`}
+        className={`w-2/3 fixed ${
+          locale == "fa" ? "right-0" : "left-0"
+        } top-0 max-w-xs bg-primary h-full z-50`}
         ref={ref}
       >
-        <div onClick={toggleMenu} className="p-5 w-fit">
+        <div onClick={toggleMenu} className="px-8 py-5 w-fit">
           <CrossIcon />
         </div>
-        <div className="flex flex-col pr-5 mt-20 h-full">
+        <div className="flex flex-col px-5 mt-20 h-full">
           {links.map((link) => {
             if (link.mobileRender) return link.mobileRender();
 
             return (
               <Link
                 key={link.name}
-                className="text-2xl my-4 text-Neutral"
+                className="text-2xl my-4 text-Neutral hover:text-purple-100"
                 href={link.link}
                 onClick={() => {
                   setIsOpen(false);

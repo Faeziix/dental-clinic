@@ -53,17 +53,20 @@ function Header({ lang, dict }) {
       ),
       mobileRender: () => (
         <div className="flex flex-col gap-2">
-          <Link className="text-2xl my-4 text-Neutral" href="/services/implant">
+          <Link
+            className="text-2xl my-4 text-Neutral hover:text-purple-100"
+            href="/services/implant"
+          >
             {dict.header.implant}
           </Link>
           <Link
-            className="text-2xl my-4 text-Neutral"
+            className="text-2xl my-4 text-Neutral hover:text-purple-100"
             href="/services/laminate"
           >
             {dict.header.laminate}
           </Link>
           <Link
-            className="text-2xl my-4 text-Neutral"
+            className="text-2xl my-4 text-Neutral hover:text-purple-100"
             href="/services/children"
           >
             {dict.header.children}
