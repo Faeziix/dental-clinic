@@ -41,17 +41,16 @@ export default async function RootLayout({
   }
 
   return (
-    <html
-      lang={params.lang}
-      style={{
-        direction: params.lang === "fa" ? "rtl" : "ltr",
-        fontFamily:
-          params.lang === "fa"
-            ? vazirmatn.style.fontFamily
-            : nunito.style.fontFamily,
-      }}
-    >
-      <body>
+    <html lang={params.lang}>
+      <body
+        style={{
+          direction: params.lang === "fa" ? "rtl" : "ltr",
+          fontFamily:
+            params.lang === "fa"
+              ? vazirmatn.style.fontFamily
+              : nunito.style.fontFamily,
+        }}
+      >
         <NextIntlClientProvider locale={params.lang} messages={dict}>
           <Header lang={params.lang} dict={dict} />
           <div className="md:mt-22 mt-16 md:mx-auto">{children}</div>
