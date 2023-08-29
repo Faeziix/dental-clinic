@@ -8,6 +8,14 @@ const dictionary = {
     children: "اطفال",
     portfolio: "نمونه کارها",
   },
+  portfolio: {
+    title: "نمونه کارها",
+    categories: {
+      laminate: "لمینت",
+      orthodontics: "ارتودنسی",
+      airflow: "جرم گیری ایرفلو",
+    },
+  },
   landingPage: {
     hero: {
       title: "در تلاشیم برای خلق بهترین لبخند شما",

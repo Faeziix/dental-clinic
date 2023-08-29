@@ -9,6 +9,14 @@ let dictionary = {
     about: "About",
     portfolio: "Our Work",
   },
+  portfolio: {
+    title: "Our Work",
+    categories: {
+      laminate: "Veneers",
+      orthodontics: "Orthodontics",
+      airflow: "Airflow Cleaning",
+    },
+  },
 
   landingPage: {
     hero: {

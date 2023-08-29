@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -6,6 +7,7 @@ import BeforeAfterPic from "@/public/instagram/Post-beforeafter.jpg";
 import ImplantPic from "@/public/instagram/Post-Implant-aftercare.jpg";
 import AirflowPic from "@/public/instagram/Post-Airflow.jpg";
 import YellowTeethPic from "@/public/instagram/Post-Yellowteeth.jpg";
+import { useTranslations } from "next-intl";
 
 const posts = [
   {
@@ -30,7 +32,8 @@ const posts = [
   },
 ];
 
-function Instagram({ lang, dict }) {
+function Instagram({}) {
+  const dict = useTranslations("landingPage");
   return (
     <div className="px-5 max-w-5xl w-full">
       <h1 className="mb-4">{dict("instagram.title")}</h1>

@@ -9,8 +9,10 @@ import {
   textVariant,
 } from "@/utils/animation-variants/variants";
 import useScrollAnimation from "@/utils/useScrollAnimation";
+import { useTranslations } from "next-intl";
 
-function Introduction({ lang, dict }) {
+function Introduction({ lang }) {
+  const dict = useTranslations("landingPage");
   const [ref, controls] = useScrollAnimation();
 
   const photoVariant = variantGenerator({

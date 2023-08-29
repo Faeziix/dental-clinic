@@ -13,8 +13,10 @@ import { Variants, motion } from "framer-motion";
 import Layers from "./journey/Layers";
 import useScrollAnimation from "@/utils/useScrollAnimation";
 import { variantGenerator } from "@/utils/animation-variants/variants";
+import { useTranslations } from "next-intl";
 
-function Journey({ lang, dict }) {
+function Journey({ lang }) {
+  const dict = useTranslations("landingPage");
   const [ref, controls] = useScrollAnimation();
 
   const imageEvenTransitionVariant: Variants = {

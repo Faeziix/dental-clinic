@@ -6,8 +6,9 @@ import Link from "next/link";
 import { Variants, motion } from "framer-motion";
 
 import useScrollAnimation from "@/utils/useScrollAnimation";
-import { digiFont } from "@/utils/utils";
+import { getHandWriteFont } from "@/utils/utils";
 import { variantGenerator } from "@/utils/animation-variants/variants";
+import { useTranslations } from "next-intl";
 
 const backgroundVariant = {
   visible: {
@@ -46,7 +47,8 @@ const lightBackgroundVariant: Variants = {
   },
 };
 
-function Testimonials({ dict, lang }) {
+function Testimonials({ lang }) {
+  const dict = useTranslations("landingPage");
   const [ref, controls] = useScrollAnimation();
 
   const testimonials = [1, 2, 3].map((i) =>
@@ -68,7 +70,7 @@ function Testimonials({ dict, lang }) {
       >
         <motion.div
           style={{
-            fontFamily: digiFont.style.fontFamily,
+            fontFamily: getHandWriteFont(lang).style.fontFamily,
           }}
           animate={controls}
           variants={lightBackgroundVariant}
@@ -77,13 +79,13 @@ function Testimonials({ dict, lang }) {
           {testimonials.map((testimonial) => (
             <div
               style={{
-                fontFamily: digiFont.style.fontFamily,
+                fontFamily: getHandWriteFont(lang).style.fontFamily,
               }}
               className="flex w-full flex-col gap-2 rounded-lg"
               key={testimonial}
             >
               <div className="flex">
-                <QuoteIcon />
+                <QuoteIcon fill="#EE6F2B" />
               </div>
               <h3 className="leading-9 lg:leading-[3rem]">{testimonial}</h3>
             </div>

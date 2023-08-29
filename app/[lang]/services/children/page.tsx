@@ -18,7 +18,7 @@ import FluoridePic from "@/public/children/fluoride.png";
 import FishurPic from "@/public/children/fishur.png";
 import FiveWaysPic from "@/public/children/5way.png";
 import Toc from "@/components/ui/Toc";
-import { digiFont } from "@/utils/utils";
+import { getHandWriteFont } from "@/utils/utils";
 import { useLocale, useTranslations } from "next-intl";
 
 function Children() {
@@ -262,7 +262,7 @@ function Children() {
 
           <div className="mx-auto w-fit">
             <p
-              style={{ fontFamily: digiFont.style.fontFamily }}
+              style={{ fontFamily: getHandWriteFont(locale).style.fontFamily }}
               className="mb-5 w-fit md:text-3xl text-2xl md:leading-[3rem] px-4 text-dark text-center font-medium relative "
             >
               {dict.rich("sections.why-visit.quote", {
@@ -295,7 +295,7 @@ function Children() {
             </div>
 
             <div className="md:pr-20">
-              <SadTooth dict={dict} />
+              <SadTooth dict={dict} locale={locale} />
             </div>
           </div>
 

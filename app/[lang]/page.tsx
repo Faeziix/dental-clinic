@@ -1,4 +1,3 @@
-"use client";
 import Hero from "./landingPage/Hero";
 import Introduction from "./landingPage/Introduction";
 import Services from "./landingPage/Services";
@@ -7,19 +6,23 @@ import Testimonials from "./landingPage/Testimonials";
 import Instagram from "./landingPage/Instagram";
 import ReservationForm from "./landingPage/ReservationForm";
 import { useTranslations } from "next-intl";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Dr. Soheila Karimi",
+  description: "Dr. Soheila Karimi's Dental Clinic Website",
+};
 
 export default function Home({ params: { lang } }) {
-  const dict = useTranslations("landingPage");
-
   return (
     <main className="flex flex-col items-center justify-between gap-16 md:gap-32 pb-8">
-      <Hero dict={dict} />
-      <Introduction dict={dict} lang={lang} />
-      <Services dict={dict} lang={lang} />
-      <Journey dict={dict} lang={lang} />
-      <Testimonials dict={dict} lang={lang} />
-      <Instagram dict={dict} lang={lang} />
-      <ReservationForm dict={dict} lang={lang} />
+      <Hero />
+      <Introduction lang={lang} />
+      <Services lang={lang} />
+      <Journey lang={lang} />
+      <Testimonials lang={lang} />
+      <Instagram />
+      <ReservationForm lang={lang} />
     </main>
   );
 }

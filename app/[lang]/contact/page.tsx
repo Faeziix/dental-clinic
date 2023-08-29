@@ -10,6 +10,12 @@ import ContactBanner from "@/public/contact-us/ContactBanner.png";
 import style from "./contact.module.scss";
 import Button from "@/components/ui/Buttons";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description: "Contact us for more information about our services.",
+};
 
 const contacts = [
   {

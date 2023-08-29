@@ -9,10 +9,10 @@ import JawPic from "@/public/implant/jaw.png";
 import OverlayBox from "@/components/sections/OverlayBox";
 import ServicesPic from "@/public/implant/services.png";
 import MaintenancePic from "@/public/implant/maintenance.png";
+import ImplantEng from "@/public/implant/implant-eng.jpg";
 import Toc from "@/components/ui/Toc";
-import { digiFont } from "@/utils/utils";
+import { getHandWriteFont } from "@/utils/utils";
 import { useLocale, useTranslations } from "next-intl";
-import { useDictionary } from "../../dictionaries";
 
 function ImplantPage() {
   const dict = useTranslations("Services.implant");
@@ -87,7 +87,7 @@ function ImplantPage() {
           <p className="mb-6">{dict("sections.section1.content.point2")}</p>
           <Image
             className="mb-6 mx-auto"
-            src={StructurePic}
+            src={locale === "fa" ? StructurePic : ImplantEng}
             alt="Implant Structure"
           />
           <p>{dict("sections.section1.content.point3")}</p>
@@ -146,7 +146,9 @@ function ImplantPage() {
           <p className="md:mx-gs">{dict("sections.section5.content.point3")}</p>
 
           <h3
-            style={{ fontFamily: digiFont.style.fontFamily }}
+            style={{
+              fontFamily: getHandWriteFont(locale).style.fontFamily,
+            }}
             className="text-center md:leading-[4rem] text-2xl md:text-3xl py-8 my-6 mx-auto text-dark"
           >
             {dict("sections.section5.quote")}
@@ -176,9 +178,19 @@ function ImplantPage() {
           <p>{dict("sections.section6.paragraph.point2")}</p>
 
           <div className="mt-7 mx-auto">
-            <h3 className="relative text-2xl font-bold text-accent pr-4">
+            <h3
+              className={`relative text-2xl font-bold text-accent ${
+                locale == "fa" ? "pr-4" : "pl-4"
+              }`}
+            >
               {dict("sections.section6.quote.content.paragraph")}
-              <StarsGroupIcon className="absolute w-10 md:-right-8 -right-4 -top-4" />
+              <StarsGroupIcon
+                className={`absolute w-10 ${
+                  locale === "fa"
+                    ? "md:-right-8 -right-4"
+                    : "md:-left-8 -left-4"
+                } -top-4`}
+              />
             </h3>
           </div>
         </section>

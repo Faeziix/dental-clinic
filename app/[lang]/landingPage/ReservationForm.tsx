@@ -1,5 +1,5 @@
+"use client";
 import React from "react";
-import styles from "./Form.module.scss";
 import Reservation from "@/components/sections/Reservation";
 
 function ReservationForm({ lang }) {

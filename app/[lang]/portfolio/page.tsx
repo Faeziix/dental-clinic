@@ -23,6 +23,7 @@ import OrtoAfter3 from "@/public/portolio/Orto/After 3.png";
 
 import Button from "@/components/ui/Buttons";
 import ToothIcon from "@/components/icons/ToothIcon";
+import { Metadata } from "next";
 
 const items = [
   {
@@ -41,6 +42,11 @@ const items = [
     beforeImages: [CleaningBefore1, CleaningBefore2, CleaningBefore3],
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Portfolio",
+  description: "Portfolio of our works.",
+};
 
 function Page() {
   return (

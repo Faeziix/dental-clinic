@@ -9,8 +9,10 @@ import { motion, Variants } from "framer-motion";
 import Button from "@/components/ui/Buttons";
 import useScrollAnimation from "@/utils/useScrollAnimation";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
-function Services({ dict, lang }) {
+function Services({ lang }) {
+  const dict = useTranslations("landingPage");
   const [ref, controls] = useScrollAnimation();
 
   const textVariant: Variants = {

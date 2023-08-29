@@ -1,9 +1,12 @@
+"use client";
 import React from "react";
 import styles from "./Hero.module.scss";
 import Button from "@/components/ui/Buttons";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
-function Hero({ dict }) {
+function Hero() {
+  const dict = useTranslations("landingPage");
   return (
     <section className="py-16 relative text-Neutral h-[70vh] w-full md:px-24 lg:px-44 px-5 flex flex-col justify-center gap-2 font-semibold">
       <h1 className="leading-[3.5rem] max-w-xl">{dict("hero.title")}</h1>
