@@ -13,6 +13,7 @@ import {
   DropdownMenuPortal,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
+import LocaleChanger from "./LocaleChanger";
 
 function Header({ lang, dict }) {
   const Links = [
@@ -107,16 +108,16 @@ function Header({ lang, dict }) {
             );
           })}
         </div>
-        <Link
-          href="/reservation"
-          className={`${
-            lang == "fa" ? "md:mr-auto" : "md:ml-auto"
-          } hidden md:block`}
-        >
-          <Button color="primary" size="md">
-            {dict.landingPage.hero.button}
-          </Button>
-        </Link>
+        <div className={`flex ${lang == "fa" ? "md:mr-auto" : "md:ml-auto"} `}>
+          <div className="hidden md:block mx-4 mt-1">
+            <LocaleChanger />
+          </div>
+          <Link href="/reservation" className={` hidden md:block`}>
+            <Button color="primary" size="md">
+              {dict.landingPage.hero.button}
+            </Button>
+          </Link>
+        </div>
         <div className="block md:hidden">
           <HamburgerMenu links={Links} />
         </div>

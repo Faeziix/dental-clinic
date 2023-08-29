@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import useClickOutside from "@/utils/useClickOutside";
 import { useLocale } from "next-intl";
+import LocaleChanger from "../layout/LocaleChanger";
 
 export type LinksType = {
   links: {
@@ -88,6 +89,7 @@ function HamburgerMenu({ links }: LinksType) {
               </Link>
             );
           })}
+          <LocaleChanger />
         </div>
       </motion.div>
     </>

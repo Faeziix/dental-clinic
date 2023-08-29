@@ -10,12 +10,10 @@ const dictionary = {
   },
   portfolio: {
     title: "نمونه کارها",
-    categories: {
-      laminate: "لمینت",
-      orthodontics: "ارتودنسی",
-      airflow: "جرم گیری ایرفلو",
-      button: "مشاهده بیشتر",
-    },
+    laminate: "لمینت",
+    orthodontics: "ارتودنسی",
+    airflow: "جرم گیری ایرفلو",
+    button: "مشاهده بیشتر",
   },
   landingPage: {
     hero: {
