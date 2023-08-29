@@ -26,7 +26,7 @@ function Services({ lang }) {
     },
     hidden: {
       opacity: 0,
-      x: lang === "en" ? -100 : 100,
+      x: lang === "en" ? "-10%" : "10%",
     },
   };
 
@@ -45,7 +45,7 @@ function Services({ lang }) {
     },
     hidden: {
       opacity: 0,
-      x: lang === "en" ? 100 : -100,
+      x: lang === "en" ? "-10%" : "10%",
     },
   };
 

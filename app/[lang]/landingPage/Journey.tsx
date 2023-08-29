@@ -117,7 +117,7 @@ function Journey({ lang }) {
       <motion.h2
         variants={variantGenerator({
           duration: 0.7,
-          x: lang === "en" ? -100 : 100,
+          x: lang === "en" ? "-10%" : "10%",
         })}
         initial="hidden"
         animate={controls}

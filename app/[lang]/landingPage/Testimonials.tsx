@@ -57,7 +57,11 @@ function Testimonials({ lang }) {
 
   return (
     <div ref={ref} className="max-w-5xl md:px-5">
-      <motion.h2 initial="hidden" animate={controls} className="pr-5 mb-6">
+      <motion.h2
+        initial="hidden"
+        animate={controls}
+        className={`${lang == "fa" ? "pr-5" : "pl-5"} mb-4`}
+      >
         {dict("testimonials.title")}
       </motion.h2>
 
@@ -66,7 +70,7 @@ function Testimonials({ lang }) {
         initial="hidden"
         animate={controls}
         transition={{ duration: 0.7, ease: "easeInOut" }}
-        className="bg-accent p-8 md:rounded-[2rem]"
+        className="bg-accent px-5 py-8 md:rounded-[2rem]"
       >
         <motion.div
           style={{
@@ -106,7 +110,7 @@ function Testimonials({ lang }) {
             className="max-w-xs h-full mt-6 block mx-auto hover:no-underline"
             href="https://www.instagram.com/stories/highlights/17902117297715473/"
           >
-            <Button withArrow radius="circle" color="neutral">
+            <Button withArrow radius="circle" color="neutral" size="sm">
               {dict("testimonials.button")}
             </Button>
           </Link>

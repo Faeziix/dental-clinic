@@ -17,7 +17,7 @@ function Layers({ step, i, lang }) {
   const imageRightVariant: Variants = {
     initial: {
       opacity: 0,
-      x: lang === "en" ? 100 : -100,
+      x: lang === "en" ? "5%" : "-5%",
     },
     visible: {
       opacity: 1,
@@ -32,7 +32,7 @@ function Layers({ step, i, lang }) {
   const imageLeftVariant: Variants = {
     initial: {
       opacity: 0,
-      x: lang === "en" ? -100 : 100,
+      x: lang === "en" ? "-5%" : "5%",
     },
     visible: {
       opacity: 1,
@@ -71,7 +71,14 @@ function Layers({ step, i, lang }) {
         },
         hidden: {
           opacity: 0,
-          x: i == 1 ? (lang === "en" ? 100 : -100) : lang === "en" ? -100 : 100,
+          x:
+            i == 1
+              ? lang === "en"
+                ? "5%"
+                : "-5%"
+              : lang === "en"
+              ? "-5%"
+              : "5%",
         },
       }}
       initial="hidden"
