@@ -14,6 +14,7 @@ const dictionary = {
       laminate: "لمینت",
       orthodontics: "ارتودنسی",
       airflow: "جرم گیری ایرفلو",
+      button: "مشاهده بیشتر",
     },
   },
   landingPage: {

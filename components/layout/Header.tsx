@@ -85,11 +85,11 @@ function Header({ lang, dict }) {
 
   return (
     <div className="md:h-20 h-16 fixed top-0 z-20 bg-background py-2 w-full shadow-xl">
-      <div className="flex gap-4 flex-row-reverse md:flex-row justify-center items-center h-full w-full lg:px-16 px-5">
+      <div className="flex gap-4 flex-row-reverse md:flex-row md:justify-center justify-between items-center h-full w-full lg:px-16 px-5">
         <Link
           href="/"
           className={`${
-            lang == "fa" ? "md:ml-auto ml-0" : "md:mr-auto mr-0"
+            lang == "fa" ? "md:ml-auto" : "md:mr-auto"
           } h-full w-fit`}
         >
           <Image className="h-full w-fit" src={Logo} alt="Logo" />
@@ -107,7 +107,7 @@ function Header({ lang, dict }) {
         <Link
           href="/reservation"
           className={`${
-            lang == "fa" ? "md:mr-auto mr-0" : "md:ml-auto ml-0"
+            lang == "fa" ? "md:mr-auto" : "md:ml-auto"
           } hidden md:block`}
         >
           <Button color="primary" size="md">

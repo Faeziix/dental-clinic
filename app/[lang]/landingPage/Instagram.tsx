@@ -36,7 +36,7 @@ function Instagram({}) {
   const dict = useTranslations("landingPage");
   return (
     <div className="px-5 max-w-5xl w-full">
-      <h1 className="mb-4">{dict("instagram.title")}</h1>
+      <h2 className="mb-4">{dict("instagram.title")}</h2>
       <div className="grid grid-cols-2 lg:grid-cols-4 justify-items-center justify-center items-center flex-wrap gap-2 mb-4">
         {posts.map((post) => (
           <div

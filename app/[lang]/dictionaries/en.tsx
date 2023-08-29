@@ -11,11 +11,10 @@ let dictionary = {
   },
   portfolio: {
     title: "Our Work",
-    categories: {
-      laminate: "Veneers",
-      orthodontics: "Orthodontics",
-      airflow: "Airflow Cleaning",
-    },
+    laminate: "Veneers",
+    orthodontics: "Orthodontics",
+    airflow: "Airflow Cleaning",
+    button: "See More",
   },
 
   landingPage: {

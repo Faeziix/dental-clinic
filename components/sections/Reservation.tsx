@@ -17,7 +17,7 @@ function Reservation({ withImage = false }) {
       }`}
     >
       <div className={styles.title}>
-        <h3 className="mb-6 text-3xl font-semibold">{dict("title")}</h3>
+        <h2 className="mb-6">{dict("title")}</h2>
       </div>
 
       <form className={`${styles.form}`}>

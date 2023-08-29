@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Before1 from "@/public/portolio/image-1.png";
@@ -23,39 +24,36 @@ import OrtoAfter3 from "@/public/portolio/Orto/After 3.png";
 
 import Button from "@/components/ui/Buttons";
 import ToothIcon from "@/components/icons/ToothIcon";
-import { Metadata } from "next";
-
-const items = [
-  {
-    category: "لمینت",
-    afterImages: [After1, After2, After3],
-    beforeImages: [Before1, Before2, Before3],
-  },
-  {
-    category: "اورتودنسی",
-    afterImages: [OrtoAfter1, OrtoAfter2, OrtoAfter3],
-    beforeImages: [OrtoBefore1, OrtoBefore2, OrtoBefore3],
-  },
-  {
-    category: "جرم‌گیری ایرفلو",
-    afterImages: [CleaningAfter1, CleaningAfter2, CleaningAfter3],
-    beforeImages: [CleaningBefore1, CleaningBefore2, CleaningBefore3],
-  },
-];
-
-export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Portfolio of our works.",
-};
+import { useTranslations } from "next-intl";
 
 function Page() {
+  const dict = useTranslations("portfolio");
+
+  const items = [
+    {
+      category: dict("laminate"),
+      afterImages: [After1, After2, After3],
+      beforeImages: [Before1, Before2, Before3],
+    },
+    {
+      category: dict("orthodontics"),
+      afterImages: [OrtoAfter1, OrtoAfter2, OrtoAfter3],
+      beforeImages: [OrtoBefore1, OrtoBefore2, OrtoBefore3],
+    },
+    {
+      category: dict("airflow"),
+      afterImages: [CleaningAfter1, CleaningAfter2, CleaningAfter3],
+      beforeImages: [CleaningBefore1, CleaningBefore2, CleaningBefore3],
+    },
+  ];
+
   return (
     <div className="md:mx-20 mx-5">
       <h1 className="py-16 flex gap-2 items-center">
         <span>
           <ToothIcon />
         </span>
-        نمونه کار‌ها
+        <span>{dict("title")}</span>
       </h1>
       {items.map((item, i) => (
         <div className="flex mx-auto w-fit flex-col" key={i}>
@@ -94,7 +92,7 @@ function Page() {
               size="sm"
               className="relative mx-auto md:mx-0 mt-8 mb-16"
             >
-              مشاهده بیشتر
+              {dict("button")}
             </Button>
           </div>
         </div>

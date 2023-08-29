@@ -2,7 +2,7 @@ import Header from "@/components/layout/Header";
 import "./globals.scss";
 import type { Metadata } from "next";
 import Footer from "@/components/layout/Footer";
-import { Raleway, Vazirmatn } from "next/font/google";
+import { Nunito_Sans, Raleway, Vazirmatn } from "next/font/google";
 import { getDictionary } from "./dictionaries";
 
 import { NextIntlClientProvider } from "next-intl";
@@ -16,7 +16,7 @@ const vazirmatn = Vazirmatn({
   subsets: ["arabic"],
 });
 
-const raleway = Raleway({
+const nunito = Nunito_Sans({
   subsets: ["latin-ext"],
   weight: ["300", "400", "500", "600", "700", "800"],
 });
@@ -48,7 +48,7 @@ export default async function RootLayout({
         fontFamily:
           params.lang === "fa"
             ? vazirmatn.style.fontFamily
-            : raleway.style.fontFamily,
+            : nunito.style.fontFamily,
       }}
     >
       <body>
