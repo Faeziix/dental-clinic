@@ -63,10 +63,10 @@ function Layers({ step, i, lang }) {
           opacity: 1,
           x: 0,
           transition: {
-            staggerChildren: 0.2,
+            staggerChildren: 0.1,
             when: "beforeChildren",
-            duration: 0.5,
-            ease: "easeInOut",
+            duration: 0.4,
+            ease: "easeOut",
           },
         },
         hidden: {
