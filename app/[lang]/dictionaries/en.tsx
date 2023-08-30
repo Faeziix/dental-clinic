@@ -586,10 +586,7 @@ let dictionary = {
       },
       clock: {
         title: "Working Hours",
-        hours: [
-          "Saturday to Thursday 16:00 to 21:00",
-          "Fridays 11:00 to 15:00",
-        ],
+        time: "<item>Saturday to Thursday 16:00 to 21:00</item> <item>Fridays 11:00 to 15:00</item>",
       },
       address: {
         title: "Address",

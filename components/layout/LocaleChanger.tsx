@@ -1,17 +1,19 @@
 "use client";
 import { useLocale } from "next-intl";
-import { usePathname, useRouter } from "next/navigation";
-import React from "react";
+import { usePathname, useRouter } from "next-intl/client";
+import React, { useTransition } from "react";
 
 function LocaleChanger() {
   const router = useRouter();
   const pathname = usePathname();
   const locale = useLocale();
-  console.log(pathname);
+  const [isPending, startTransition] = useTransition();
 
-  const changeLocale = (locale: string) => {
-    router.push(`/${locale}`);
-  };
+  function changeLocale(locale: "en" | "fa") {
+    startTransition(() => {
+      router.push(pathname, { locale: locale });
+    });
+  }
 
   const activeStyle =
     "text-purple-900 border-b-2 border-0 border-purple-700 aspect-square w-8 h-8";

@@ -54,6 +54,7 @@ function Reservation({ withImage = false }) {
 
       {withImage && (
         <Image
+          priority
           className={`rounded-lg rows-start-1 mb-4 md:mb-0 ${styles.picture}`}
           src={FormGirl}
           alt="Form"

@@ -61,7 +61,7 @@ function HamburgerMenu({ links }: LinksType) {
       ></motion.div>
 
       <motion.div
-        initial={{ x: "100%" }}
+        initial={{ x: locale === "fa" ? "100%" : "-100%" }}
         animate={isOpen ? { x: 0 } : { x: locale === "fa" ? "100%" : "-100%" }}
         transition={{ duration: 0.2 }}
         className={`w-2/3 fixed ${

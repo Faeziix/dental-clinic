@@ -61,11 +61,11 @@ button {
 }
 
 h1 {
-  @apply text-3xl font-extrabold md:text-4xl lg:text-5xl capitalize;
+  @apply text-3xl font-extrabold md:text-4xl lg:leading-[4.5rem] lg:text-5xl capitalize;
 }
 
 h2 {
-  @apply text-2xl font-bold lg:text-4xl capitalize;
+  @apply text-2xl font-bold lg:leading-[1.5] lg:text-4xl capitalize;
 }
 
 h3 {

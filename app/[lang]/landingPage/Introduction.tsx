@@ -4,10 +4,7 @@ import Image from "next/image";
 import DocImage from "@/public/Doctor-image.jpeg";
 import DentistIcon from "@/public/icons/DentistIcon.png";
 import { motion } from "framer-motion";
-import {
-  variantGenerator,
-  textVariant,
-} from "@/utils/animation-variants/variants";
+import { variantGenerator } from "@/utils/animation-variants/variants";
 import useScrollAnimation from "@/utils/useScrollAnimation";
 import { useTranslations } from "next-intl";
 

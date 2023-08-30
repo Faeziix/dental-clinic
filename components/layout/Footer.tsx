@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import ToothFamily from "@/public/icons/tooth-family.png";
 import Logo from "@/public/logo.png";
@@ -7,27 +9,30 @@ import Link from "next/link";
 import Phone from "@/public/footer/phone.svg";
 import Clock from "@/public/footer/clock.svg";
 import Address from "@/public/footer/address.svg";
+import { useTranslations } from "next-intl";
 
-function Footer({ dict }) {
+function Footer() {
+  const dict = useTranslations("footer");
+
   const ContactUs = [
     {
       name: "Phone",
-      title: dict.footer.contactUs.phone.title,
+      title: dict("contactUs.phone.title"),
       display: <a href="tel:04133321028">04133321028</a>,
       icons: <Image className="w-6 h-6" src={Phone} alt="Phone" />,
     },
     {
       name: "Work Hours",
-      title: dict.footer.contactUs.clock.title,
-      display: dict.footer.contactUs.clock.hours.map((hour) => (
-        <p key={hour}>{hour}</p>
-      )),
+      title: dict("contactUs.clock.title"),
+      display: dict.rich("contactUs.clock.time", {
+        item: (text) => <span className="font-bold">{text}</span>,
+      }),
       icons: <Image className="w-6 h-6" src={Clock} alt="Clock" />,
     },
     {
       name: "Address",
-      title: dict.footer.contactUs.address.title,
-      display: dict.footer.contactUs.address.text,
+      title: dict("contactUs.address.title"),
+      display: dict("contactUs.address.text"),
       icons: <Image className="w-12" src={Address} alt="Address" />,
     },
   ];
@@ -36,22 +41,22 @@ function Footer({ dict }) {
     {
       name: "laminate",
       link: "/services/laminate",
-      display: dict.footer.quick_access.laminate,
+      display: dict("quick_access.laminate"),
     },
     {
       name: "implant",
       link: "/services/implant",
-      display: dict.footer.quick_access.implant,
+      display: dict("quick_access.implant"),
     },
     {
       name: "children",
       link: "/services/children",
-      display: dict.footer.quick_access.children,
+      display: dict("quick_access.children"),
     },
     {
       name: "Portofolio",
       link: "/portfolio",
-      display: dict.footer.quick_access.portfolio,
+      display: dict("quick_access.portfolio"),
     },
   ];
 
@@ -72,12 +77,12 @@ function Footer({ dict }) {
                 alt="Logo"
               />
             </div>
-            <p className="text-base leading-7">{dict.footer.description}</p>
+            <p className="text-base leading-7">{dict("description")}</p>
           </div>
 
           <div className="flex gap-4 flex-col basis-1/5">
             <h3 className="text-2xl whitespace-nowrap font-bold">
-              {dict.footer.quick_access.title}
+              {dict("quick_access.title")}
             </h3>
             <div className="flex gap-2 flex-col">
               {quickAccessLinks.map((link) => (
@@ -92,9 +97,7 @@ function Footer({ dict }) {
             </div>
           </div>
           <div className="flex gap-4 flex-col">
-            <h3 className="text-2xl font-bold">
-              {dict.footer.contactUs.title}
-            </h3>
+            <h3 className="text-2xl font-bold">{dict("contactUs.title")}</h3>
             <div className="flex gap-2 flex-col">
               {ContactUs.map((link) => (
                 <div className="flex gap-2 items-baseline" key={link.name}>
@@ -112,13 +115,13 @@ function Footer({ dict }) {
                 style={{ border: 0 }}
                 className="mt-6"
                 allowFullScreen
-                loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
           </div>
         </div>
       </section>
+
       <Image
         src={FooterBkg}
         className="object-cover -z-10"
@@ -128,7 +131,7 @@ function Footer({ dict }) {
 
       <div className="bg-blue-950 absolute bottom-0 w-full left-0">
         <p className="text-center py-4 text-sm">
-          {dict.footer.copyright} © {new Date().getFullYear()}
+          {dict("copyright")} © {new Date().getFullYear()}
         </p>
       </div>
     </footer>
