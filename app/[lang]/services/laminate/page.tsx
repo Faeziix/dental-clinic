@@ -73,9 +73,17 @@ function LaminatePage() {
           <p className="">{dict("sections.whatIsLaminate.content.point2")}</p>
 
           <div className="my-5">
-            <div className="flex gap-4">
-              <Image src={PortfolioPic1} alt="Portfolio Pic" />
-              <Image src={PortfolioPic2} alt="Portfolio Pic" />
+            <div className="grid grid-cols-2 gap-4 w-full">
+              <Image
+                className="w-full h-full"
+                src={PortfolioPic1}
+                alt="Portfolio Pic"
+              />
+              <Image
+                className="w-full h-full"
+                src={PortfolioPic2}
+                alt="Portfolio Pic"
+              />
             </div>
             <p className="text-center mt-2 text-primary ">
               {dict("sections.whatIsLaminate.sampleWorkImage")}
@@ -165,7 +173,7 @@ function LaminatePage() {
           <p className="md:mx-gs">{dict("sections.where.content.point1")}</p>
           <p className="md:mx-gs">{dict("sections.where.content.point2")}</p>
 
-          <div className="flexColRow rounded-lg justify-center items-center gap-4 md:px-gs py-4 bg-primary mb-5">
+          <div className="flexColRow rounded-lg justify-center items-center px-5 gap-4 md:px-gs py-4 bg-primary mb-5">
             <Image src={WherePic} className="w-full" alt="Where" />
             <h3 className="font-bold text-Neutral w-fit text-center">
               {dict("sections.where.content.point3")}

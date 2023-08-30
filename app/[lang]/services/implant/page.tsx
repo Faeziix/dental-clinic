@@ -155,9 +155,6 @@ function ImplantPage() {
             <div className="flex absolute top-0 right-0">
               <QuoteIcon />
             </div>
-            <div className="flex rotate-180 absolute bottom-0 left-0">
-              <QuoteIcon />
-            </div>
           </h3>
 
           <p className="md:mx-gs">{dict("sections.section5.content.point4")}</p>

@@ -52,23 +52,26 @@ function Header({ lang, dict }) {
           </DropdownMenuPortal>
         </DropdownMenu>
       ),
-      mobileRender: () => (
+      mobileRender: (onClick) => (
         <div className="flex flex-col gap-2">
           <Link
             className="text-2xl my-4 text-Neutral hover:text-purple-100"
             href="/services/implant"
+            onClick={onClick}
           >
             {dict.header.implant}
           </Link>
           <Link
             className="text-2xl my-4 text-Neutral hover:text-purple-100"
             href="/services/laminate"
+            onClick={onClick}
           >
             {dict.header.laminate}
           </Link>
           <Link
             className="text-2xl my-4 text-Neutral hover:text-purple-100"
             href="/services/children"
+            onClick={onClick}
           >
             {dict.header.children}
           </Link>

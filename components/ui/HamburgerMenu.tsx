@@ -74,7 +74,8 @@ function HamburgerMenu({ links }: LinksType) {
         </div>
         <div className="flex flex-col px-5 mt-20 h-full">
           {links.map((link) => {
-            if (link.mobileRender) return link.mobileRender();
+            if (link.mobileRender)
+              return link.mobileRender(() => setIsOpen(false));
 
             return (
               <Link
