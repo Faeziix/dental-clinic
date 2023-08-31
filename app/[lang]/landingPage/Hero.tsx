@@ -9,7 +9,7 @@ function Hero() {
   const dict = useTranslations("landingPage");
 
   return (
-    <section className="py-16 relative text-Neutral h-[70vh] w-full md:px-24 lg:px-44 px-5 flex flex-col justify-center gap-2 font-semibold">
+    <section className="py-16 relative text-background h-[70vh] w-full md:px-24 lg:px-44 px-5 flex flex-col justify-center gap-2 font-semibold">
       <h1 className=" max-w-xl">{dict("hero.title")}</h1>
       <h4 className="max-w-md leading-7">{dict("hero.subtitle")}</h4>
       <Link href="./reservation">

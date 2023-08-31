@@ -20,8 +20,8 @@ function Introduction({ lang }) {
 
   const descriptionVariant = variantGenerator({
     duration: 0.7,
-    delay: 0.6,
-    x: lang === "en" ? -50 : 50,
+    delay: 1,
+    x: 0,
   });
 
   return (

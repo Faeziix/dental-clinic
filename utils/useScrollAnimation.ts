@@ -5,7 +5,7 @@ export default function useScrollAnimation() {
   const controls = useAnimation();
   const ref = useRef(null);
   const inView = useInView(ref, {
-    margin: "0px 0px -100px 0px",
+    margin: "0px 0px -200px 0px",
   });
 
   useEffect(() => {

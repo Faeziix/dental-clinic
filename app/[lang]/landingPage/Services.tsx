@@ -174,7 +174,7 @@ ${
                 </div>
 
                 <Link className="w-full" href={service.link}>
-                  <Button withArrow mode="block">
+                  <Button withArrow mode="block" className="text-primary">
                     {dict("services.button")}
                   </Button>
                 </Link>

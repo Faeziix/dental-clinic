@@ -21,7 +21,7 @@ export default function Home({ params: { lang } }) {
       <Services lang={lang} />
       <Journey lang={lang} />
       <Testimonials lang={lang} />
-      <Instagram />
+      <Instagram lang={lang} />
       <ReservationForm lang={lang} />
     </main>
   );
