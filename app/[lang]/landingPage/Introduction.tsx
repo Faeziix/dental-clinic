@@ -52,18 +52,19 @@ function Introduction({ lang }) {
             alt="Doctor Image"
           />
         </motion.div>
-        <motion.p
-          variants={descriptionVariant}
-          initial="hidden"
-          animate={controls}
-          className="basis-7/12"
-        >
+        <motion.div className="basis-7/12">
           {[1, 2, 3].map((i) => (
-            <p key={i} className="mb-4">
+            <motion.p
+              variants={descriptionVariant}
+              initial="hidden"
+              animate={controls}
+              key={i}
+              className="mb-4"
+            >
               {dict(`introduction.description.point${i}`)}
-            </p>
+            </motion.p>
           ))}
-        </motion.p>
+        </motion.div>
       </div>
     </section>
   );
