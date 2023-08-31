@@ -539,32 +539,25 @@ let dictionary = {
 
   contact: {
     title: "Contact Us",
-    subtitle:
+    description:
       "For personalized telephone consultation and appointment reservation, simply contact us during working hours.",
-    cards: [
-      {
-        title: "Contact Number",
-        paragraphs: ["041-33321028"],
+    cards: {
+      contactNumber: "Contact Number",
+      opening: "Opening Hours",
+      hours: {
+        h1: "Saturday to Thursday: 16:00 to 21:00",
+        h2: "Fridays: 11:00 to 15:00",
       },
-      {
-        title: "Opening Hours",
-        paragraphs: [
-          "Saturday to Thursday: 16:00 to 21:00",
-          "Fridays: 11:00 to 15:00",
-        ],
-      },
-    ],
+    },
     address: {
       title: "Our Address",
-      paragraphs: [
+      description:
         "7th Floor, Unit B, Physicians Building 1, Across from Pak Confectionery, Parvin Etesami Street, Valiasr Avenue, Tabriz",
-      ],
     },
     socials: {
       title: "Dr. Soheila Karimi's Social Media",
-      paragraphs: [
+      description:
         "Outside of working hours, feel free to message us on Instagram or WhatsApp. Our team members will respond to you as soon as possible.",
-      ],
     },
   },
 

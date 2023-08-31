@@ -175,7 +175,7 @@ ${
 
                 <Link className="w-full" href={service.link}>
                   <Button withArrow mode="block" className="text-primary">
-                    {dict("services.button")}
+                    <span className="mr-3">{dict("services.button")}</span>
                   </Button>
                 </Link>
               </motion.div>

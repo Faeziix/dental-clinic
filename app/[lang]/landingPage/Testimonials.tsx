@@ -76,7 +76,7 @@ function Testimonials({ lang }) {
           }}
           animate={controls}
           variants={lightBackgroundVariant}
-          className="bg-background border-2 border-solid border-black py-6 px-16 flex flex-col items-center gap-6 rounded-[2rem]"
+          className="bg-background border-2 border-solid border-black py-6 md:px-16 px-5 flex flex-col items-center gap-6 rounded-[2rem]"
         >
           {testimonials.map((testimonial) => (
             <div

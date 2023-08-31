@@ -130,8 +130,14 @@ function Button({
         withArrow ? "arrow-button" : ""
       )}
     >
-      <span className="mx-3">{children}</span>
-      {withArrow && <span className={cn(arrowVarient({ color, size }))} />}
+      {withArrow ? (
+        <>
+          <span className="mx-3">{children}</span>
+          <span className={cn(arrowVarient({ color, size }))} />
+        </>
+      ) : (
+        children
+      )}
     </button>
   );
 }

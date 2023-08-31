@@ -1,6 +1,6 @@
 const dictionary = {
   header: {
-    home: "خانه",
+    home: "صفحه اصلی",
     services: "خدمات",
     contact: "تماس با ما",
     laminate: "لمینت",

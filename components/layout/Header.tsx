@@ -14,8 +14,11 @@ import {
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import LocaleChanger from "./LocaleChanger";
+import { usePathname } from "next/navigation";
 
 function Header({ lang, dict }) {
+  const pathname = usePathname();
+
   const Links = [
     {
       display: dict.header.home,
@@ -31,20 +34,30 @@ function Header({ lang, dict }) {
           <DropdownMenuTrigger asChild>
             <a>{dict.header.services}</a>
           </DropdownMenuTrigger>
+
           <DropdownMenuPortal>
             <DropdownMenuContent className="w-56">
-              <DropdownMenuItem className="text-right w-full">
-                <Link className="w-full block" href="/services/implant">
+              <DropdownMenuItem>
+                <Link
+                  className="w-full block hover:text-background"
+                  href="/services/implant"
+                >
                   {dict.header.implant}
                 </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem className="text-right w-full">
-                <Link className="w-full block" href="/services/laminate">
+              <DropdownMenuItem>
+                <Link
+                  className="w-full block hover:text-background"
+                  href="/services/laminate"
+                >
                   {dict.header.laminate}
                 </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem className="text-right w-full">
-                <Link className="w-full block" href="/services/children">
+              <DropdownMenuItem>
+                <Link
+                  className="w-full block hover:text-background"
+                  href="/services/children"
+                >
                   {dict.header.children}
                 </Link>
               </DropdownMenuItem>
@@ -104,6 +117,7 @@ function Header({ lang, dict }) {
         <div className="md:flex hidden gap-6 items-center">
           {Links.map((link) => {
             if (link.render) return link.render();
+
             return (
               <Link href={link.link} key={link.name}>
                 {link.display}

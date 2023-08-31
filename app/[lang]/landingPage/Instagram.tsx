@@ -148,7 +148,7 @@ function Instagram({ lang }) {
           variants={linkVariant}
           initial="hidden"
           animate={controls}
-          className="flex justify-center gap-2 text-accent hover:text-orange-700"
+          className="flex justify-center gap-2 text-accent items-center"
           style={{ direction: "rtl" }}
           target="_blank"
           href="https://www.instagram.com/dr.soheila.karimi/"

@@ -41,7 +41,7 @@ export default async function RootLayout({
   }
 
   return (
-    <html lang={params.lang}>
+    <html dir={params.lang === "fa" ? "rtl" : "ltr"} lang={params.lang}>
       <body
         style={{
           direction: params.lang === "fa" ? "rtl" : "ltr",
