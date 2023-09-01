@@ -104,7 +104,7 @@ function Header({ lang, dict }) {
   return (
     <div className="md:h-20 h-16 fixed top-0 z-20 bg-background py-2 w-full shadow-xl">
       <div className="flex gap-4 flex-row-reverse md:flex-row md:justify-center justify-between items-center h-full w-full lg:px-16 px-5">
-        <Link href="/" className={`ltr:md:ml-auto rtl:md:mr-auto h-full w-fit`}>
+        <Link href="/" className={`rtl:md:ml-auto ltr:md:mr-auto h-full w-fit`}>
           <Image className="h-full w-fit" src={Logo} alt="Logo" />
         </Link>
         <div className="md:flex hidden gap-6 items-center">
