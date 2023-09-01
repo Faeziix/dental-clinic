@@ -7,12 +7,11 @@ type TocItem = {
 };
 
 function Toc({ items }: { items: TocItem[] }) {
-  const locale = useLocale();
   return (
     <ul
-      className={` ${
-        locale === "fa" ? "border-r-4 pr-4" : "border-l-4 pl-4"
-      } border-r-primary border-opacity-60 `}
+      className={
+        " ltr:border-r-4 ltr:pr-4  rtl:border-l-4 rtl:pl-4 border-r-primary border-opacity-60 "
+      }
     >
       {items.map((i) => (
         <a key={i.href} href={i.href}>
