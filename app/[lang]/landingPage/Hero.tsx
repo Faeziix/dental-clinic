@@ -4,9 +4,6 @@ import styles from "./Hero.module.scss";
 import Button from "@/components/ui/Buttons";
 import Link from "next-intl/link";
 import { useTranslations } from "next-intl";
-import dynamic from "next/dynamic";
-
-const Video = dynamic(() => import("./Video"), { ssr: false });
 
 function Hero() {
   const dict = useTranslations("landingPage");
@@ -25,7 +22,15 @@ function Hero() {
 
       <div className="absolute top-0 left-0 w-full h-full -z-10">
         <div className={`${styles.bkgVideo} relative h-full w-full`}>
-          <Video />
+          <video
+            className="h-full w-full object-cover z-[-10]"
+            autoPlay
+            muted={true}
+            loop
+            playsInline
+          >
+            <source src="/HeroBkg.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </section>
