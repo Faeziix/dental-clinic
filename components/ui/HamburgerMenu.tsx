@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Button from "./Buttons";
-import Link from "next/link";
+import Link from "next-intl/link";
 import { motion } from "framer-motion";
 import useClickOutside from "@/utils/useClickOutside";
 import { useLocale } from "next-intl";

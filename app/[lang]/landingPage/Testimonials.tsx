@@ -2,7 +2,7 @@
 import React from "react";
 import QuoteIcon from "@/components/icons/QuoteIcon";
 import Button from "@/components/ui/Buttons";
-import Link from "next/link";
+import Link from "next-intl/link";
 import { Variants, motion } from "framer-motion";
 
 import useScrollAnimation from "@/utils/useScrollAnimation";

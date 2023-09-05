@@ -522,33 +522,26 @@ const dictionary = {
     },
   },
   contact: {
-    title: "Contact Us",
-    subtitle:
-      "For personalized telephone consultation and appointment reservation, simply contact us during working hours.",
-    cards: [
-      {
-        title: "Contact Number",
-        paragraphs: ["041-33321028"],
+    title: "تماس با ما",
+    description:
+      "برای مشاوره تلفنی شخصی و رزرو وقت کافیست در ساعات کاری با ما تماس بگیرید.",
+    cards: {
+      contactNumber: "شماره تماس",
+      opening: "ساعات کاری",
+      hours: {
+        h1: "شنبه تا پنجشنبه: 16:00 تا 21:00",
+        h2: "جمعه ها: 11:00 الی 15:00",
       },
-      {
-        title: "Opening Hours",
-        paragraphs: [
-          "Saturday to Thursday: 16:00 to 21:00",
-          "Fridays: 11:00 to 15:00",
-        ],
-      },
-    ],
+    },
     address: {
-      title: "Our Address",
-      paragraphs: [
-        "7th Floor, Unit B, Physicians Building 1, Across from Pak Confectionery, Parvin Etesami Street, Valiasr Avenue, Tabriz",
-      ],
+      title: "آدرس ما",
+      description:
+        "تبریز، ولیعصر، خیابان پروین اعتصامی، روبروی قنادی پاک، ساختمان پزشکان 1، طبقه هفتم، واحد B",
     },
     socials: {
-      title: "Dr. Soheila Karimi's Social Media",
-      paragraphs: [
-        "Outside of working hours, feel free to message us on Instagram or WhatsApp. Our team members will respond to you as soon as possible.",
-      ],
+      title: "صفحات مجازی مطب دکتر سهیلا کریمی",
+      description:
+        "در خارج از ساعات کاری، در اینستاگرام یا واتس‌اپ پیام دهید. همکاران ما در اسرع‌وقت پاسخگوی شما هستند.",
     },
   },
 

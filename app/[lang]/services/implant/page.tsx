@@ -13,12 +13,11 @@ import ImplantEng from "@/public/implant/implant-eng.jpg";
 import Toc from "@/components/ui/Toc";
 import { getHandWriteFont } from "@/utils/utils";
 import { useLocale, useTranslations } from "next-intl";
+import Quote from "@/components/ui/Quote";
 
 function ImplantPage() {
   const dict = useTranslations("Services.implant");
   const locale = useLocale();
-
-  const margin = locale === "fa" ? "md:mr-gs" : "md:ml-gs";
 
   const advantagesPoints = [
     "point1",
@@ -65,14 +64,14 @@ function ImplantPage() {
 
   return (
     <div className="blog">
-      <article className="max-w-screen-desktop md:mx-auto">
-        <section className={`mx-auto ${margin}`}>
+      <article className="max-w-screen-desktop">
+        <section>
           <h1 className="mb-4 text-primary">{dict("title")}</h1>
           <h4 className="text-primary">{dict("subtitle")}</h4>
         </section>
 
-        <section className="flex gap-4 items-center mx-auto">
-          <p className={`mb-0 ${margin}`}>{dict("description")}</p>
+        <section className="flex gap-4 items-center ">
+          <p className="mb-0">{dict("description")}</p>
 
           <Image src={JawPic} alt="Jaw Pic" className="hidden md:block" />
         </section>
@@ -93,9 +92,9 @@ function ImplantPage() {
           <p>{dict("sections.section1.content.point3")}</p>
         </section>
 
-        <section className="mx-auto" id="advantages">
-          <h2 className="md:mx-gs">{dict("sections.section2.title")}</h2>
-          <p className="md:mx-gs">{dict("sections.section2.content")}</p>
+        <section id="advantages">
+          <h2>{dict("sections.section2.title")}</h2>
+          <p>{dict("sections.section2.content")}</p>
 
           <OverlayBox imgsrc={ServicesPic}>
             <h4 className="text-primary leading-6 mb-4 font-bold">
@@ -111,10 +110,10 @@ function ImplantPage() {
           </OverlayBox>
         </section>
 
-        <section className="mx-auto" id="maintenance">
-          <h2 className="md:mx-gs">{dict("sections.section3.title")}</h2>
-          <p className="md:mx-gs">{dict("sections.section3.content.point1")}</p>
-          <p className="md:mx-gs">{dict("sections.section3.content.point2")}</p>
+        <section id="maintenance">
+          <h2>{dict("sections.section3.title")}</h2>
+          <p>{dict("sections.section3.content.point1")}</p>
+          <p>{dict("sections.section3.content.point2")}</p>
 
           <div className="flexColRow gap-4 items-center">
             <Image
@@ -139,17 +138,17 @@ function ImplantPage() {
           </p>
         </section>
 
-        <section id="pain" className="mx-auto relative">
-          <h2 className="md:mx-gs">{dict("sections.section5.title")}</h2>
-          <p className="md:mx-gs">{dict("sections.section5.content.point1")}</p>
-          <p className="md:mx-gs">{dict("sections.section5.content.point2")}</p>
-          <p className="md:mx-gs">{dict("sections.section5.content.point3")}</p>
+        <section id="pain" className=" relative">
+          <h2>{dict("sections.section5.title")}</h2>
+          <p>{dict("sections.section5.content.point1")}</p>
+          <p>{dict("sections.section5.content.point2")}</p>
+          <p>{dict("sections.section5.content.point3")}</p>
 
           <h3
             style={{
               fontFamily: getHandWriteFont(locale).style.fontFamily,
             }}
-            className="text-center md:leading-[4rem] text-2xl md:text-3xl py-8 my-6 mx-auto text-dark"
+            className="text-center md:leading-[4rem] text-2xl md:text-3xl py-8 my-6 text-dark"
           >
             {dict("sections.section5.quote")}
             <div className="flex absolute top-0 right-0">
@@ -157,8 +156,8 @@ function ImplantPage() {
             </div>
           </h3>
 
-          <p className="md:mx-gs">{dict("sections.section5.content.point4")}</p>
-          <p className="md:mx-gs">{dict("sections.section5.content.point5")}</p>
+          <p>{dict("sections.section5.content.point4")}</p>
+          <p>{dict("sections.section5.content.point5")}</p>
         </section>
 
         <section id="cost">
@@ -174,30 +173,15 @@ function ImplantPage() {
           </ul>
           <p>{dict("sections.section6.paragraph.point2")}</p>
 
-          <div className="mt-7 mx-auto">
-            <h3
-              className={`relative text-2xl font-bold text-accent ${
-                locale == "fa" ? "pr-4" : "pl-4"
-              }`}
-            >
-              {dict("sections.section6.quote.content.paragraph")}
-              <StarsGroupIcon
-                className={`absolute w-10 ${
-                  locale === "fa"
-                    ? "md:-right-8 -right-4"
-                    : "md:-left-8 -left-4"
-                } -top-4`}
-              />
-            </h3>
+          <div className="mt-7 ">
+            <Quote text={dict("sections.section6.quote.content.paragraph")} />
           </div>
         </section>
 
-        <section id="summary" className="mx-auto">
-          <h2 className="md:mx-gs">{dict("sections.section7.title")}</h2>
-          <p className="md:mx-gs">{dict("sections.section7.content.point1")}</p>
-          <p className="md:mx-gs mb-5">
-            {dict("sections.section7.content.point2")}
-          </p>
+        <section id="summary" className="">
+          <h2>{dict("sections.section7.title")}</h2>
+          <p>{dict("sections.section7.content.point1")}</p>
+          <p className="mb-5">{dict("sections.section7.content.point2")}</p>
 
           <div className="flex flex-col md:flex-row gap-4">
             <Image src={FacePic} alt="Face Pic" className="" />

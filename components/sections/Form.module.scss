@@ -1,7 +1,5 @@
 #reservation_form {
-  grid-template-areas:
-    "title picture"
-    "form picture";
+  grid-template-areas: "form picture";
 
   @media (max-width: theme("screens.md")) {
     grid-template-columns: 1fr;

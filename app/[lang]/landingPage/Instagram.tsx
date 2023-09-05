@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Link from "next/link";
+import Link from "next-intl/link";
 import Image from "next/image";
 import InstagramImage from "@/components/icons/InstagramIconOrange";
 import BeforeAfterPic from "@/public/instagram/Post-beforeafter.jpg";

@@ -10,7 +10,7 @@ import TelephoneIcon from "@/public/icons/TelephoneIcon.png";
 import ContactBanner from "@/public/contact-us/ContactBanner.png";
 import style from "./contact.module.scss";
 import Button from "@/components/ui/Buttons";
-import Link from "next/link";
+import Link from "next-intl/link";
 import { useLocale, useTranslations } from "next-intl";
 
 function Page() {

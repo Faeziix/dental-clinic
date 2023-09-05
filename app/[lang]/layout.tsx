@@ -14,11 +14,13 @@ export async function generateStaticParams() {
 
 const vazirmatn = Vazirmatn({
   subsets: ["arabic"],
+  display: "swap",
 });
 
 const nunito = Nunito_Sans({
   subsets: ["latin-ext"],
   weight: ["300", "400", "500", "600", "700", "800"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {

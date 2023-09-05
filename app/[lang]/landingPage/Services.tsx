@@ -8,7 +8,7 @@ import ServicesGirlImage from "@/public/services/ServicesGirl.png";
 import { motion, Variants } from "framer-motion";
 import Button from "@/components/ui/Buttons";
 import useScrollAnimation from "@/utils/useScrollAnimation";
-import Link from "next/link";
+import Link from "next-intl/link";
 import { useTranslations } from "next-intl";
 
 function Services({ lang }) {

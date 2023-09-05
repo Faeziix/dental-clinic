@@ -11,7 +11,7 @@ function LocaleChanger() {
 
   function changeLocale(locale: "en" | "fa") {
     startTransition(() => {
-      router.push(pathname, { locale: locale });
+      router.replace(pathname, { locale: locale });
     });
   }
 

@@ -10,7 +10,7 @@ function Toc({ items }: { items: TocItem[] }) {
   return (
     <ul
       className={
-        " ltr:border-r-4 ltr:pr-4  rtl:border-l-4 rtl:pl-4 border-r-primary border-opacity-60 "
+        "rtl:border-r-4 rtl:pr-4  ltr:border-l-4 ltr:pl-4 border-r-primary border-opacity-60"
       }
     >
       {items.map((i) => (

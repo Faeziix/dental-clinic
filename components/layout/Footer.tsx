@@ -5,7 +5,7 @@ import ToothFamily from "@/public/icons/tooth-family.png";
 import Logo from "@/public/logo.png";
 import FooterBkg from "@/public/footer/footer-bkg.png";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "next-intl/link";
 import Phone from "@/public/footer/phone.svg";
 import Clock from "@/public/footer/clock.svg";
 import Address from "@/public/footer/address.svg";
@@ -116,6 +116,7 @@ function Footer() {
                 className="mt-6"
                 allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"
+                title="Map"
               ></iframe>
             </div>
           </div>

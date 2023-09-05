@@ -125,7 +125,7 @@ article {
   }
 
   section {
-    @apply mb-14 md:mb-16 md:mx-gs;
+    @apply mb-14 md:mb-16;
     scroll-margin: 6rem;
 
     & > h2 {
