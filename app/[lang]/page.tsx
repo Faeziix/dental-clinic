@@ -1,28 +1,31 @@
 import Hero from "./landingPage/Hero";
-import { useTranslations } from "next-intl";
+import Introduction from "./landingPage/Introduction";
+import Services from "./landingPage/Services";
+import Journey from "./landingPage/Journey";
+import Testimonials from "./landingPage/Testimonials";
+import Instagram from "./landingPage/Instagram";
+import ReservationForm from "./landingPage/ReservationForm";
 import { Metadata } from "next";
-import dynamic from "next/dynamic";
-
-const Introduction = dynamic(() => import("./landingPage/Introduction"), {
-  ssr: false,
-});
-const Services = dynamic(() => import("./landingPage/Services"), {
-  ssr: false,
-});
-const Journey = dynamic(() => import("./landingPage/Journey"), { ssr: false });
-const Testimonials = dynamic(() => import("./landingPage/Testimonials"), {
-  ssr: false,
-});
-const Instagram = dynamic(() => import("./landingPage/Instagram"), {
-  ssr: false,
-});
-const ReservationForm = dynamic(() => import("./landingPage/ReservationForm"), {
-  ssr: false,
-});
 
 export const metadata: Metadata = {
   title: "Dr. Soheila Karimi",
   description: "Dr. Soheila Karimi's Dental Clinic Website",
+  openGraph: {
+    type: "website",
+    locale: "en_IE",
+    url: "https://dental-clinic-faeziix.vercel.app/",
+    title: "Dr. Soheila Karimi",
+    description: "Dr. Soheila Karimi's Dental Clinic Website",
+    images: [
+      {
+        url: "https://dental-clinic-faeziix.vercel.app/Doctor-image.jpeg",
+        width: 800,
+        height: 600,
+        alt: "Dr. Soheila Karimi",
+      },
+    ],
+    siteName: "Dr. Soheila Karimi",
+  },
 };
 
 export default function Home({ params: { lang } }) {
