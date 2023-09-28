@@ -13,14 +13,13 @@ function Introduction({ lang }) {
   const [ref, controls] = useScrollAnimation();
 
   const photoVariant = variantGenerator({
-    duration: 0.7,
-    delay: 0.5,
+    duration: 0.3,
     x: lang === "en" ? -50 : 50,
   });
 
   const descriptionVariant = variantGenerator({
-    duration: 0.7,
-    delay: 1,
+    duration: 0.3,
+    delay: 0.3,
     x: 0,
   });
 
@@ -28,8 +27,8 @@ function Introduction({ lang }) {
     <section ref={ref} className="w-full flex max-w-5xl flex-col gap-4 px-5">
       <motion.div
         variants={variantGenerator({
-          duration: 0.7,
-          x: lang === "en" ? -100 : 100,
+          duration: 0.3,
+          x: lang === "en" ? -50 : 50,
         })}
         initial="hidden"
         animate={controls}

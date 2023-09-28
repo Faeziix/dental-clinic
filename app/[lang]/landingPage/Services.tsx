@@ -20,7 +20,7 @@ function Services({ lang }) {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.7,
+        duration: 0.3,
         ease: "easeInOut",
       },
     },
@@ -35,12 +35,11 @@ function Services({ lang }) {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.7,
+        duration: 0.3,
         ease: "easeInOut",
-        staggerChildren: 0.2,
+        staggerChildren: 0.1,
         when: "beforeChildren",
         staggerDirection: -1,
-        delay: 0.3,
       },
     },
     hidden: {
@@ -54,7 +53,7 @@ function Services({ lang }) {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 0.5,
+        duration: 0.3,
         ease: "easeInOut",
       },
     },
@@ -66,15 +65,15 @@ function Services({ lang }) {
 
   const backgroundVariant: Variants = {
     visible: {
-      width: "100%",
+      opacity: 1,
       transition: {
-        duration: 0.5,
+        duration: 0.3,
         ease: "circOut",
-        delay: 0.7,
+        delay: 0.3,
       },
     },
     hidden: {
-      width: "0%",
+      opacity: 0,
     },
   };
 
@@ -83,10 +82,8 @@ function Services({ lang }) {
       opacity: 1,
       scale: 1,
       transition: {
-        type: "spring",
-        stiffness: 100,
-        duration: 0.7,
-        delay: 1.7,
+        duration: 0.4,
+        delay: 0.8,
       },
     },
     hidden: {
@@ -139,7 +136,7 @@ function Services({ lang }) {
             variants={backgroundVariant}
             initial="hidden"
             animate={controls}
-            className={`absolute top-0 bg-accent h-full -z-10 ${
+            className={`absolute w-full top-0 bg-accent h-full -z-10 ${
               lang == "fa"
                 ? "lg:-right-10 lg:rounded-l-3xl rounded-3xl lg:rounded-r-none"
                 : "lg:-left-10 lg:rounded-r-3xl rounded-3xl lg:rounded-l-none"
@@ -150,12 +147,11 @@ function Services({ lang }) {
             variants={listVariant}
             initial="hidden"
             animate={controls}
-            className={`px-5 lg:px-0 max-w-4xl text-2xl  h-full w-full py-4 flex flex-col-reverse md:flex-row-reverse gap-4
-${
-  lang == "fa"
-    ? "lg:mr-auto lg:ml-6 ml-auto mr-auto"
-    : "lg:ml-auto lg:mr-6 ml-auto mr-auto"
-}
+            className={`px-5 lg:px-0 max-w-4xl text-2xl  h-full w-full py-4 flex flex-col-reverse md:flex-row-reverse gap-4 ${
+              lang == "fa"
+                ? "lg:mr-auto lg:ml-6 ml-auto mr-auto"
+                : "lg:ml-auto lg:mr-6 ml-auto mr-auto"
+            }
 `}
           >
             {services.map((service) => (
