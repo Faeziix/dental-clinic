@@ -17,8 +17,8 @@ function Hero() {
             playsInline
             poster={HeroImg.src}
           >
-            <source src="/HeroBkg.mp4" type="video/mp4" />
             <source src="/HeroBkg.webm" type="video/webm" />
+            <source src="/HeroBkg.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
