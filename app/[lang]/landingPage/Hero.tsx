@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Hero.module.scss";
 import HeroContent from "./HeroContent";
-import HeroImg from "@/public/HeroImg.png";
+import HeroImg from "@/public/HeroImg.webp";
 
 function Hero() {
   return (
