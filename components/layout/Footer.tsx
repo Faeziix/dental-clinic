@@ -19,7 +19,7 @@ function Footer() {
       name: "Phone",
       title: dict("contactUs.phone.title"),
       display: <a href="tel:04133321028">04133321028</a>,
-      icons: <Image className="w-6 h-6" src={Phone} alt="Phone" />,
+      icons: <Image className="h-6 w-6" src={Phone} alt="Phone" />,
     },
     {
       name: "Work Hours",
@@ -27,7 +27,7 @@ function Footer() {
       display: dict.rich("contactUs.clock.time", {
         item: (text) => <span className="font-bold">{text}</span>,
       }),
-      icons: <Image className="w-6 h-6" src={Clock} alt="Clock" />,
+      icons: <Image className="h-6 w-6" src={Clock} alt="Clock" />,
     },
     {
       name: "Address",
@@ -62,17 +62,17 @@ function Footer() {
 
   return (
     <footer className="relative mt-32 px-5 py-20 text-Neutral">
-      <section className="flex h-full max-w-5xl mx-auto items-center justify-center">
-        <div className="flex flex-col lg:flex-row gap-12">
-          <div className="flex flex-col basis-3/5">
-            <div className="flex mb-4">
+      <section className="mx-auto flex h-full max-w-5xl items-center justify-center">
+        <div className="flex flex-col gap-12 lg:flex-row">
+          <div className="flex basis-3/5 flex-col">
+            <div className="mb-4 flex">
               <Image
-                className="w-20 object-contain h-20"
+                className="h-20 w-20 object-contain"
                 src={ToothFamily}
                 alt="Tooth Family"
               />
               <Image
-                className="h-20 object-contain w-40"
+                className="h-20 w-40 object-contain"
                 src={Logo}
                 alt="Logo"
               />
@@ -80,14 +80,14 @@ function Footer() {
             <p className="text-base leading-7">{dict("description")}</p>
           </div>
 
-          <div className="flex gap-4 flex-col basis-1/5">
-            <h3 className="text-2xl whitespace-nowrap font-bold">
+          <div className="flex basis-1/5 flex-col gap-4">
+            <h3 className="whitespace-nowrap text-2xl font-bold">
               {dict("quick_access.title")}
             </h3>
-            <div className="flex gap-2 flex-col">
+            <div className="flex flex-col gap-2">
               {quickAccessLinks.map((link) => (
                 <Link
-                  className="hover:text-purple-300 inline"
+                  className="inline hover:text-purple-300"
                   href={link.link}
                   key={link.name}
                 >
@@ -96,11 +96,11 @@ function Footer() {
               ))}
             </div>
           </div>
-          <div className="flex gap-4 flex-col">
+          <div className="flex flex-col gap-4">
             <h3 className="text-2xl font-bold">{dict("contactUs.title")}</h3>
-            <div className="flex gap-2 flex-col">
+            <div className="flex flex-col gap-2">
               {ContactUs.map((link) => (
-                <div className="flex gap-2 items-baseline" key={link.name}>
+                <div className="flex items-start gap-2" key={link.name}>
                   {link.icons}
                   <div className="flex flex-col">
                     <p>
@@ -125,13 +125,13 @@ function Footer() {
 
       <Image
         src={FooterBkg}
-        className="object-cover -z-10"
+        className="-z-10 object-cover"
         alt="Footer Background"
         fill
       />
 
-      <div className="bg-blue-950 absolute bottom-0 w-full left-0">
-        <p className="text-center py-4 text-sm">
+      <div className="absolute bottom-0 left-0 w-full bg-blue-950">
+        <p className="py-4 text-center text-sm">
           {dict("copyright")} © {new Date().getFullYear()}
         </p>
       </div>
