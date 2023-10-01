@@ -10,7 +10,7 @@ function HeroContent() {
   return (
     <div>
       <h1 className=" max-w-xl">{dict("hero.title")}</h1>
-      <h4 className="max-w-md leading-7">{dict("hero.subtitle")}</h4>
+      <p className="max-w-md mt-2">{dict("hero.subtitle")}</p>
       <Link href="./reservation">
         <Button color="primary" size="lg" className="mt-4">
           <span className="w-full text-lg font-bolder grow block">

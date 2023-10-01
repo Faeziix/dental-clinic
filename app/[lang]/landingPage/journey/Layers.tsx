@@ -90,7 +90,7 @@ function Layers({ step, i, lang }) {
     >
       <motion.div
         variants={i == 1 ? imageLeftVariant : imageRightVariant}
-        className="mb-4 relative w-[90%]"
+        className="mb-4 relative w-full"
       >
         {step.image}
       </motion.div>
@@ -101,7 +101,7 @@ function Layers({ step, i, lang }) {
         transition={{ duration: 0.5, ease: "easeInOut" }}
         className="flex flex-col max-w-xl gap-2 basis-full"
       >
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 relative">
           {step.icon}
           <h3 className="h-full">{step.title}</h3>
         </div>

@@ -26,7 +26,7 @@ function Journey({ lang }) {
     },
     visible: {
       top: -16,
-      left: lang === "fa" ? 16 : -16,
+      left: lang === "fa" ? 16 : 0,
       transition: {
         type: "spring",
         stiffness: 200,
@@ -62,12 +62,19 @@ function Journey({ lang }) {
       image: (
         <>
           <Image
-            className="absolute top-0"
+            className="absolute w-[calc(100%-16px)] top-0"
             src={JourneyBkgPrimary}
             alt="JourneyBkgPrimary"
           />
-          <motion.div className="relative" variants={imageOddTransitionVariant}>
-            <Image src={Journey1} alt="Journey1" />
+          <motion.div
+            className="relative w-full"
+            variants={imageOddTransitionVariant}
+          >
+            <Image
+              src={Journey1}
+              className="w-[calc(100%-16px)] relative"
+              alt="Journey1"
+            />
           </motion.div>
         </>
       ),
@@ -79,15 +86,19 @@ function Journey({ lang }) {
       image: (
         <>
           <Image
-            className={`absolute top-0 ${lang == "en" ? "left-0" : "right-0"}`}
+            className="absolute w-[calc(100%-16px)] top-0 ltr:right-0 : rtl:right-0 "
             src={JourneyBkgAccent}
             alt="JourneyBkgAccent"
           />
           <motion.div
-            className="relative"
+            className="relative left-4"
             variants={imageEvenTransitionVariant}
           >
-            <Image className="relative" src={Journey2} alt="Journey2" />
+            <Image
+              className="relative w-[calc(100%-16px)]"
+              src={Journey2}
+              alt="Journey2"
+            />
           </motion.div>
         </>
       ),
@@ -95,20 +106,27 @@ function Journey({ lang }) {
     },
     {
       title: dict("journey.third.title"),
-      icon: <StarIcon className="w-9 h-9" />,
+      icon: <CheckmarkIcon className="w-9 h-9" />,
       image: (
         <>
           <Image
-            className="absolute top-0"
+            className="absolute w-[calc(100%-16px)] top-0"
             src={JourneyBkgPrimary}
             alt="JourneyBkgPrimary"
           />
-          <motion.div className="relative" variants={imageOddTransitionVariant}>
-            <Image src={Journey3} alt="Journey3" />
+          <motion.div
+            className="relative w-full"
+            variants={imageOddTransitionVariant}
+          >
+            <Image
+              src={Journey3}
+              className="w-[calc(100%-16px)] relative"
+              alt="Journey1"
+            />
           </motion.div>
         </>
       ),
-      description: dict("journey.third.description"),
+      description: dict("journey.first.description"),
     },
   ];
 

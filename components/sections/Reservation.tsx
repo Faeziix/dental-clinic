@@ -47,16 +47,12 @@ function Reservation({ withImage = false }) {
               <label className="mb-2 text-xl" htmlFor="description">
                 {dict("fields.note")}
               </label>
-              <textarea className="lg:min-h-[6rem]" id="description" />
+              <textarea className="lg:min-h-[6rem] h-full" id="description" />
             </div>
+            <Button className="w-full mx-auto" mode="block" color="primary">
+              {dict("button")}
+            </Button>
           </div>
-          <Button
-            className="w-full max-w-xs mx-auto"
-            mode="block"
-            color="primary"
-          >
-            {dict("button")}
-          </Button>
         </form>
 
         {withImage && (
