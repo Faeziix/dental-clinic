@@ -84,14 +84,14 @@ const buttonVarient = cva(
       mode: "default",
       radius: "default",
     },
-  }
+  },
 );
 
 const arrowVarient = cva(["arrow", "absolute", "right-4"], {
   variants: {
     color: {
       default: [
-        "text-dark border-primary group-hover:before:bg-Neutral group-hover:border-Neutral rtl:-scale-x-100",
+        "text-dark border-primary group-hover:before:bg-Neutral group-hover:border-Neutral",
       ],
       primary: ["text-primary border-primary group-hover:before:bg-primary"],
       accent: ["text-accent border-accent group-hover:before:bg-accent"],
@@ -127,7 +127,7 @@ function Button({
       className={cn(
         buttonVarient({ color, size, mode, radius }),
         className,
-        withArrow ? "arrow-button" : ""
+        withArrow ? "arrow-button" : "",
       )}
     >
       {withArrow ? (

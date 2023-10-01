@@ -74,11 +74,11 @@ function Layers({ step, i, lang }) {
           x:
             i == 1
               ? lang === "en"
-                ? "5%"
-                : "-5%"
+                ? "1%"
+                : "-1%"
               : lang === "en"
-              ? "-5%"
-              : "5%",
+              ? "-1%"
+              : "1%",
         },
       }}
       initial="hidden"

@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import CheckmarkIcon from "@/components/icons/Checkmark";
@@ -20,13 +21,14 @@ function Journey({ lang }) {
   const [ref, controls] = useScrollAnimation();
 
   const imageEvenTransitionVariant: Variants = {
-    initial: {
+    hidden: {
       top: 0,
-      left: 0,
+      left: -16,
     },
+
     visible: {
       top: -16,
-      left: lang === "fa" ? 16 : 0,
+      left: 0,
       transition: {
         type: "spring",
         stiffness: 200,
@@ -38,9 +40,9 @@ function Journey({ lang }) {
   };
 
   const imageOddTransitionVariant: Variants = {
-    initial: {
-      top: 0,
+    hidden: {
       left: 0,
+      top: 0,
     },
     visible: {
       top: -16,
@@ -86,12 +88,12 @@ function Journey({ lang }) {
       image: (
         <>
           <Image
-            className="absolute w-[calc(100%-16px)] top-0 ltr:right-0 : rtl:right-0 "
+            className="absolute w-[calc(100%-16px)] top-0 ltr:right-0 rtl:left-0 "
             src={JourneyBkgAccent}
             alt="JourneyBkgAccent"
           />
           <motion.div
-            className="relative left-4"
+            className="relative w-full"
             variants={imageEvenTransitionVariant}
           >
             <Image
@@ -121,7 +123,7 @@ function Journey({ lang }) {
             <Image
               src={Journey3}
               className="w-[calc(100%-16px)] relative"
-              alt="Journey1"
+              alt="Journey3"
             />
           </motion.div>
         </>

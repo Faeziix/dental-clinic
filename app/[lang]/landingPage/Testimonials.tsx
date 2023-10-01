@@ -108,7 +108,13 @@ function Testimonials({ lang }) {
             className="max-w-xs h-full mt-6 block mx-auto hover:no-underline"
             href="https://www.instagram.com/stories/highlights/17902117297715473/"
           >
-            <Button withArrow radius="circle" color="neutral" size="sm">
+            <Button
+              withArrow
+              radius="circle"
+              mode="block"
+              color="neutral"
+              size="sm"
+            >
               {dict("testimonials.button")}
             </Button>
           </Link>
