@@ -53,7 +53,7 @@ function Page() {
 
   return (
     <main className="mt-20 min-h-screen">
-      <div className="mx-auto mr-5 md:mr-auto md:max-w-7xl">
+      <div className="mx-auto ltr:ml-5 rtl:mr-5 md:mr-auto md:max-w-7xl">
         <div className="flex items-center gap-4 pr-5 pt-24 md:pr-20 ">
           <Image
             src={TelephoneIcon}
@@ -62,7 +62,7 @@ function Page() {
           />
           <h1 className="">{dict("title")}</h1>
         </div>
-        <h4 className="p-5 pb-24 pt-6 md:pr-20">{dict("description")}</h4>
+        <h4 className="pb-24 pt-6 md:pr-20">{dict("description")}</h4>
       </div>
 
       <section className="">
@@ -89,9 +89,9 @@ function Page() {
 
       <section className="flex flex-col items-center md:flex-row">
         <div
-          className={`w-full rounded-lg bg-primary px-5 py-12 text-Neutral rtl:rounded-bl-none rtl:rounded-tl-none md:h-80 md:pr-48 ltr:md:rounded-bl-none ltr:md:rounded-br-lg ltr:md:rounded-tl-none ltr:md:rounded-tr-lg rtl:md:rounded-br-lg rtl:md:rounded-tr-lg`}
+          className={`w-full rounded-lg bg-primary px-5 py-12 text-Neutral md:h-80 md:rounded-none md:pr-48`}
         >
-          <div className="flex items-center gap-2">
+          <div className="mb-4 flex items-center gap-2">
             <Image src={LocationIcon} className="w-6" alt="Location" />
             <h3 className="font-bold">{dict("address.title")}</h3>
           </div>
@@ -99,17 +99,19 @@ function Page() {
             <h4>{dict("address.description")}</h4>
           </div>
         </div>
-        <div
-          className={`relative z-0 mx-auto h-[36.5rem] w-[90%] max-w-3xl rounded-lg bg-accent py-4 ltr:rounded-bl-lg ltr:rounded-br-none ltr:rounded-tl-lg ltr:rounded-tr-none ltr:px-4 ltr:pl-4 rtl:mr-auto rtl:rounded-bl-lg rtl:rounded-br-lg rtl:rounded-tl-lg rtl:rounded-tr-lg rtl:pl-4 rtl:pr-4 md:w-full ltr:md:pr-0 rtl:md:pl-0`}
-        >
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d832.9439167393656!2d46.36135513800614!3d38.06218727627918!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x401a1be87093cfd9%3A0xad3c6b856558b5ba!2z2LPYp9iu2KrZhdin2YYg2b7Ysti02qnYp9mG!5e0!3m2!1sen!2sae!4v1690826504853!5m2!1sen!2sae"
-            style={{ border: 0 }}
-            allowFullScreen={false}
-            loading="lazy"
-            referrerPolicy="no-referrer"
-            className="z-20 h-full w-full"
-          />
+        <div className="w-full px-5 md:px-0">
+          <div
+            className={`relative z-0 h-[36.5rem] w-full max-w-3xl rounded-lg bg-accent py-4 ltr:rounded-bl-lg ltr:rounded-br-lg ltr:rounded-tl-none ltr:rounded-tr-none ltr:px-4 ltr:pl-4 rtl:mr-auto rtl:rounded-bl-lg rtl:rounded-br-lg rtl:rounded-tl-none rtl:rounded-tr-none rtl:pl-4 rtl:pr-4 md:w-full ltr:md:rounded-bl-lg ltr:md:rounded-br-none ltr:md:rounded-tl-lg ltr:md:rounded-tr-none ltr:md:pr-0 rtl:md:rounded-bl-none rtl:md:rounded-br-lg rtl:md:rounded-tl-none rtl:md:rounded-tr-lg rtl:md:pl-0`}
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d832.9439167393656!2d46.36135513800614!3d38.06218727627918!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x401a1be87093cfd9%3A0xad3c6b856558b5ba!2z2LPYp9iu2KrZhdin2YYg2b7Ysti02qnYp9mG!5e0!3m2!1sen!2sae!4v1690826504853!5m2!1sen!2sae"
+              style={{ border: 0 }}
+              allowFullScreen={false}
+              loading="lazy"
+              referrerPolicy="no-referrer"
+              className="z-20 h-full w-full"
+            />
+          </div>
         </div>
       </section>
       <section className="mx-5 mt-32 py-20 md:mx-20">

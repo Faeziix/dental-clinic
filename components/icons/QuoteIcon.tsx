@@ -1,4 +1,6 @@
-export default function QuoteIcon({ fill = "#372D95", ...props }) {
+import clsx from "clsx";
+
+export default function QuoteIcon({ fill = "#372D95", className, ...props }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -6,6 +8,7 @@ export default function QuoteIcon({ fill = "#372D95", ...props }) {
       height="27"
       viewBox="0 0 36 27"
       fill="none"
+      className={clsx("ltr:-scale-x-100 ", className)}
       {...props}
     >
       <path

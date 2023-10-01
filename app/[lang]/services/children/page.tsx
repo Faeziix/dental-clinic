@@ -89,12 +89,12 @@ function Children() {
           <h4 className="text-primary">{dict("subtitle")}</h4>
         </section>
 
-        <section className="flexColRow gap-4 items-center mx-auto">
+        <section className="flexColRow mx-auto items-center gap-4">
           <p className="mb-0 md:mr-gs">{dict("description")}</p>
 
           <Image
             src={ChildPickingPic}
-            className="w-full h-full grow md:w-[160%]"
+            className="h-full w-full grow md:w-[160%]"
             alt="Child Picking Pic"
           />
         </section>
@@ -107,7 +107,7 @@ function Children() {
           <h2>{dict("sections.why-brush.title")}</h2>
           <p>{dict("sections.why-brush.content.point1")}</p>
           <p className="mb-6">{dict("sections.why-brush.content.point2")}</p>
-          <div className="mb-6 mx-auto w-fit">
+          <div className="mx-auto mb-6 w-fit">
             <People />
           </div>
           <p className="">{dict("sections.why-brush.content.point3")}</p>
@@ -117,14 +117,14 @@ function Children() {
           <h2 className="md:mx-gs">{dict("sections.when-brush.title")}</h2>
 
           <div className="flex">
-            <div className="flex h-full items-center justify-center md:px-8 px-5 py-4 md:py-0 relative mb-5 bg-primary md:bg-transparent">
-              <div className="absolute bg-primary bottom-0 md:top-12 w-full z-0 rounded-lg hidden md:block"></div>
+            <div className="relative mb-5 flex h-full items-center justify-center rounded-lg bg-primary px-5 py-4 md:bg-transparent md:px-8 md:py-0">
+              <div className="absolute bottom-0 z-0 hidden w-full rounded-lg bg-primary md:top-12 md:block"></div>
               <Image
                 src={ChildAgePic}
                 alt="Child Age Pic"
-                className="object-cover w-[70%] z-10 hidden md:block"
+                className="z-10 hidden w-[70%] object-cover md:block"
               />
-              <h3 className="text-Neutral font-bold md:text-2xl text-center md:mt-12">
+              <h3 className="text-center font-bold text-Neutral md:mt-12 md:text-2xl">
                 {dict("sections.when-brush.content.point1")}
               </h3>
             </div>
@@ -143,11 +143,11 @@ function Children() {
         </section>
 
         <section className="mx-auto my-6 md:my-10">
-          <h3 className="md:mx-gs mb-8">{dict("sections.0-9.title")}</h3>
+          <h3 className="mb-8 md:mx-gs">{dict("sections.0-9.title")}</h3>
           <p className="md:mx-gs">{dict("sections.0-9.content.point1")}</p>
           <p className="md:mx-gs">{dict("sections.0-9.content.point2")}</p>
 
-          <div className="flexColRow gap-4 items-center mb-5 relative">
+          <div className="flexColRow relative mb-5 items-center gap-4">
             <Image
               src={ZeroToNinePic}
               alt="Zero To Nine Pic"
@@ -157,9 +157,9 @@ function Children() {
               <Checkmark
                 className={`absolute ${
                   locale == "en" ? "left-0" : "right-0"
-                } w-6 h-6 md:top-0`}
+                } h-6 w-6 md:top-0`}
               />
-              <h4 className="font-medium md:leading-9 text-dark flex indent-7 relative">
+              <h4 className="relative flex indent-7 font-medium text-dark md:leading-9">
                 {dict("sections.0-9.content.point3")}
               </h4>
             </div>
@@ -167,7 +167,7 @@ function Children() {
 
           <p className="md:mx-gs">{dict("sections.0-9.content.point4")}</p>
 
-          <p className="md:mx-gs underline underline-offset-4">
+          <p className="underline underline-offset-4 md:mx-gs">
             {dict("sections.0-9.content.point5")}
           </p>
         </section>
@@ -180,14 +180,12 @@ function Children() {
 
           <div className="relative">
             <StarsGroupIcon
-              className={`w-10 absolute ${
-                locale == "fa" ? "-right-4" : "-left-6"
-              } -top-4`}
+              className={`absolute -top-4 w-10 ltr:-left-6 ltr:-scale-x-100 rtl:-right-4`}
             />
             <p
               className={`md:text-3xl ${
                 locale == "fa" ? "pr-4" : "pl-4"
-              } text-2xl md:leading-[3rem] text-accent font-medium`}
+              } text-2xl font-medium text-accent md:leading-[3rem]`}
             >
               {dict("sections.9-12.content.point4")}
             </p>
@@ -201,13 +199,13 @@ function Children() {
 
           <div className="mb-5">
             <Image src={ThreeToSixPic} alt="Three To Six Pic" />
-            <h5 className="text-primary text-center mt-2">
+            <h5 className="mt-2 text-center text-primary">
               {dict("sections.1-3.image_description")}
             </h5>
           </div>
 
           <p className="text-center">
-            <mark className="bg-accent bg-opacity-25 p-[1px] leading-9 rounded-lg">
+            <mark className="rounded-lg bg-accent bg-opacity-25 p-[1px] leading-9">
               {dict("sections.1-3.content.point3")}
             </mark>
           </p>
@@ -230,11 +228,11 @@ function Children() {
           </h2>
 
           <OverlayBox imgsrc={FiveWaysPic}>
-            <ol className="flex flex-col list-decimal list-inside">
+            <ol className="flex list-inside list-decimal flex-col">
               {sectionsArrays["how-brush"].map((i) => {
                 const title = dict(`sections.how-brush.sections.${i}.title`);
                 const description = dict(
-                  `sections.how-brush.sections.${i}.description`
+                  `sections.how-brush.sections.${i}.description`,
                 );
                 return (
                   <>
@@ -252,7 +250,7 @@ function Children() {
               })}
             </ol>
           </OverlayBox>
-          <p className="underline-offset-4 underline md:mx-gs">
+          <p className="underline underline-offset-4 md:mx-gs">
             {dict("sections.how-brush.content")}
           </p>
         </section>
@@ -263,17 +261,15 @@ function Children() {
           <div className="mx-auto w-fit">
             <p
               style={{ fontFamily: getHandWriteFont(locale).style.fontFamily }}
-              className="mb-5 w-fit md:text-3xl text-2xl md:leading-[3rem] px-4 text-dark text-center font-medium relative "
+              className="relative mb-5 w-fit px-4 text-center text-2xl font-medium text-dark md:text-3xl md:leading-[3rem] "
             >
               {dict.rich("sections.why-visit.quote", {
                 p: (children) => (
-                  <p className="md:text-3xl text-2xl">{children}</p>
+                  <p className="text-2xl md:text-3xl">{children}</p>
                 ),
               })}
               <QuoteIcon
-                className={`md:w-10 w-7 inline-block absolute -top-5 ${
-                  locale == "fa" ? "right-0" : "left-0"
-                }`}
+                className={`absolute -top-5 inline-block w-7 ltr:left-0 rtl:right-0 md:w-10`}
               />
             </p>
           </div>
@@ -284,11 +280,11 @@ function Children() {
           <p className="md:mx-gs">
             {dict("sections.why-visit.content.point2")}
           </p>
-          <p className="md:mx-gs mb-5">
+          <p className="mb-5 md:mx-gs">
             {dict("sections.why-visit.content.point3")}
           </p>
 
-          <div className="flexColRow flex-col-reverse md:flex-row justify-center items-center gap-5 mb-5">
+          <div className="flexColRow mb-5 flex-col-reverse items-center justify-center gap-5 md:flex-row">
             <div className="md:mr-14">
               <p>{dict("sections.why-visit.content.point4")}</p>
               <p>{dict("sections.why-visit.content.point5")}</p>
@@ -299,8 +295,8 @@ function Children() {
             </div>
           </div>
 
-          <p className="md:mx-gs font-medium text-2xl leading-[3rem] text-center ">
-            <mark className="bg-accent bg-opacity-25 p-[2px] rounded-lg">
+          <p className="text-2xl font-medium leading-[3rem] md:mx-gs ">
+            <mark className="rounded-lg bg-accent bg-opacity-25 p-[2px]">
               {dict("sections.why-visit.content.point6")}
             </mark>
           </p>
@@ -345,11 +341,11 @@ function Children() {
               imgSrc={FluoridePic}
               align={locale == "en" ? "right" : "left"}
             >
-              <h4 className="text-accent mb-5 font-semibold">
+              <h4 className="mb-5 font-semibold text-accent">
                 {dict("sections.fluoride.tips-fluoride-therapy.title")}
               </h4>
 
-              <ul className="list-disc list-inside">
+              <ul className="list-inside list-disc">
                 {sectionsArrays["fluoride"]["fluoride-therapy"].map((i) => (
                   <li
                     key={dict(`sections.fluoride.fluoride-therapy.${i}`)}
@@ -378,11 +374,11 @@ function Children() {
             align={locale == "en" ? "right" : "left"}
             imgSrc={FishurPic}
           >
-            <h4 className="text-accent mb-5 font-medium">
+            <h4 className="mb-5 font-medium text-accent">
               {dict("sections.fluoride.tips-fissure-sealant-therapy.title")}
             </h4>
 
-            <ul className="list-disc list-inside">
+            <ul className="list-inside list-disc">
               {sectionsArrays["fluoride"]["fissure-sealant-therapy"].map(
                 (i) => (
                   <li
@@ -391,7 +387,7 @@ function Children() {
                   >
                     {dict(`sections.fluoride.fissure-sealant-therapy.${i}`)}
                   </li>
-                )
+                ),
               )}
             </ul>
           </PictureCard>

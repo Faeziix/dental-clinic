@@ -8,9 +8,9 @@ function SadTooth({ dict, locale }) {
   return (
     <div>
       <div className="relative">
-        <div className="absolute text-center right-12 top-3">
+        <div className="absolute right-12 top-3 text-center">
           <p
-            className="text-gray-700 text-sm mb-2"
+            className="mb-2 text-sm text-gray-700"
             style={{
               fontFamily: getHandWriteFont(locale).style.fontFamily,
               width: "160px",

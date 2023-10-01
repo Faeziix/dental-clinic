@@ -13,6 +13,7 @@ import WhyLaminatePic from "@/public/laminate/why_laminate.png";
 import OverlayPic from "@/public/laminate/overlay.png";
 import WherePic from "@/public/laminate/where_laminate.png";
 import { useLocale, useTranslations } from "next-intl";
+import Quote from "@/components/ui/Quote";
 
 function LaminatePage() {
   const dict = useTranslations("Services.laminate");
@@ -53,12 +54,12 @@ function LaminatePage() {
           <h4 className="text-primary">{dict("subtitle")}</h4>
         </section>
 
-        <section className="flexColRow gap-4 items-center mx-auto">
+        <section className="flexColRow mx-auto items-center gap-4">
           <p className="mb-0 md:mr-gs">{dict("description")}</p>
 
           <Image
             src={HeroPic}
-            className="w-full h-full grow md:w-[160%]"
+            className="h-full w-full grow md:w-[160%]"
             alt="Child Picking Pic"
           />
         </section>
@@ -73,19 +74,19 @@ function LaminatePage() {
           <p className="">{dict("sections.whatIsLaminate.content.point2")}</p>
 
           <div className="my-5">
-            <div className="grid grid-cols-2 gap-4 w-full">
+            <div className="grid w-full grid-cols-2 gap-4">
               <Image
-                className="w-full h-full"
+                className="h-full w-full"
                 src={PortfolioPic1}
                 alt="Portfolio Pic"
               />
               <Image
-                className="w-full h-full"
+                className="h-full w-full"
                 src={PortfolioPic2}
                 alt="Portfolio Pic"
               />
             </div>
-            <p className="text-center mt-2 text-primary ">
+            <p className="mt-2 text-center text-primary ">
               {dict("sections.whatIsLaminate.sampleWorkImage")}
             </p>
           </div>
@@ -105,7 +106,7 @@ function LaminatePage() {
           </p>
 
           <OverlayBox imgsrc={WhyLaminatePic}>
-            <ul className="list-disc list-inside">
+            <ul className="list-inside list-disc">
               <li>{dict("sections.whyLaminate.list.point1")}</li>
               <li>{dict("sections.whyLaminate.list.point2")}</li>
               <li>{dict("sections.whyLaminate.list.point3")}</li>
@@ -120,10 +121,7 @@ function LaminatePage() {
           <p className="md:mx-gs">{dict("sections.damage.content.point2")}</p>
 
           <div className="relative mt-6">
-            <StarsGroupIcon className="w-10 absolute md:-right-8 -right-4 -top-4" />
-            <p className="md:text-3xl text-2xl text-accent font-medium md:leading-[3rem] leading-9 pr-4">
-              {dict("sections.damage.content.point3")}
-            </p>
+            <Quote text={dict("sections.damage.content.point3")} />
           </div>
         </section>
 
@@ -135,11 +133,11 @@ function LaminatePage() {
           <p className="md:mx-gs">
             {dict("sections.maintenance.content.point2")}
           </p>
-          <h4 className="md:mx-gs mb-2 text-primary font-semibold">
+          <h4 className="mb-2 font-semibold text-primary md:mx-gs">
             {dict("sections.maintenance.content.point3")}
           </h4>
 
-          <ul className="list-disc list-inside md:mx-24">
+          <ul className="list-inside list-disc md:mx-24">
             <li>{dict("sections.maintenance.factorsDiscoloration.point1")}</li>
             <li>{dict("sections.maintenance.factorsDiscoloration.point2")}</li>
             <li>{dict("sections.maintenance.factorsDiscoloration.point3")}</li>
@@ -152,11 +150,11 @@ function LaminatePage() {
               imgSrc={OverlayPic}
               align={locale == "fa" ? "left" : "right"}
             >
-              <h4 className="text-accent font-bold">
+              <h4 className="font-bold text-accent">
                 {dict("sections.maintenance.stepsPrevent.title")}
               </h4>
 
-              <ol className="list-decimal list-inside">
+              <ol className="list-inside list-decimal">
                 <li>{dict("sections.maintenance.stepsPrevent.point1")}</li>
                 <li>{dict("sections.maintenance.stepsPrevent.point2")}</li>
                 <li>{dict("sections.maintenance.stepsPrevent.point3")}</li>
@@ -173,9 +171,9 @@ function LaminatePage() {
           <p className="md:mx-gs">{dict("sections.where.content.point1")}</p>
           <p className="md:mx-gs">{dict("sections.where.content.point2")}</p>
 
-          <div className="flexColRow rounded-lg justify-center items-center px-5 gap-4 md:px-gs py-4 bg-primary mb-5">
+          <div className="flexColRow mb-5 items-center justify-center gap-4 rounded-lg bg-primary px-5 py-4 md:px-gs">
             <Image src={WherePic} className="w-full" alt="Where" />
-            <h3 className="font-bold text-Neutral w-fit text-center">
+            <h3 className="w-fit text-center font-bold text-Neutral">
               {dict("sections.where.content.point3")}
             </h3>
           </div>

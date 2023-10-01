@@ -48,49 +48,49 @@ function Page() {
   ];
 
   return (
-    <div className="md:mx-20 mx-5">
-      <h1 className="py-16 flex gap-2 items-center">
+    <div className="mx-5 md:mx-20">
+      <h1 className="flex items-center gap-2 py-16">
         <span>
           <ToothIcon />
         </span>
         <span>{dict("title")}</span>
       </h1>
       {items.map((item, i) => (
-        <div className="flex mx-auto w-fit flex-col" key={i}>
+        <div className="mx-auto flex w-fit flex-col" key={i}>
           <h2 className="mb-4 text-center">{item.category}</h2>
-          <div className="flex flex-row md:flex-col-reverse w-fit">
-            <div className="flex bg-primary rounded-lg flex-col-reverse md:flex-row">
+          <div className="flex w-fit flex-row md:flex-col-reverse">
+            <div className="flex flex-col-reverse rounded-lg bg-primary md:flex-row">
               {item.afterImages.map((image, n) => (
-                <div key={n} className={`flex md:py-4 py-2 px-2 gap-2`}>
-                  <div key={image.src} className="basis-full grow">
+                <div key={n} className={`flex gap-2 px-2 py-2 md:py-4`}>
+                  <div key={image.src} className="grow basis-full">
                     <Image src={image} alt="Portfolio Image" />
                   </div>
                 </div>
               ))}
-              <h2 className="md:text-bt mt-2 md:mt-0 pr-4 text-center grow text-Neutral">
+              <h2 className="md:text-bt mt-2 grow pr-4 text-center text-Neutral md:mt-0">
                 After
               </h2>
             </div>
 
             <div className="flex flex-col-reverse  md:flex-row">
               {item.beforeImages.map((image, n) => (
-                <div key={n} className={`flex md:py-4 py-2 px-2 gap-2`}>
-                  <div key={image.src} className="basis-full grow">
+                <div key={n} className={`flex gap-2 px-2 py-2 md:py-4`}>
+                  <div key={image.src} className="grow basis-full">
                     <Image src={image} alt="Portfolio Image" />
                   </div>
                 </div>
               ))}
-              <h2 className="md:text-bt mt-2 md:mt-0 pr-4 text-center grow text-primary">
+              <h2 className="md:text-bt mt-2 grow pr-4 text-center text-primary md:mt-0">
                 Before
               </h2>
             </div>
           </div>
 
-          <div className="w-fit mx-auto">
+          <div className="mx-auto w-fit">
             <Button
               radius="circle"
-              size="sm"
-              className="relative mx-auto md:mx-0 mt-8 mb-16"
+              size="md"
+              className="relative mx-auto mb-16 mt-8 md:mx-0"
             >
               {dict("button")}
             </Button>

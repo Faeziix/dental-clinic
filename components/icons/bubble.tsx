@@ -8,6 +8,7 @@ export default function Bubble({ ...props }) {
       viewBox="0 0 254 103"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="ltr:-scale-x-100"
       {...props}
     >
       <g id="Layer 5">

@@ -7,9 +7,9 @@ type QuoteProps = {
 
 function Quote({ text }: QuoteProps) {
   return (
-    <h3 className="relative text-2xl font-bold text-accent ltr:pr-4 rtl:pl-4">
+    <h3 className="relative text-2xl font-bold text-accent ltr:pl-4 rtl:pr-4">
       {text}
-      <StarsGroupIcon className="absolute w-10 rtl:md:-right-8 rtl:-right-4 ltr:-scale-x-100 ltr:md:-left-8 ltr:-left-4 -top-4" />
+      <StarsGroupIcon className="absolute -top-4 w-10 ltr:-left-4 ltr:-scale-x-100 rtl:-right-4 ltr:md:-left-8 rtl:md:-right-8" />
     </h3>
   );
 }

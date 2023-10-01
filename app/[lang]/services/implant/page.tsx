@@ -70,7 +70,7 @@ function ImplantPage() {
           <h4 className="text-primary">{dict("subtitle")}</h4>
         </section>
 
-        <section className="flex gap-4 items-center ">
+        <section className="flex items-center gap-4 ">
           <p className="mb-0">{dict("description")}</p>
 
           <Image src={JawPic} alt="Jaw Pic" className="hidden md:block" />
@@ -85,7 +85,7 @@ function ImplantPage() {
           <p>{dict("sections.section1.content.point1")}</p>
           <p className="mb-6">{dict("sections.section1.content.point2")}</p>
           <Image
-            className="mb-6 mx-auto"
+            className="mx-auto mb-6"
             src={locale === "fa" ? StructurePic : ImplantEng}
             alt="Implant Structure"
           />
@@ -97,10 +97,10 @@ function ImplantPage() {
           <p>{dict("sections.section2.content")}</p>
 
           <OverlayBox imgsrc={ServicesPic}>
-            <h4 className="text-primary leading-6 mb-4 font-bold">
+            <h4 className="mb-4 font-bold leading-6 text-primary">
               {dict("sections.section2.list.title")}
             </h4>
-            <ul className="list-disc list-inside">
+            <ul className="list-inside list-disc">
               {advantagesPoints.map((pointKey) => (
                 <li key={pointKey}>
                   {dict(`sections.section2.list.points.${pointKey}`)}
@@ -115,13 +115,13 @@ function ImplantPage() {
           <p>{dict("sections.section3.content.point1")}</p>
           <p>{dict("sections.section3.content.point2")}</p>
 
-          <div className="flexColRow gap-4 items-center">
+          <div className="flexColRow items-center gap-4">
             <Image
               src={MaintenancePic}
               alt="Maintenance Pic"
               className="w-full"
             />
-            <h5 className="md:font-medium font-normal md:leading-9 text-dark">
+            <h5 className="font-normal text-dark md:font-medium md:leading-9">
               {dict("sections.section3.content.point3")}
             </h5>
           </div>
@@ -148,10 +148,10 @@ function ImplantPage() {
             style={{
               fontFamily: getHandWriteFont(locale).style.fontFamily,
             }}
-            className="text-center md:leading-[4rem] text-2xl md:text-3xl py-8 my-6 text-dark"
+            className="my-6 py-8 text-center text-2xl text-dark md:text-3xl md:leading-[4rem]"
           >
             {dict("sections.section5.quote")}
-            <div className="flex absolute top-0 right-0">
+            <div className="absolute left-0 top-0 flex">
               <QuoteIcon />
             </div>
           </h3>
@@ -164,7 +164,7 @@ function ImplantPage() {
           <h2>{dict("sections.section6.title")}</h2>
 
           <p className="">{dict("sections.section6.paragraph.point1")}</p>
-          <ul className="list-disc list-inside mb-4">
+          <ul className="mb-4 list-inside list-disc">
             {costFactors.map((pointKey) => (
               <li key={pointKey}>
                 {dict(`sections.section6.factors.${pointKey}`)}
@@ -183,7 +183,7 @@ function ImplantPage() {
           <p>{dict("sections.section7.content.point1")}</p>
           <p className="mb-5">{dict("sections.section7.content.point2")}</p>
 
-          <div className="flex flex-col md:flex-row gap-4">
+          <div className="flex flex-col gap-4 md:flex-row">
             <Image src={FacePic} alt="Face Pic" className="" />
             <div className="flex flex-col justify-center">
               <p>{dict("sections.section7.content.point3")}</p>
