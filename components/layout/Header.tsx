@@ -15,6 +15,7 @@ import {
 } from "../ui/dropdown-menu";
 import LocaleChanger from "./LocaleChanger";
 import { usePathname } from "next/navigation";
+import MobileDropdown from "./MobileDropdown";
 
 function Header({ lang, dict }) {
   const Links = [
@@ -37,7 +38,7 @@ function Header({ lang, dict }) {
             <DropdownMenuContent className="w-56">
               <DropdownMenuItem>
                 <Link
-                  className="w-full block hover:text-background"
+                  className="block w-full hover:text-background"
                   href="/services/implant"
                 >
                   {dict.header.implant}
@@ -45,7 +46,7 @@ function Header({ lang, dict }) {
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <Link
-                  className="w-full block hover:text-background"
+                  className="block w-full hover:text-background"
                   href="/services/laminate"
                 >
                   {dict.header.laminate}
@@ -53,7 +54,7 @@ function Header({ lang, dict }) {
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <Link
-                  className="w-full block hover:text-background"
+                  className="block w-full hover:text-background"
                   href="/services/children"
                 >
                   {dict.header.children}
@@ -64,29 +65,27 @@ function Header({ lang, dict }) {
         </DropdownMenu>
       ),
       mobileRender: (onClick) => (
-        <div className="flex flex-col gap-2">
-          <Link
-            className="text-2xl my-4 text-Neutral hover:text-purple-100"
-            href="/services/implant"
-            onClick={onClick}
-          >
-            {dict.header.implant}
-          </Link>
-          <Link
-            className="text-2xl my-4 text-Neutral hover:text-purple-100"
-            href="/services/laminate"
-            onClick={onClick}
-          >
-            {dict.header.laminate}
-          </Link>
-          <Link
-            className="text-2xl my-4 text-Neutral hover:text-purple-100"
-            href="/services/children"
-            onClick={onClick}
-          >
-            {dict.header.children}
-          </Link>
-        </div>
+        <MobileDropdown
+          onClick={onClick}
+          menu={[
+            {
+              title: dict.header.implant,
+              href: "/services/implant",
+            },
+            {
+              title: dict.header.laminate,
+              href: "/services/laminate",
+            },
+            {
+              title: dict.header.children,
+              href: "/services/children",
+            },
+          ]}
+        >
+          <span className="my-4 p-0 text-2xl text-Neutral">
+            {dict.header.services}
+          </span>
+        </MobileDropdown>
       ),
     },
     {
@@ -102,12 +101,12 @@ function Header({ lang, dict }) {
   ];
 
   return (
-    <div className="md:h-20 h-16 fixed top-0 z-20 bg-background py-2 w-full shadow-xl">
-      <div className="flex gap-4 flex-row-reverse md:flex-row md:justify-center justify-between items-center h-full w-full lg:px-16 px-5">
-        <Link href="/" className={`rtl:md:ml-auto ltr:md:mr-auto h-full w-fit`}>
+    <div className="fixed top-0 z-20 h-16 w-full bg-background py-2 shadow-xl md:h-20">
+      <div className="flex h-full w-full flex-row-reverse items-center justify-between gap-4 px-5 md:flex-row md:justify-center lg:px-16">
+        <Link href="/" className={`h-full w-fit ltr:md:mr-auto rtl:md:ml-auto`}>
           <Image className="h-full w-fit" src={Logo} alt="Logo" />
         </Link>
-        <div className="md:flex hidden gap-6 items-center">
+        <div className="hidden items-center gap-6 md:flex">
           {Links.map((link) => {
             if (link.render) return link.render();
 
@@ -119,7 +118,7 @@ function Header({ lang, dict }) {
           })}
         </div>
         <div className={`flex ${lang == "fa" ? "md:mr-auto" : "md:ml-auto"} `}>
-          <div className="hidden md:block mx-4 mt-1">
+          <div className="mx-4 mt-1 hidden md:block">
             <LocaleChanger />
           </div>
           <Link href="/reservation" className={` hidden md:block`}>
