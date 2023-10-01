@@ -53,8 +53,8 @@ function Page() {
 
   return (
     <main className="mt-20 min-h-screen">
-      <div className="mx-auto ltr:ml-5 rtl:mr-5 md:mr-auto md:max-w-7xl">
-        <div className="flex items-center gap-4 pr-5 pt-24 md:pr-20 ">
+      <div className="mx-auto pb-8 pt-5 ltr:ml-5 rtl:mr-5 md:mr-auto  md:max-w-7xl">
+        <div className="flex items-center gap-4 pr-5 md:pr-20 ">
           <Image
             src={TelephoneIcon}
             className="w-10 md:w-min"
@@ -62,7 +62,7 @@ function Page() {
           />
           <h1 className="">{dict("title")}</h1>
         </div>
-        <h4 className="pb-24 pt-6 md:pr-20">{dict("description")}</h4>
+        <h4 className="pt-6 md:pr-20">{dict("description")}</h4>
       </div>
 
       <section className="">
@@ -73,7 +73,7 @@ function Page() {
         />
       </section>
 
-      <section className="mb-32 md:-mt-24">
+      <section className="mb-8 md:-mt-24">
         <div className="mx-5 flex flex-col items-center justify-center gap-16 md:flex-row">
           {contacts.map((contact) => (
             <div key={contact.title} className={style.card}>
@@ -87,7 +87,7 @@ function Page() {
         </div>
       </section>
 
-      <section className="flex flex-col items-center md:flex-row">
+      <section className="mb-8 flex flex-col items-center md:flex-row">
         <div
           className={`w-full rounded-lg bg-primary px-5 py-12 text-Neutral md:h-80 md:rounded-none md:pr-48`}
         >
@@ -114,7 +114,7 @@ function Page() {
           </div>
         </div>
       </section>
-      <section className="mx-5 mt-32 py-20 md:mx-20">
+      <section className="mx-5 md:mx-20">
         <h1 className="mb-8">{dict("socials.title")}</h1>
         <h4>{dict("socials.description")}</h4>
 
@@ -123,7 +123,10 @@ function Page() {
             target="_blank"
             href="https://www.instagram.com/dr.soheila.karimi/"
           >
-            <Button className="flex w-full flex-row">
+            <Button
+              style={{ direction: "rtl" }}
+              className="flex w-full flex-row"
+            >
               dr.sohaila.karimi
               <Image
                 src={InstagramIcon}
@@ -135,7 +138,7 @@ function Page() {
           </Link>
 
           <Link href="https://wa.me/98914133321028">
-            <Button className="flex w-full">
+            <Button style={{ direction: "rtl" }} className="flex w-full">
               041-33321028
               <WhatsAppIcon className="h-16 w-16" />
             </Button>

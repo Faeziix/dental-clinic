@@ -130,11 +130,9 @@ function ImplantPage() {
         <section id="suitable">
           <h2>{dict("sections.section4.title")}</h2>
           <p>{dict("sections.section4.content.point1")}</p>
-          <p>
-            {dict("sections.section4.content.point2")}
-            <span className="underline underline-offset-4">
-              {dict("sections.section4.content.point3")}
-            </span>
+          <p>{dict("sections.section4.content.point2")}</p>
+          <p className="underline underline-offset-4">
+            {dict("sections.section4.content.point3")}
           </p>
         </section>
 
