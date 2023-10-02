@@ -57,7 +57,7 @@ function Page() {
       </h1>
       {items.map((item, i) => (
         <div className="mx-auto flex w-fit flex-col" key={i}>
-          <h2 className="mb-4 text-center">{item.category}</h2>
+          <h2 className="mb-4">{item.category}</h2>
           <div className="flex w-fit flex-row md:flex-col-reverse">
             <div className="flex flex-col-reverse rounded-lg bg-primary md:flex-row">
               {item.afterImages.map((image, n) => (
@@ -86,11 +86,12 @@ function Page() {
             </div>
           </div>
 
-          <div className="mx-auto w-fit">
+          <div className="w-fit ltr:ml-auto rtl:mr-auto">
             <Button
               radius="circle"
               size="md"
               className="relative mx-auto mb-16 mt-8 md:mx-0"
+              withArrow
             >
               {dict("button")}
             </Button>

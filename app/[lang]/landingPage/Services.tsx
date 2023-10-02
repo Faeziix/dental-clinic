@@ -20,7 +20,7 @@ function Services({ lang }) {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.7,
+        duration: 0.3,
         ease: "easeInOut",
       },
     },
@@ -35,7 +35,7 @@ function Services({ lang }) {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.7,
+        duration: 0.3,
         ease: "easeInOut",
         staggerChildren: 0.2,
         when: "beforeChildren",
@@ -54,27 +54,27 @@ function Services({ lang }) {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 0.5,
+        duration: 0.3,
         ease: "easeInOut",
       },
     },
     hidden: {
       opacity: 0,
-      scale: 0.7,
+      scale: 0.9,
     },
   };
 
   const backgroundVariant: Variants = {
     visible: {
-      width: "100%",
+      opacity: 1,
       transition: {
-        duration: 0.5,
+        duration: 0.3,
         ease: "circOut",
         delay: 0.7,
       },
     },
     hidden: {
-      width: "0%",
+      opacity: 0,
     },
   };
 
@@ -126,12 +126,12 @@ function Services({ lang }) {
           variants={textVariant}
           initial="hidden"
           animate={controls}
-          className="mb-6 max-w-5xl mx-auto"
+          className="mx-auto mb-6 max-w-5xl"
         >
           {dict("services.title")}
         </motion.h2>
         <div
-          className={`relative items-end flex ${
+          className={`relative flex items-end ${
             lang == "fa" ? "lg:pl-6" : "lg:pr-6"
           }`}
         >
@@ -139,10 +139,10 @@ function Services({ lang }) {
             variants={backgroundVariant}
             initial="hidden"
             animate={controls}
-            className={`absolute top-0 bg-accent h-full -z-10 ${
+            className={`absolute top-0 -z-10 h-full w-full bg-accent ${
               lang == "fa"
-                ? "lg:-right-10 lg:rounded-l-3xl rounded-3xl lg:rounded-r-none"
-                : "lg:-left-10 lg:rounded-r-3xl rounded-3xl lg:rounded-l-none"
+                ? "rounded-3xl lg:-right-10 lg:rounded-l-3xl lg:rounded-r-none"
+                : "rounded-3xl lg:-left-10 lg:rounded-l-none lg:rounded-r-3xl"
             }`}
           />
 
@@ -150,11 +150,11 @@ function Services({ lang }) {
             variants={listVariant}
             initial="hidden"
             animate={controls}
-            className={`px-5 lg:px-0 max-w-4xl text-2xl  h-full w-full py-4 flex flex-col-reverse md:flex-row-reverse gap-4
+            className={`flex h-full w-full max-w-4xl  flex-col-reverse gap-4 px-5 py-4 text-2xl md:flex-row-reverse lg:px-0
 ${
   lang == "fa"
-    ? "lg:mr-auto lg:ml-6 ml-auto mr-auto"
-    : "lg:ml-auto lg:mr-6 ml-auto mr-auto"
+    ? "ml-auto mr-auto lg:ml-6 lg:mr-auto"
+    : "ml-auto mr-auto lg:ml-auto lg:mr-6"
 }
 `}
           >
@@ -162,15 +162,15 @@ ${
               <motion.div
                 variants={listItemVariant}
                 key={service.name}
-                className="flex max-w-xl mx-auto flex-col basis-full px-4 py-8 gap-4 items-center justify-between bg-background rounded-lg"
+                className="mx-auto flex max-w-xl basis-full flex-col items-center justify-between gap-4 rounded-lg bg-background px-4 py-8"
               >
                 <div>
-                  <div className="flex mb-4 text-primary w-full gap-2 items-center">
+                  <div className="mb-4 flex w-full items-center gap-2 text-primary">
                     {service.icon}
                     <h3 className="">{service.display}</h3>
                   </div>
 
-                  <p className="leading-8 text-base">{service.text}</p>
+                  <p className="text-base leading-8">{service.text}</p>
                 </div>
 
                 <Link className="w-full" href={service.link}>
@@ -182,7 +182,7 @@ ${
             ))}
           </motion.div>
           <motion.div
-            className="hidden lg:block lg:w-3/12 h-full"
+            className="hidden h-full lg:block lg:w-3/12"
             variants={imageVariant}
             initial="hidden"
             animate={controls}

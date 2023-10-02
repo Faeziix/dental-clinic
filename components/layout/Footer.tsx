@@ -18,7 +18,7 @@ function Footer() {
     {
       name: "Phone",
       title: dict("contactUs.phone.title"),
-      display: <a href="tel:04133321028">04133321028</a>,
+      display: <a href="tel:04133321028">041-33321028</a>,
       icons: <Image className="h-6 w-6" src={Phone} alt="Phone" />,
     },
     {
@@ -33,7 +33,7 @@ function Footer() {
       name: "Address",
       title: dict("contactUs.address.title"),
       display: dict("contactUs.address.text"),
-      icons: <Image className="w-12" src={Address} alt="Address" />,
+      icons: <Image className="w-6" src={Address} alt="Address" />,
     },
   ];
 

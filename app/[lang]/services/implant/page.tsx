@@ -70,10 +70,10 @@ function ImplantPage() {
           <h4 className="text-primary">{dict("subtitle")}</h4>
         </section>
 
-        <section className="flex items-center gap-4 ">
+        <section className="flex flex-col items-center gap-4 md:flex-row ">
           <p className="mb-0">{dict("description")}</p>
 
-          <Image src={JawPic} alt="Jaw Pic" className="hidden md:block" />
+          <Image src={JawPic} alt="Jaw Pic" className="md:block" />
         </section>
 
         <section>
@@ -182,7 +182,7 @@ function ImplantPage() {
           <p className="mb-5">{dict("sections.section7.content.point2")}</p>
 
           <div className="flex flex-col gap-4 md:flex-row">
-            <Image src={FacePic} alt="Face Pic" className="" />
+            <Image src={FacePic} alt="Face Pic" className="w-full" />
             <div className="flex flex-col justify-center">
               <p>{dict("sections.section7.content.point3")}</p>
               <p>{dict("sections.section7.content.point4")}</p>

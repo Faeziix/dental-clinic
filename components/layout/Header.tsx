@@ -14,7 +14,6 @@ import {
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import LocaleChanger from "./LocaleChanger";
-import { usePathname } from "next/navigation";
 import MobileDropdown from "./MobileDropdown";
 
 function Header({ lang, dict }) {
@@ -82,7 +81,7 @@ function Header({ lang, dict }) {
             },
           ]}
         >
-          <span className="my-4 p-0 text-2xl text-Neutral">
+          <span className="px-1 py-2 text-2xl text-Neutral">
             {dict.header.services}
           </span>
         </MobileDropdown>
@@ -111,9 +110,9 @@ function Header({ lang, dict }) {
             if (link.render) return link.render();
 
             return (
-              <Link href={link.link} key={link.name}>
-                {link.display}
-              </Link>
+              <div key={link.name}>
+                <Link href={link.link}>{link.display}</Link>
+              </div>
             );
           })}
         </div>

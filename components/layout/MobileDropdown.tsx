@@ -3,8 +3,10 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import ArrowRightIcon from "../icons/ArrowRightIcon";
+import { usePathname } from "next-intl/client";
 
 function MobileDropdown({ children, menu, onClick }) {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -19,7 +21,7 @@ function MobileDropdown({ children, menu, onClick }) {
           <ArrowRightIcon
             className={`${
               isOpen ? "-rotate-90" : "rotate-90"
-            } invert transition`}
+            } fill-Neutral transition `}
           />
         </div>
       </div>
@@ -33,16 +35,20 @@ function MobileDropdown({ children, menu, onClick }) {
             className="relative left-0 top-0 bg-[#302782]"
           >
             <div className="flex h-full flex-col">
-              {menu.map((item, i) => (
-                <Link
-                  href={item.href}
-                  key={i}
-                  className="my-4 px-2 text-2xl text-Neutral hover:text-purple-100"
-                  onClick={onClick}
-                >
-                  {item.title}
-                </Link>
-              ))}
+              {menu.map((item, i) => {
+                return (
+                  <Link
+                    href={item.href}
+                    key={i}
+                    className={`my-2 px-2 py-2 text-2xl text-Neutral hover:text-purple-100 ${
+                      pathname == item.href && "bg-[hsl(246,54%,22%)]"
+                    }`}
+                    onClick={onClick}
+                  >
+                    {item.title}
+                  </Link>
+                );
+              })}
             </div>
           </motion.div>
         )}

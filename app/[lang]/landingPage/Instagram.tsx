@@ -74,14 +74,14 @@ function Instagram({ lang }) {
   };
 
   const descriptionVariant = variantGenerator({
-    duration: 0.7,
-    delay: 1.5,
+    duration: 0.3,
+    delay: 1,
     x: 0,
   });
 
   const linkVariant = variantGenerator({
-    duration: 0.7,
-    delay: 2,
+    duration: 0.3,
+    delay: 1.3,
     x: 0,
   });
 
@@ -103,7 +103,7 @@ function Instagram({ lang }) {
   const dict = useTranslations("landingPage");
 
   return (
-    <div ref={ref} className="px-5 max-w-5xl w-full">
+    <div ref={ref} className="w-full max-w-5xl px-5">
       <motion.h2
         variants={textVariant}
         initial="hidden"
@@ -116,20 +116,20 @@ function Instagram({ lang }) {
         variants={listVariant}
         initial="hidden"
         animate={controls}
-        className="grid grid-cols-2 lg:grid-cols-4 justify-items-center justify-center items-center flex-wrap gap-2 mb-4"
+        className="mb-4 grid grid-cols-2 flex-wrap items-center justify-center justify-items-center gap-2 lg:grid-cols-4"
       >
         {posts.map((post) => (
           <motion.div
             variants={listItemVariant}
             key={post.name}
-            className="max-w-[15rem] relative w-full aspect-square rounded-lg"
+            className="relative aspect-square w-full max-w-[15rem] rounded-lg"
           >
             <Link href={post.link} target="_blank">
               <Image
                 src={post.src}
                 alt="Instagram Post"
                 fill
-                className="object-cover rounded-lg"
+                className="rounded-lg object-cover"
               />
             </Link>
           </motion.div>
@@ -139,7 +139,7 @@ function Instagram({ lang }) {
         variants={descriptionVariant}
         initial="hidden"
         animate={controls}
-        className="text-center mb-2"
+        className="mb-2 text-center"
       >
         {dict("instagram.description")}
       </motion.h4>
@@ -148,7 +148,7 @@ function Instagram({ lang }) {
           variants={linkVariant}
           initial="hidden"
           animate={controls}
-          className="flex justify-center gap-2 text-accent items-center"
+          className="flex items-center justify-center gap-2 text-accent"
           style={{ direction: "rtl" }}
           target="_blank"
           href="https://www.instagram.com/dr.soheila.karimi/"

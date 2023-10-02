@@ -20,7 +20,7 @@ module.exports = {
         desktop: "705px",
       },
       colors: {
-        primary: "#372D95",
+        primary: "hsl(246, 54%, 38%)",
         accent: "hsl(21, 83%, 55%)",
         background: "#fdfdfd",
         Neutral: "hsl(278, 100%, 97%)",

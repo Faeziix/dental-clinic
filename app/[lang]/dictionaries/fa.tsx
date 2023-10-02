@@ -564,7 +564,7 @@ const dictionary = {
       },
       clock: {
         title: "ساعات کاری",
-        time: "<item>شنبه تا پنجشنبه 16:00 تا 21:00</item> <item>جمعه 11:00 تا 15:00</item>",
+        time: "<item>شنبه تا پنجشنبه 16:00 تا 21:00 - </item> <item>جمعه 11:00 تا 15:00</item>",
       },
       address: {
         title: "آدرس",

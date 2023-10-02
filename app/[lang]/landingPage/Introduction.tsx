@@ -13,9 +13,9 @@ function Introduction({ lang }) {
   const [ref, controls] = useScrollAnimation();
 
   const photoVariant = variantGenerator({
-    duration: 0.7,
+    duration: 0.3,
     delay: 0.5,
-    x: lang === "en" ? -50 : 50,
+    x: lang === "en" ? -20 : 20,
   });
 
   const descriptionVariant = variantGenerator({
@@ -25,29 +25,29 @@ function Introduction({ lang }) {
   });
 
   return (
-    <section ref={ref} className="w-full flex max-w-5xl flex-col gap-4 px-5">
+    <section ref={ref} className="flex w-full max-w-5xl flex-col gap-4 px-5">
       <motion.div
         variants={variantGenerator({
-          duration: 0.7,
-          x: lang === "en" ? -100 : 100,
+          duration: 0.3,
+          x: lang === "en" ? -20 : 20,
         })}
         initial="hidden"
         animate={controls}
-        className="flex items-center gap-2 mb-6"
+        className="mb-6 flex items-center gap-2"
       >
         <Image src={DentistIcon} alt="Dentist Icon" width={40} />
         <h2>{dict("introduction.title")}</h2>
       </motion.div>
 
-      <div className="flex flex-col md:flex-row gap-4">
+      <div className="flex flex-col gap-4 md:flex-row">
         <motion.div
-          className="basis-5/12 grow"
+          className="grow basis-5/12"
           variants={photoVariant}
           initial="hidden"
           animate={controls}
         >
           <Image
-            className="rounded-lg w-full"
+            className="w-full rounded-lg"
             src={DocImage}
             alt="Doctor Image"
           />

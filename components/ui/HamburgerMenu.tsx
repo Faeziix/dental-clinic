@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import useClickOutside from "@/utils/useClickOutside";
 import { useLocale } from "next-intl";
 import LocaleChanger from "../layout/LocaleChanger";
+import { usePathname } from "next-intl/client";
 
 export type LinksType = {
   links: {
@@ -18,6 +19,7 @@ export type LinksType = {
 
 function HamburgerMenu({ links }: LinksType) {
   const locale = useLocale();
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const ref = React.useRef<HTMLDivElement>(null);
 
@@ -52,7 +54,7 @@ function HamburgerMenu({ links }: LinksType) {
       </button>
 
       <motion.div
-        className={`fixed top-0 right-0 w-full h-screen bg-black bg-opacity-30 ${
+        className={`fixed right-0 top-0 h-screen w-full bg-black bg-opacity-30 ${
           isOpen ? "block" : "hidden"
         }`}
         initial={{ opacity: 0 }}
@@ -64,15 +66,15 @@ function HamburgerMenu({ links }: LinksType) {
         initial={{ x: locale === "fa" ? "100%" : "-100%" }}
         animate={isOpen ? { x: 0 } : { x: locale === "fa" ? "100%" : "-100%" }}
         transition={{ duration: 0.2 }}
-        className={`w-2/3 fixed ${
+        className={`fixed w-2/3 ${
           locale == "fa" ? "right-0" : "left-0"
-        } top-0 max-w-xs bg-primary h-full z-50`}
+        } top-0 z-50 h-full max-w-xs bg-primary`}
         ref={ref}
       >
-        <div onClick={toggleMenu} className="px-8 py-5 w-fit">
+        <div onClick={toggleMenu} className="w-fit px-8 py-5">
           <CrossIcon />
         </div>
-        <div className="flex flex-col px-5 mt-20 h-full">
+        <div className="mt-20 flex h-full flex-col px-5">
           {links.map((link) => {
             if (link.mobileRender)
               return link.mobileRender(() => setIsOpen(false));
@@ -80,7 +82,9 @@ function HamburgerMenu({ links }: LinksType) {
             return (
               <Link
                 key={link.name}
-                className="text-2xl my-4 text-Neutral hover:text-purple-100"
+                className={`my-4 px-1 py-2 text-2xl text-Neutral hover:text-purple-100 ${
+                  pathname == link.link && "rounded bg-[hsl(246,54%,32%)]"
+                }`}
                 href={link.link}
                 onClick={() => {
                   setIsOpen(false);

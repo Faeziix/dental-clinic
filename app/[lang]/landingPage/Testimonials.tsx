@@ -7,7 +7,6 @@ import { Variants, motion } from "framer-motion";
 
 import useScrollAnimation from "@/utils/useScrollAnimation";
 import { getHandWriteFont } from "@/utils/utils";
-import { variantGenerator } from "@/utils/animation-variants/variants";
 import { useTranslations } from "next-intl";
 
 const backgroundVariant = {
@@ -15,7 +14,7 @@ const backgroundVariant = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.5,
+      duration: 0.3,
       ease: "easeInOut",
       delay: 0.7,
     },
@@ -32,11 +31,11 @@ const lightBackgroundVariant: Variants = {
     y: -10,
     boxShadow: "0px 10px black",
     transition: {
-      delay: 1.4,
+      delay: 1,
       type: "spring",
       stiffness: 300,
       damping: 10,
-      duration: 0.7,
+      duration: 0.5,
     },
   },
 
@@ -76,7 +75,7 @@ function Testimonials({ lang }) {
           }}
           animate={controls}
           variants={lightBackgroundVariant}
-          className="bg-background border-2 border-solid border-black py-6 md:px-16 px-5 flex flex-col items-center gap-6 rounded-[2rem]"
+          className="flex flex-col items-center gap-6 rounded-[2rem] border-2 border-solid border-black bg-background px-5 py-6 md:px-16"
         >
           {testimonials.map((testimonial) => (
             <div
@@ -105,7 +104,7 @@ function Testimonials({ lang }) {
           transition={{ duration: 0.2, ease: "easeInOut", delay: 1.4 }}
         >
           <Link
-            className="max-w-xs h-full mt-6 block mx-auto hover:no-underline"
+            className="mx-auto mt-6 block h-full max-w-xs hover:no-underline"
             href="https://www.instagram.com/stories/highlights/17902117297715473/"
           >
             <Button
