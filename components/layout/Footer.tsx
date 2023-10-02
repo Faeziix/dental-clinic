@@ -33,7 +33,9 @@ function Footer() {
       name: "Address",
       title: dict("contactUs.address.title"),
       display: dict("contactUs.address.text"),
-      icons: <Image className="w-6" src={Address} alt="Address" />,
+      icons: (
+        <Image className="w-16 max-w-[20px]" src={Address} alt="Address" />
+      ),
     },
   ];
 
