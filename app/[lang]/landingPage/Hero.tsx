@@ -5,12 +5,12 @@ import HeroImg from "@/public/HeroImg.webp";
 
 function Hero() {
   return (
-    <section className="py-16 relative text-background h-[70vh] w-full md:px-24 lg:px-44 px-5 flex flex-col justify-center gap-2 font-semibold">
+    <section className="relative flex h-[70vh] w-full flex-col justify-center gap-2 px-5 py-16 font-semibold text-background md:px-24 lg:px-44">
       <HeroContent />
-      <div className="absolute top-0 left-0 w-full h-full -z-10">
+      <div className="absolute left-0 top-0 -z-10 h-full w-full">
         <div className={`${styles.bkgVideo} relative h-full w-full`}>
           <video
-            className={`h-full w-full object-cover z-[-10] `}
+            className={`z-[-10] h-full w-full object-cover `}
             autoPlay
             muted={true}
             loop

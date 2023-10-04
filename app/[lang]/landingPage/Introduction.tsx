@@ -14,13 +14,13 @@ function Introduction({ lang }) {
 
   const photoVariant = variantGenerator({
     duration: 0.3,
-    delay: 0.5,
-    x: lang === "en" ? -20 : 20,
+    delay: 0.1,
+    x: lang === "en" ? -40 : 40,
   });
 
   const descriptionVariant = variantGenerator({
-    duration: 0.7,
-    delay: 1,
+    duration: 0.3,
+    delay: 0.2,
     x: 0,
   });
 
@@ -29,7 +29,7 @@ function Introduction({ lang }) {
       <motion.div
         variants={variantGenerator({
           duration: 0.3,
-          x: lang === "en" ? -20 : 20,
+          x: lang === "en" ? -40 : 40,
         })}
         initial="hidden"
         animate={controls}

@@ -43,15 +43,15 @@ function Instagram({ lang }) {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.5,
+        duration: 0.3,
         ease: "easeInOut",
-        staggerChildren: 0.15,
+        staggerChildren: 0.1,
         when: "beforeChildren",
       },
     },
     hidden: {
       opacity: 0,
-      x: lang === "en" ? "-10%" : "10%",
+      x: lang === "en" ? "-20px" : "20px",
     },
   };
 
@@ -96,7 +96,7 @@ function Instagram({ lang }) {
     },
     hidden: {
       opacity: 0,
-      x: lang === "en" ? "-10%" : "10%",
+      x: lang === "en" ? "-20px" : "20px",
     },
   };
 

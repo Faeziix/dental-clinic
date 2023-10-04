@@ -34,7 +34,7 @@ function Journey({ lang }) {
         stiffness: 200,
         damping: 20,
         duration: 0.1,
-        delay: 0.2,
+        delay: 0.1,
       },
     },
   };
@@ -52,7 +52,7 @@ function Journey({ lang }) {
         stiffness: 200,
         damping: 20,
         duration: 0.1,
-        delay: 0.2,
+        delay: 0.1,
       },
     },
   };
@@ -136,7 +136,7 @@ function Journey({ lang }) {
     <motion.section ref={ref} className="mx-5 md:px-0">
       <motion.h2
         variants={variantGenerator({
-          duration: 0.7,
+          duration: 0.3,
           x: lang === "en" ? "-5%" : "5%",
         })}
         initial="hidden"

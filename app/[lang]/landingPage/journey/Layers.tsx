@@ -23,7 +23,7 @@ function Layers({ step, i, lang }) {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.5,
+        duration: 0.3,
         ease: "easeInOut",
       },
     },
@@ -38,7 +38,7 @@ function Layers({ step, i, lang }) {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.5,
+        duration: 0.3,
         ease: "easeInOut",
       },
     },
@@ -49,7 +49,7 @@ function Layers({ step, i, lang }) {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.5,
+        duration: 0.3,
         ease: "easeInOut",
       },
     },
@@ -65,7 +65,7 @@ function Layers({ step, i, lang }) {
           transition: {
             staggerChildren: 0.1,
             when: "beforeChildren",
-            duration: 0.4,
+            duration: 0.2,
             ease: "easeOut",
           },
         },
@@ -90,7 +90,7 @@ function Layers({ step, i, lang }) {
     >
       <motion.div
         variants={i == 1 ? imageLeftVariant : imageRightVariant}
-        className="mb-4 relative w-full"
+        className="relative mb-4 w-full"
       >
         {step.image}
       </motion.div>
@@ -98,10 +98,10 @@ function Layers({ step, i, lang }) {
       <motion.div
         initial={{ opacity: 0 }}
         variants={descriptionVariant}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
-        className="flex flex-col max-w-xl gap-2 basis-full"
+        transition={{ duration: 0.2, ease: "easeInOut" }}
+        className="flex max-w-xl basis-full flex-col gap-2"
       >
-        <div className="flex items-center gap-2 relative">
+        <div className="relative flex items-center gap-2">
           {step.icon}
           <h3 className="h-full">{step.title}</h3>
         </div>

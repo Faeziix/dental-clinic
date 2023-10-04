@@ -16,7 +16,7 @@ const backgroundVariant = {
     transition: {
       duration: 0.3,
       ease: "easeInOut",
-      delay: 0.7,
+      delay: 0.3,
     },
   },
   hidden: {
@@ -31,7 +31,7 @@ const lightBackgroundVariant: Variants = {
     y: -10,
     boxShadow: "0px 10px black",
     transition: {
-      delay: 1,
+      delay: 0.7,
       type: "spring",
       stiffness: 300,
       damping: 10,
@@ -52,10 +52,26 @@ function Testimonials({ lang }) {
 
   const testimonials = [1, 2, 3].map((i) => dict(`testimonials.t${i}`));
 
+  const textVariant: Variants = {
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.3,
+        ease: "easeInOut",
+      },
+    },
+    hidden: {
+      opacity: 0,
+      x: lang === "en" ? "-20px" : "20px",
+    },
+  };
+
   return (
     <div ref={ref} className="max-w-5xl md:px-5">
       <motion.h2
         initial="hidden"
+        variants={textVariant}
         animate={controls}
         className={`${lang == "fa" ? "pr-5" : "pl-5"} mb-4`}
       >
@@ -66,7 +82,7 @@ function Testimonials({ lang }) {
         variants={backgroundVariant}
         initial="hidden"
         animate={controls}
-        transition={{ duration: 0.7, ease: "easeInOut" }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
         className="bg-accent px-5 py-8 md:rounded-[2rem]"
       >
         <motion.div
@@ -101,7 +117,7 @@ function Testimonials({ lang }) {
             opacity: 1,
             y: 0,
           }}
-          transition={{ duration: 0.2, ease: "easeInOut", delay: 1.4 }}
+          transition={{ duration: 0.2, ease: "easeInOut", delay: 0.8 }}
         >
           <Link
             className="mx-auto mt-6 block h-full max-w-xs hover:no-underline"

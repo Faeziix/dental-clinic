@@ -26,7 +26,7 @@ function Services({ lang }) {
     },
     hidden: {
       opacity: 0,
-      x: lang === "en" ? "-10%" : "10%",
+      x: lang === "en" ? "-20px" : "20px",
     },
   };
 
@@ -37,10 +37,9 @@ function Services({ lang }) {
       transition: {
         duration: 0.3,
         ease: "easeInOut",
-        staggerChildren: 0.2,
+        staggerChildren: 0.1,
         when: "beforeChildren",
         staggerDirection: -1,
-        delay: 0.3,
       },
     },
     hidden: {
@@ -54,7 +53,7 @@ function Services({ lang }) {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 0.3,
+        duration: 0.2,
         ease: "easeInOut",
       },
     },
@@ -70,7 +69,7 @@ function Services({ lang }) {
       transition: {
         duration: 0.3,
         ease: "circOut",
-        delay: 0.7,
+        delay: 0.3,
       },
     },
     hidden: {
@@ -86,7 +85,7 @@ function Services({ lang }) {
         type: "spring",
         stiffness: 100,
         duration: 0.7,
-        delay: 1.7,
+        delay: 0.6,
       },
     },
     hidden: {
