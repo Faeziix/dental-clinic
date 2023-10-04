@@ -20,7 +20,7 @@ function HeroContent() {
     },
     hidden: {
       opacity: 0,
-      y: lang === "en" ? "-20px" : "20px",
+      y: "20px",
     },
   };
 

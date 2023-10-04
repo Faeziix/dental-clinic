@@ -1,4 +1,6 @@
-export default function ArrowRightIcon({ ...props }) {
+export default function ArrowRightIcon({
+  ...props
+}: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
