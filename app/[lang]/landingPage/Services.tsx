@@ -161,7 +161,7 @@ ${
               <motion.div
                 variants={listItemVariant}
                 key={service.name}
-                className="mx-auto flex max-w-xl basis-full flex-col items-center justify-between gap-4 rounded-lg bg-background px-4 py-8"
+                className="mx-auto flex max-w-2xl basis-full flex-col items-center justify-between gap-4 rounded-lg bg-background px-4 py-8"
               >
                 <div>
                   <div className="mb-4 flex w-full items-center gap-2 text-primary">
@@ -173,8 +173,8 @@ ${
                 </div>
 
                 <Link className="w-full" href={service.link}>
-                  <Button withArrow mode="block" className="text-primary">
-                    <span className="mr-3">{dict("services.button")}</span>
+                  <Button withArrow mode="block" className="px-6 text-primary">
+                    <span>{dict("services.button")}</span>
                   </Button>
                 </Link>
               </motion.div>

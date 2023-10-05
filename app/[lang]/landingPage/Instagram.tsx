@@ -116,13 +116,13 @@ function Instagram({ lang }) {
         variants={listVariant}
         initial="hidden"
         animate={controls}
-        className="mb-4 grid grid-cols-2 flex-wrap items-center justify-center justify-items-center gap-2 lg:grid-cols-4"
+        className="mx-auto mb-4 flex max-w-xl flex-wrap items-center justify-center gap-2 lg:max-w-none"
       >
         {posts.map((post) => (
           <motion.div
             variants={listItemVariant}
             key={post.name}
-            className="relative aspect-square w-full max-w-[15rem] rounded-lg"
+            className="relative aspect-square w-full max-w-[15rem] basis-[48%] rounded-lg"
           >
             <Link href={post.link} target="_blank">
               <Image

@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import Checkmark from "@/components/icons/Checkmark";
-import localFont from "next/font/local";
 import QuoteIcon from "@/components/icons/QuoteIcon";
 import StarsGroupIcon from "@/components/icons/StarsGroupIcon";
 import OverlayBox from "@/components/sections/OverlayBox";
@@ -20,6 +19,7 @@ import FiveWaysPic from "@/public/children/5way.png";
 import Toc from "@/components/ui/Toc";
 import { getHandWriteFont } from "@/utils/utils";
 import { useLocale, useTranslations } from "next-intl";
+import Quote from "@/components/ui/Quote";
 
 function Children() {
   const dict = useTranslations("Services.children");
@@ -90,7 +90,7 @@ function Children() {
         </section>
 
         <section className="flexColRow mx-auto items-center gap-4">
-          <p className="mb-0 md:mr-gs">{dict("description")}</p>
+          <p className="mb-0">{dict("description")}</p>
 
           <Image
             src={ChildPickingPic}
@@ -114,7 +114,7 @@ function Children() {
         </section>
 
         <section id="when-brush" className="mx-auto">
-          <h2 className="md:mx-gs">{dict("sections.when-brush.title")}</h2>
+          <h2 className="">{dict("sections.when-brush.title")}</h2>
 
           <div className="flex">
             <div className="relative mb-5 flex h-full items-center justify-center rounded-lg bg-primary px-5 py-4 md:bg-transparent md:px-8 md:py-0">
@@ -130,22 +130,16 @@ function Children() {
             </div>
           </div>
 
-          <p className="md:mx-gs">
-            {dict("sections.when-brush.content.point2")}
-          </p>
+          <p className="">{dict("sections.when-brush.content.point2")}</p>
 
-          <p className="md:mx-gs">
-            {dict("sections.when-brush.content.point3")}
-          </p>
-          <p className="md:mx-gs">
-            {dict("sections.when-brush.content.point4")}
-          </p>
+          <p className="">{dict("sections.when-brush.content.point3")}</p>
+          <p className="">{dict("sections.when-brush.content.point4")}</p>
         </section>
 
         <section className="mx-auto my-6 md:my-10">
-          <h3 className="mb-8 md:mx-gs">{dict("sections.0-9.title")}</h3>
-          <p className="md:mx-gs">{dict("sections.0-9.content.point1")}</p>
-          <p className="md:mx-gs">{dict("sections.0-9.content.point2")}</p>
+          <h3 className="mb-8 ">{dict("sections.0-9.title")}</h3>
+          <p className="">{dict("sections.0-9.content.point1")}</p>
+          <p className="">{dict("sections.0-9.content.point2")}</p>
 
           <div className="flexColRow relative mb-5 items-center gap-4">
             <Image
@@ -165,9 +159,9 @@ function Children() {
             </div>
           </div>
 
-          <p className="md:mx-gs">{dict("sections.0-9.content.point4")}</p>
+          <p className="">{dict("sections.0-9.content.point4")}</p>
 
-          <p className="underline underline-offset-4 md:mx-gs">
+          <p className="underline underline-offset-4 ">
             {dict("sections.0-9.content.point5")}
           </p>
         </section>
@@ -198,7 +192,11 @@ function Children() {
           <p className="mb-5">{dict("sections.1-3.content.point2")}</p>
 
           <div className="mb-5">
-            <Image src={ThreeToSixPic} alt="Three To Six Pic" />
+            <Image
+              src={ThreeToSixPic}
+              className="mx-auto"
+              alt="Three To Six Pic"
+            />
             <h5 className="mt-2 text-center text-primary">
               {dict("sections.1-3.image_description")}
             </h5>
@@ -219,7 +217,7 @@ function Children() {
         </section>
 
         <section className="mx-auto" id="how-brush">
-          <h2 className="md:mx-gs">
+          <h2 className="">
             {dict.rich("sections.how-brush.title", {
               gold: (children) => (
                 <span className="text-yellow-500">{children}</span>
@@ -250,13 +248,13 @@ function Children() {
               })}
             </ol>
           </OverlayBox>
-          <p className="underline underline-offset-4 md:mx-gs">
+          <p className="underline underline-offset-4 ">
             {dict("sections.how-brush.content")}
           </p>
         </section>
 
         <section id="why-visit" className="mx-auto">
-          <h2 className="md:mx-gs">{dict("sections.why-visit.title")}</h2>
+          <h2 className="">{dict("sections.why-visit.title")}</h2>
 
           <div className="mx-auto w-fit">
             <p
@@ -269,20 +267,14 @@ function Children() {
                 ),
               })}
               <QuoteIcon
-                className={`absolute -top-5 inline-block w-7 ltr:left-0 rtl:right-0 md:w-10`}
+                className={`absolute -top-5 inline-block w-7 ltr:left-0 md:w-10`}
               />
             </p>
           </div>
 
-          <p className="md:mx-gs">
-            {dict("sections.why-visit.content.point1")}
-          </p>
-          <p className="md:mx-gs">
-            {dict("sections.why-visit.content.point2")}
-          </p>
-          <p className="mb-5 md:mx-gs">
-            {dict("sections.why-visit.content.point3")}
-          </p>
+          <p className="">{dict("sections.why-visit.content.point1")}</p>
+          <p className="">{dict("sections.why-visit.content.point2")}</p>
+          <p className="mb-5 ">{dict("sections.why-visit.content.point3")}</p>
 
           <div className="flexColRow mb-5 flex-col-reverse items-center justify-center gap-5 md:flex-row">
             <div className="md:mr-14">
@@ -295,7 +287,7 @@ function Children() {
             </div>
           </div>
 
-          <p className="text-2xl font-medium leading-[3rem] md:mx-gs ">
+          <p className="text-2xl font-medium leading-[3rem]  ">
             <mark className="rounded-lg bg-accent bg-opacity-25 p-[2px]">
               {dict("sections.why-visit.content.point6")}
             </mark>
@@ -325,8 +317,8 @@ function Children() {
         </section>
 
         <section id="fluoride" className="mx-auto">
-          <h2 className="md:mx-gs">{dict("sections.fluoride.title")}</h2>
-          <div className="md:mx-gs">
+          <h2 className="">{dict("sections.fluoride.title")}</h2>
+          <div className="">
             <h4 className="font-semibold">
               {dict("sections.fluoride.fluoride-therapy.title")}
             </h4>
@@ -358,7 +350,7 @@ function Children() {
             </PictureCard>
           </div>
 
-          <div className="md:mx-gs">
+          <div className="">
             <h4 className="mb-2 font-semibold">
               {dict("sections.fluoride.fissure-sealant-therapy.title")}
             </h4>

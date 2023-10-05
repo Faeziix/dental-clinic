@@ -54,8 +54,8 @@ function LaminatePage() {
           <h4 className="text-primary">{dict("subtitle")}</h4>
         </section>
 
-        <section className="flexColRow mx-auto items-center gap-4">
-          <p className="mb-0 md:mr-gs">{dict("description")}</p>
+        <section className="flexColRow items-center gap-4">
+          <p className="mb-0">{dict("description")}</p>
 
           <Image
             src={HeroPic}
@@ -95,15 +95,11 @@ function LaminatePage() {
         </section>
 
         <section id="why-laminate" className="mx-auto">
-          <h2 className="md:mx-gs">{dict("sections.whyLaminate.title")}</h2>
+          <h2 className="">{dict("sections.whyLaminate.title")}</h2>
 
-          <p className="md:mx-gs">
-            {dict("sections.whyLaminate.content.point1")}
-          </p>
+          <p className="">{dict("sections.whyLaminate.content.point1")}</p>
 
-          <p className="md:mx-gs">
-            {dict("sections.whyLaminate.content.point2")}
-          </p>
+          <p className="">{dict("sections.whyLaminate.content.point2")}</p>
 
           <OverlayBox imgsrc={WhyLaminatePic}>
             <ul className="list-inside list-disc">
@@ -116,9 +112,9 @@ function LaminatePage() {
         </section>
 
         <section id="damage" className="mx-auto">
-          <h2 className="md:mx-gs">{dict("sections.damage.title")}</h2>
-          <p className="md:mx-gs">{dict("sections.damage.content.point1")}</p>
-          <p className="md:mx-gs">{dict("sections.damage.content.point2")}</p>
+          <h2 className="">{dict("sections.damage.title")}</h2>
+          <p className="">{dict("sections.damage.content.point1")}</p>
+          <p className="">{dict("sections.damage.content.point2")}</p>
 
           <div className="relative mt-6">
             <Quote text={dict("sections.damage.content.point3")} />
@@ -126,18 +122,14 @@ function LaminatePage() {
         </section>
 
         <section className="mx-auto" id="maintenance">
-          <h2 className="md:mx-gs">{dict("sections.maintenance.title")}</h2>
-          <p className="md:mx-gs">
-            {dict("sections.maintenance.content.point1")}
-          </p>
-          <p className="md:mx-gs">
-            {dict("sections.maintenance.content.point2")}
-          </p>
-          <h4 className="mb-2 font-semibold text-primary md:mx-gs">
+          <h2 className="">{dict("sections.maintenance.title")}</h2>
+          <p className="">{dict("sections.maintenance.content.point1")}</p>
+          <p className="">{dict("sections.maintenance.content.point2")}</p>
+          <h4 className="mb-2 font-semibold text-primary ">
             {dict("sections.maintenance.content.point3")}
           </h4>
 
-          <ul className="list-inside list-disc md:mx-24">
+          <ul className="list-inside list-disc ltr:ml-4 rtl:mr-4">
             <li>{dict("sections.maintenance.factorsDiscoloration.point1")}</li>
             <li>{dict("sections.maintenance.factorsDiscoloration.point2")}</li>
             <li>{dict("sections.maintenance.factorsDiscoloration.point3")}</li>
@@ -167,19 +159,19 @@ function LaminatePage() {
         </section>
 
         <section id="where" className="mx-auto">
-          <h2 className="mb-8 md:mx-gs">{dict("sections.where.title")}</h2>
-          <p className="md:mx-gs">{dict("sections.where.content.point1")}</p>
-          <p className="md:mx-gs">{dict("sections.where.content.point2")}</p>
+          <h2 className="mb-8">{dict("sections.where.title")}</h2>
+          <p className="">{dict("sections.where.content.point1")}</p>
+          <p className="">{dict("sections.where.content.point2")}</p>
 
           <div className="flexColRow mb-5 items-center justify-center gap-4 rounded-lg bg-primary px-5 py-4 md:px-gs">
             <Image src={WherePic} className="w-full" alt="Where" />
-            <h3 className="w-fit text-center font-bold text-Neutral">
+            <h3 className="w-fit font-bold text-Neutral">
               {dict("sections.where.content.point3")}
             </h3>
           </div>
 
-          <p className="md:mx-gs">{dict("sections.where.content.point4")}</p>
-          <p className="md:mx-gs">{dict("sections.where.content.point5")}</p>
+          <p className="">{dict("sections.where.content.point4")}</p>
+          <p className="">{dict("sections.where.content.point5")}</p>
         </section>
       </article>
     </div>
