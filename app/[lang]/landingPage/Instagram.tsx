@@ -143,6 +143,7 @@ function Instagram({ lang }) {
       >
         {dict("instagram.description")}
       </motion.h4>
+
       <motion.div variants={linkVariant} initial="hidden" animate={controls}>
         <Link
           variants={linkVariant}
