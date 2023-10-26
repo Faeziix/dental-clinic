@@ -4,7 +4,6 @@ import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import CheckmarkIcon from "@/components/icons/Checkmark";
 import TaskIcon from "@/components/icons/TaskIcon";
-import StarIcon from "@/components/icons/StarIcon";
 import JourneyBkgPrimary from "@/public/journey/JourneyBackgroundPrimary.png";
 import JourneyBkgAccent from "@/public/journey/JourneyBackgroundAccent.png";
 import Journey1 from "@/public/journey/Journey1.png";
@@ -141,12 +140,12 @@ function Journey({ lang }) {
         })}
         initial="hidden"
         animate={controls}
-        className="mb-16"
+        className="mb-8 md:mb-16"
       >
         {dict("journey.title")}
       </motion.h2>
 
-      <div className="flex max-w-5xl flex-col gap-20">
+      <div className="flex max-w-5xl flex-col gap-12 md:gap-20">
         {journey.map((step, i) => (
           <Layers lang={lang} key={i} step={step} i={i} />
         ))}

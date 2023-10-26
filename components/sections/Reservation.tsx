@@ -12,18 +12,18 @@ function Reservation({ withImage = false }) {
 
   return (
     <div>
-      <h2 className="mb-8">{dict("title")}</h2>
+      <h2 className="md:mb-8">{dict("title")}</h2>
       <div
         id={styles.reservation_form}
-        className={`gap-6 justify-between  ${
-          withImage ? "md:grid-cols-2 md:grid-rows-[auto_1fr] grid" : ""
+        className={`justify-between gap-6  ${
+          withImage ? "grid md:grid-cols-2 md:grid-rows-[auto_1fr]" : ""
         }`}
       >
         <form
-          className={`${styles.form} max-w-lg md:max-w-none flex flex-col justify-between `}
+          className={`${styles.form} flex max-w-lg flex-col justify-between md:max-w-none `}
         >
           <div>
-            <div className="flex gap-4 w-full">
+            <div className="flex w-full gap-4">
               <div className="mb-4 w-full">
                 <label className="mb-2 text-xl" htmlFor="name">
                   {dict("fields.first_name")}
@@ -47,9 +47,9 @@ function Reservation({ withImage = false }) {
               <label className="mb-2 text-xl" htmlFor="description">
                 {dict("fields.note")}
               </label>
-              <textarea className="lg:min-h-[6rem] h-full" id="description" />
+              <textarea className="h-full lg:min-h-[6rem]" id="description" />
             </div>
-            <Button className="w-full mx-auto" mode="block" color="primary">
+            <Button className="mx-auto w-full" mode="block" color="primary">
               {dict("button")}
             </Button>
           </div>
@@ -57,7 +57,7 @@ function Reservation({ withImage = false }) {
 
         {withImage && (
           <Image
-            className={`rounded-lg rows-start-1 mb-4 md:mb-0 ltr:-scale-x-100 ${styles.picture}`}
+            className={`rows-start-1 mb-4 rounded-lg ltr:-scale-x-100 md:mb-0 ${styles.picture}`}
             src={FormGirl}
             alt="Form"
             loading="lazy"

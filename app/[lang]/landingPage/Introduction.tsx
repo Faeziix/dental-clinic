@@ -33,7 +33,7 @@ function Introduction({ lang }) {
         })}
         initial="hidden"
         animate={controls}
-        className="mb-6 flex items-center gap-2"
+        className="mb-2 flex items-center gap-2 md:mb-8"
       >
         <Image src={DentistIcon} alt="Dentist Icon" width={40} />
         <h2>{dict("introduction.title")}</h2>

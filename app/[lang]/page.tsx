@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
 export default function Home({ params: { lang } }) {
   return (
-    <main className="flex flex-col items-center justify-between gap-16 md:gap-32 pb-8">
+    <main className="flex flex-col items-center justify-between gap-8 pb-8 md:gap-24">
       <Hero />
       <Introduction lang={lang} />
       <Services lang={lang} />

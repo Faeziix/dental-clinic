@@ -73,7 +73,7 @@ function Testimonials({ lang }) {
         initial="hidden"
         variants={textVariant}
         animate={controls}
-        className={`${lang == "fa" ? "pr-5" : "pl-5"} mb-4`}
+        className={`${lang == "fa" ? "pr-5" : "pl-5"} mb-4 md:mb-8`}
       >
         {dict("testimonials.title")}
       </motion.h2>

@@ -108,7 +108,7 @@ function Instagram({ lang }) {
         variants={textVariant}
         initial="hidden"
         animate={controls}
-        className="mb-4"
+        className="mb-6 md:mb-8"
       >
         {dict("instagram.title")}
       </motion.h2>

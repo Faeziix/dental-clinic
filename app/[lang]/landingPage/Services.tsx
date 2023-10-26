@@ -125,7 +125,7 @@ function Services({ lang }) {
           variants={textVariant}
           initial="hidden"
           animate={controls}
-          className="mx-auto mb-6 max-w-5xl"
+          className="mx-auto mb-6 max-w-5xl md:mb-8"
         >
           {dict("services.title")}
         </motion.h2>
