@@ -18,8 +18,12 @@ function Footer() {
     {
       name: "Phone",
       title: dict("contactUs.phone.title"),
-      display: <a href="tel:04133321028">041-33321028</a>,
-      icons: <Image className="h-6 w-6" src={Phone} alt="Phone" />,
+      display: (
+        <a className="inline hover:text-purple-300" href="tel:04133321028">
+          041-33321028
+        </a>
+      ),
+      icons: <Image className="h-6 w-6 mt-1.5" src={Phone} alt="Phone" />,
     },
     {
       name: "Work Hours",
@@ -27,14 +31,14 @@ function Footer() {
       display: dict.rich("contactUs.clock.time", {
         item: (text) => <span className="font-bold">{text}</span>,
       }),
-      icons: <Image className="h-6 w-6" src={Clock} alt="Clock" />,
+      icons: <Image className="h-6 w-6 mt-1.5" src={Clock} alt="Clock" />,
     },
     {
       name: "Address",
       title: dict("contactUs.address.title"),
       display: dict("contactUs.address.text"),
       icons: (
-        <Image className="w-16 max-w-[20px]" src={Address} alt="Address" />
+        <Image className="w-16 max-w-[20px] mt-1.5" src={Address} alt="Address" />
       ),
     },
   ];
@@ -139,14 +143,14 @@ function Footer() {
         <p className="text-center text-xs">
           Designed By{" "}
           <a
-            className="underline hover:text-purple-300 transition-all"
+            className="underline transition-all hover:text-purple-300"
             href="https://www.figma.com/design/WUkWrHo6SWuD5vFsTLwFDA/Dental-Clinic?node-id=962-1136&t=9qfOI9Kx2CkWGKSw-1"
           >
             Sara Karimi
           </a>
           . Developed by{" "}
           <a
-            className="underline hover:text-purple-300 transition-all"
+            className="underline transition-all hover:text-purple-300"
             href="https://portfolio-git-main-faeziixs-projects.vercel.app/"
           >
             Faez Ansari
