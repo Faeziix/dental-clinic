@@ -63,7 +63,7 @@ function Footer() {
   ];
 
   return (
-    <footer className="relative mt-32 px-5 py-20 text-Neutral">
+    <footer className="relative mt-32 px-5 py-20 pb-32 text-Neutral">
       <section className="mx-auto flex h-full max-w-5xl items-center justify-center">
         <div className="flex flex-col gap-12 lg:flex-row">
           <div className="flex basis-3/5 flex-col">
@@ -132,9 +132,26 @@ function Footer() {
         fill
       />
 
-      <div className="absolute bottom-0 left-0 w-full bg-blue-950">
-        <p className="py-4 text-center text-sm">
+      <div className="absolute bottom-0 left-0 w-full bg-blue-950 py-4">
+        <p className="mb-2 text-center text-sm">
           {dict("copyright")} © {new Date().getFullYear()}
+        </p>
+        <p className="text-center text-xs">
+          Designed By{" "}
+          <a
+            className="underline hover:text-purple-300 transition-all"
+            href="https://www.figma.com/design/WUkWrHo6SWuD5vFsTLwFDA/Dental-Clinic?node-id=962-1136&t=9qfOI9Kx2CkWGKSw-1"
+          >
+            Sara Karimi
+          </a>
+          . Developed by{" "}
+          <a
+            className="underline hover:text-purple-300 transition-all"
+            href="https://portfolio-git-main-faeziixs-projects.vercel.app/"
+          >
+            Faez Ansari
+          </a>
+          .
         </p>
       </div>
     </footer>
